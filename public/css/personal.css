@@ -461,6 +461,15 @@ position: absolute;
     font-size: 18px;
     line-height: 30px;
 }
+.ui-checkbox{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
 
 
 
