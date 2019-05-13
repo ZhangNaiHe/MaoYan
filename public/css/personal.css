@@ -22,7 +22,6 @@ a {
     text-decoration: none;
 }
 
-
 /* 1.顶部start */
 .dh{
     position: fixed;
@@ -167,6 +166,7 @@ position: absolute;
 .nav-ul>li>a:hover {
     color: #ef4238;
 }
+
 .nav-ul>.ys{
     color: #fff;
     background-color: #ef4238;
@@ -263,6 +263,7 @@ position: absolute;
     padding: 0 40px 0 20px;
     border: 1px solid #ccc;
     font-size: 14px;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
     border-radius: 30px;
     background-color: #faf8fa;
     overflow: hidden;
@@ -353,235 +354,122 @@ position: absolute;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
-/* 1.顶部end*/
+/* 1.顶部end */
 
-/* 2.分类部分strat */
-.yz_category {
-    width: 100%;
-    height: 60px;
-    background-color: #48474b;
-    padding-top: 82px;
-}
-
-.yz_category_navbar {
-    margin:  0 auto;
-    width: calc(5 * 160px);
-    height: 100%;
-    text-align: center;
-}
-
-.yz_category_navbar > li {
-    position: relative;
-    float: left;
-    width: 160px;
-    height: 100%;
-    line-height: 60px;
-    list-style: none;
-}
-.yz_category_navbar .yz_active {
-    color: #ef4238;
-}
-
-.yz_category_navbar > li > a {
-    color: #999;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.yz_category_navbar > li > a:hover {
-    color: #ffffff;
-}
-
-.yz_category_navbar_hint {
-    content: "";
-    width: 2px;
-    height: 0;
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    margin-left: -5px;
-    top: 53px;
-    border-bottom: 7px solid #fff;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: none;
-    /* display: none; */
-}
-/* 2.分类部分end */
-
-
-/* 3.内容部分start */
-.yz_section {
-    display: none;
+/* 2.内容start */
+.yz_container {
+    padding-top: 112px;
+    margin-bottom: 80px;
 }
 
 .yz_main {
-    width: 950px;
-    margin: 0 auto;
-    margin-top: 70px;
+    height: 900px;
+    border: 1px solid #e1e1e1;
 }
 
-.yz_update-time,
-.yz_board-content {
+.yz_user_profile_nav {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #f5f4f5;
+    border-right: 1px solid #e1e1e1;
+}
+
+.yz_user_profile_nav > h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #222;
+    font-weight: 400;
     text-align: center;
-    font-size: 12px;
-    color: #999;
-    margin-top: 6px;
 }
 
-.yz_has-fresh-text {
-    color: #ffb400;
-    margin-left: 4px;
+.yz_user_profile_nav > a {
+    display: block;
+    font-weight: 400;
+    height: 40px;
+    width: 202px;
+    margin-left: -1px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
 }
 
-/* dl样式 */
-.yz_board-wrapper {
-    margin-top: 35px;
+.yz_profile {
+    color: #ffffff;
+    background-color: #ff240c;
 }
 
-.yz_board-wrapper > dd {
-    position: relative;
+.yz_profile_container {
+    float: right;
+    width: 935px;
+    height: 100%;
+}
+
+.yz_profile_title {
+    padding: 26px 0;
+    color: #ec443f;
+    font-size: 18px;
+    border-bottom: 1px solid #e1e1e1;
     margin-bottom: 30px;
 }
 
-.yz_board-index {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: #f7f7f7;
+/* 个人填写信息处 */
+.yz_avatar-container {
+    float: left;
+}
+
+.yz_upload_avatar_w {
+    position: relative;
+    cursor: pointer;
+    /* text-align: center; */
+    padding-left: 55px;
+}
+
+/* 按钮1 */
+.yz_upload_avatar {
+    cursor: pointer;
+    margin: 20px auto 0;
+    width: 182px;
+    height: 56px;
+    line-height: 56px;
+    color: #5b5b5b;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    border: 1px;
     font-size: 18px;
+    padding: 0;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+}
+
+/* 按钮2--上传头像按钮 */
+.yz_upload_avatar2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    bottom: -50px;
+    direction: ltr;
+    font-size: 200px!important;
+    cursor: pointer;
+}
+
+.yz_tips {
+    display: block;
+    margin-top: 10px;
     color: #999;
-    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
 }
 
-.yz_board-index_1 {
-    background-image: url(../images/yz_icon_1.png);
-}
-
-.yz_board-index_2,
-.yz_board-index_3 {
-    background: #ffb400;
-    color: #fff;
-}
-
-.yz_board-index_4,
-.yz_board-index_5,
-.yz_board-index_6,
-.yz_board-index_7,
-.yz_board-index_8,
-.yz_board-index_9,
-.yz_board-index_10 {
-    background-color: #f6f6f6;
-    color: #999;
-}
-
-
-.yz_image_link {
-    float: left;
-    margin-left: 80px;
-    margin-right: 30px;
-}
-
-.yz_board-item-main {
-    float: left;
-    width: 680px;
-    height: 219px;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.yz_board-item-content {
-    padding-top: 65px;
-}
-
-.yz_movie-item-info {
+.yz_userexinfo-form {
     float: left;
 }
 
-.yz_name > a {
-    display: inline-block;
-    font-size: 26px;
-    color: #333;
-    text-decoration: none;
-}
-
-.yz_star {
-    margin-top: 18px;
-    color: #333;
-}
-
-.yz_releasetime {
-    margin-top: 8px;
-    color: #999;
-}
-
-.yz_movie-item-number {
-    float: right;
-}
-
-.yz_integer {
-    font-size: 56px;
-    font-weight: 700;    
-    color: #ffb400;
-}
-
-.yz_fraction {
-    font-size: 26px;
-    font-weight: 700;
-    color: #ffb400;
-}
-
-/* 最受期待榜的右侧文字 */
-.yz_month-wish {
-    font-size: 16px;
-    color: #ffb400;
-}
-
-.yz_month-wish > span {
-    font-size: 26px;
-    font-weight: 700;
-}
-
-.yz_total-wish {
-    margin-top: 8px;
-    font-size: 16px;
-    color: #999;
-    text-align: right;
-}
-
-.yz_total-wish > span,
-.yz_total-boxoffice > span {
-    font-size: 16px;
-    color: #999;
-}
-
-/* 国内票房榜右侧 */
-.yz_realtime {
-    color: #ef4238;
-    font-size: 16px;
-}
-
-.yz_realtime > span {
-    font-weight: 700;
-    font-size: 26px;
-}
-
-.yz_total-boxoffice {
-    margin-top: 8px;
-    color: #999;
-    text-align: right;
-}
+/* 2.内容end*/
 
 
-/* 3.内容部分end */
-
-
-/* 4.底部start */
+/* 3.底部start */
 .footer {
     background-color: #262426;
     padding: 56px 0;
@@ -615,4 +503,4 @@ position: absolute;
     position: relative;
     top: 1px;
 }
-/* 4.底部end */
+/* 3.底部end */
