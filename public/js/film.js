@@ -1,11 +1,3 @@
-// // 正在热映
-// $('.film-classify-being').on('click',function(){
-//   // 点击正在热映添加class 属性
-//   $('.film-classify-being').addClass('active');
-//   // 删除class hover属性
-//   $('.film-classify-being').removeClass('hv');
-// })
-
 let show = function () {
   var btn = document.querySelectorAll('.btn-o>li>a');
   for (var i = 0; i < btn.length; i++) {

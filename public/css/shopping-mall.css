@@ -22,7 +22,7 @@ ul {
 }
 body {
     font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
-    background-color: #fff;
+    background-color: rgb(197, 183, 183);
     -webkit-font-smoothing: subpixel-antialiased;
 }
 .clearfix:after {
