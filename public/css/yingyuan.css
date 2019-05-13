@@ -1,5 +1,9 @@
-.main {
+/* .main {
 height:4000px;
+} */
+
+body {
+    font-family: "PingFang SC","\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";
 }
 
 /* 顶部导航 */
@@ -333,6 +337,8 @@ height:4000px;
 }
 /* 顶部导航 end*/
 
+
+/* 中部区域start */
 .container {
     width:1200px;
     margin: 0 auto;
@@ -499,7 +505,38 @@ height:4000px;
 .film-list .choose-down a:hover {
     background-color: #ff5e59
 }
+/* 中部区域end */
 
-/* .film-pager {
-    text-align: center
-} */
+.footer {
+    background-color: #262426;
+    padding: 53px 0;
+    margin: -29px auto;
+    min-width: 1349px;
+    margin-top: 81px;
+    margin-left: -75px;
+}
+
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color:rgb(97, 95, 95);
+}
+
+.friendly-links span {
+    display: inline-block;
+    border-left: 1px solid #444;
+    margin: 0 7px;
+    height: 12px;
+    position: relative;
+    top: 1px;
+}
+
+.footer .friendly-links a {
+    color: #ef4238;
+} 
+
+
