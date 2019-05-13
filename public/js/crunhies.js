@@ -1,5 +1,3 @@
-
-
 window.onload = function () {
     // #region  导航条
     // 1.获取所有的a标签
