@@ -14,7 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "art-template": "^4.13.2",
     "express": "^4.16.4",
+    "express-art-template": "^1.0.1",
     "jquery": "^3.4.1"
   },
   "devDependencies": {}

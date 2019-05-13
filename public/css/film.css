@@ -10,11 +10,6 @@ body {
   font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
 }
 
-/* 清除浮动 */
-.clear-fix {
-  overflow: hidden
-}
-
 /* 电影分类选中效果 */
 .film-classify-three .active {
   color: #ef4238;
@@ -222,7 +217,6 @@ body {
 /* 顶部导航 */
 
 .dh {
-    /* margin-top: 100px; */
     width: 100%;
     position: fixed;
     height: 81px;
