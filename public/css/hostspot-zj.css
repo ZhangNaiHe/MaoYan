@@ -8,11 +8,12 @@ ul,ul li {
     margin: 0;
 }
 
+/* h4 */
 h4 {
     font-weight: 400;
 }
 
-
+/* a标签变色 */
 a:hover {
     color: #ef4238;
 }
@@ -262,7 +263,7 @@ a:hover {
 .top-list {
     margin-bottom: 20px;
 }
-
+/* 播放图标 */
 .play-ico{
     position: absolute;
     right: 6px;
@@ -278,7 +279,7 @@ a:hover {
     vertical-align: top;
     width: 224px;
 }
-
+/* 一行的文字内容 */
 .oneline {
     margin: 14px 0 10px;
     height: 19px;
@@ -393,7 +394,7 @@ a:hover {
     background: url("../images/imgs-zj/cateye-eye-zj.png") 0 no-repeat;
     background-size: 18px 14px;
 }
-
+/* 颜色 */
 .red {
     color: #ef4238;
 }
@@ -405,6 +406,7 @@ a:hover {
 .yellow {
     color: #ffb400;
 }
+/* span hover变色 */
 .video-list-title span:hover {
     color: #ef4238;
 }
