@@ -228,3 +228,65 @@ a{
 .panel{
   margin: 0;
 }
+.panel-header{
+  overflow: hidden;
+    height: 26px;
+    line-height: 26px;
+}
+.panel-title{
+  font-size: 26px;
+}
+.panel-content{
+  overflow: hidden;
+  width: 100%;
+  margin-top: 23px;
+}
+.ranking-item {
+  overflow: hidden;
+}
+.ranking-index-1 {
+  margin-bottom: 11px;
+  border: 1px solid #efefef;
+}
+.ranking-top-left{
+  width: 120px;
+  height: 78px;
+  float: left;
+  position: relative;
+}
+.ranking-top-icon{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 25px;
+    background: url(../images/sbz.png) no-repeat;
+    background-size: contain;
+}
+.ranking-top-right{
+  height: 78px;
+  line-height: 78px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+.ranking-top-right-main{
+  width: 220px;
+  display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+}
+.ranking-top-moive-name{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.ranking-top-wish{
+  font-size: 14px;
+  color: #ef4238;
+  line-height: 1;
+}
