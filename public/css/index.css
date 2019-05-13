@@ -1,0 +1,230 @@
+body{
+  font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+  background-color: #fff;
+}
+.hit-move{
+  width: 1200px;
+  margin:0 auto;
+}
+
+.content{
+  overflow: hidden;
+  margin-top: 62px;
+
+}
+.main{
+  padding: 0 18px;
+  margin-right: 363px;
+}
+
+.move-grid {
+    margin-top: -62px;
+}
+
+
+.move-grid .panel {
+    margin: 62px 0 0;
+    width: 750px;
+}
+
+.main-header{
+  width: 740px;
+  overflow: hidden;
+  height: 26px;
+  line-height: 26px;
+}
+.main-top-more{
+  font-size: 14px;
+  line-height: 16px;
+  float: right;
+  margin-top: 10px;
+}
+.text-color{
+  color: #ef4238!important;
+}
+a{
+ text-decoration: none; 
+}
+.main-top-more-logo{
+  display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-image: url(../images/jiant.png)
+}
+.main-top-title{
+  font-size:26px; 
+}
+.main-content{
+  overflow: hidden;
+  width: 100%;
+  margin-top: 23px;
+}
+.move-list{
+  margin: -29px 0 20px -25px;
+}
+.move-list dd{
+  margin: 30px 0 0 30px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.move-item{
+  position: relative;
+  border: 1px solid #efefef;
+  margin: -1px;
+}
+.move-poster {
+  background-color: #fcfcfc;
+  width: 160px;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+.move-overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/bottom.png) repeat-x bottom; 
+}
+.move-info {
+  color: #fff;
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+}
+.move-score{
+  color: #ffb400;
+  float: right;
+  margin-right: 10px;
+}
+
+.move-score .integer {
+  font-size: 18px;
+  font-style: italic;
+}
+.move-score .fraction {
+  font-size: 14px;
+  font-style: italic;
+}
+.move-title{
+  font-size: 16px;
+  line-height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 10px;
+}
+
+.move-sale{
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.move-sale .active{
+    display: block;
+    color: #ef4238;
+    font-size: 14px;
+}
+
+.move-sale a.active:hover {
+  color: #fff;
+  background-color: #ef4238;
+}
+
+.textcolor_bule{
+  color: #2d98f3!important;
+}
+.main-top-more-blue{
+  display: inline-block;
+    width: 8px;
+    height: 14px;
+  background: url(../images/bule.png) 
+}
+.want-see{
+  font-size: 14px;
+  color: #ffb400;
+  background-color: #fbfbfb;
+  text-align: left;
+  padding-left: 10px;
+  height: 34px;
+  line-height: 34px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie-presale{
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie-presale a{
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  color: #999;
+  font-size: 14px;
+
+}
+.move-item:hover {
+  box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0,0,0,.07);
+}
+.movie-presale-sep{
+  border-right: 1px dotted #e5e5e5;
+}
+.movie-presale a.active {
+  color: #2d98f3;
+}
+.movie-presale a.active:hover {
+  color: #fff;
+  background-color: #2d98f3;
+}
+.movie-rt{
+  border: none;
+  color: #999;
+  font-size: 14px;
+  line-height: 40px;
+  height: 34px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.panel-subtitle{
+  margin-left: 10px;
+
+}
+.panel-subtitle a{
+  font-size: 14px;
+  color: #333;
+}
+
+
+.movie-poster-long{
+  width: 350px;
+  height: 220px;
+}
+
+
+/* 右边 */
+.aside {
+  float: right;
+  width: 360px;
+}
+.panel{
+  margin: 0;
+}

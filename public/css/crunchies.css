@@ -8,7 +8,7 @@ body {
 }
 
 .yz_content {
-    width: 80%;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@ a {
     line-height: 60px;
     list-style: none;
 }
-.yz_active {
+.yz_category_navbar .yz_active {
     color: #ef4238;
 }
 
@@ -72,18 +72,17 @@ a {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: none;
+    /* display: none; */
 }
 /* 2.分类部分end */
 
 
 /* 3.内容部分start */
-.yz_main {
-    width: 950px;
-    margin: 0 auto;
-    margin-top: 70px;
+.yz_section {
+    display: none;
 }
 
-.yz_main{
+.yz_main {
     width: 950px;
     margin: 0 auto;
     margin-top: 70px;
