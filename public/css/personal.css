@@ -462,9 +462,93 @@ position: absolute;
     line-height: 30px;
 }
 
-.yz_userexinfo-form {
+
+
+
+/* 表单内容 */
+.userexinfo-form {
     float: left;
+    width: 495px;
+    margin-left: 58px;
 }
+
+
+.userexinfo-form-section {
+    position: relative;
+    color: #666;
+    margin: 9px 0;
+    line-height: 30px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.userexinfo-form-section > p {
+    float: left;
+    font-size: 16px;
+    
+}
+
+.userexinfo-form-section > span {
+    float: left;
+    display: block;
+    margin-right: 10px;
+}
+
+/* 生日日期的div */
+.ui-select {
+    display: inline-block;
+    height: 30px;
+    padding: 0 5px 0 10px;
+}
+
+.userexinfo-form-section input[type=text] {
+    width: 240px;
+    font-size: 12px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+/* 兴趣 */
+.interest-list {
+    width: 300px;
+}
+
+.interest-list > span {
+    margin-right: 5px;
+}
+
+.interest-list .bottom-tips {
+    font: 12px/1.14 arial,\5b8b\4f53;
+    display: inline-block;
+    color: #ccc;
+}
+
+.userexinfo-form .form-save-btn {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    border: none;
+    background-color: #ed3931;
+    padding: 0;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+}
+
+.userexinfo-form .userexinfo-bottom-section {
+    margin-top: 20px;
+    padding-left: 80px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.userexinfo-form-section:nth-child(2){
+    width: 312px;
+}
+
+
 
 /* 2.内容end*/
 
