@@ -382,6 +382,10 @@ position: absolute;
     display: inline-block;
 }
 
+.yz_category_navbar > li > a:hover {
+    color: #ffffff;
+}
+
 .yz_category_navbar_hint {
     content: "";
     width: 2px;
@@ -524,7 +528,7 @@ position: absolute;
     color: #ffb400;
 }
 
-/* 国内榜单的右侧文字 */
+/* 最受期待榜的右侧文字 */
 .yz_month-wish {
     font-size: 16px;
     color: #ffb400;
@@ -542,10 +546,29 @@ position: absolute;
     text-align: right;
 }
 
-.yz_total-wish > span {
+.yz_total-wish > span,
+.yz_total-boxoffice > span {
     font-size: 16px;
     color: #999;
 }
+
+/* 国内票房榜右侧 */
+.yz_realtime {
+    color: #ef4238;
+    font-size: 16px;
+}
+
+.yz_realtime > span {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.yz_total-boxoffice {
+    margin-top: 8px;
+    color: #999;
+    text-align: right;
+}
+
 
 /* 3.内容部分end */
 
