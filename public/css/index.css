@@ -12,17 +12,20 @@ body{
 
 /* 1.顶部start */
 .dh{
-  /* position: absolute; */
+  position: fixed;
+  width: 100%;    /* position: absolute; */
   background-color: #fff;
   height: 81px;
+  top: 0;
   border-bottom: 1px solid #d8d8d8;
+  z-index: 100;
 }
 .dh_con{
+  position: relative;
   /* position: absolute; */
   margin: 0 auto;
   height: 81px;
   width: 1200px;
-  /* background-color: lightblue; */
 }
 /* log */
 .log{
@@ -166,7 +169,7 @@ position: absolute;
 .app-xz>a{
   position: absolute;
   display: block;
-  height: 24px;
+  height: 67px;
   width: 100px;
 }
 .app-zi{
@@ -270,7 +273,6 @@ position: absolute;
   height: 100%;
 }
 .user-info .user-avatar {
-  position: relative;
   display: block;
   border: 1px solid transparent;
   border-top: none;
@@ -279,18 +281,20 @@ position: absolute;
   width: 56px;
   height: 100%;
   border-style: none;
+  position: absolute;
+  top: 20px;
+  right: 0px;
 }
 .user-info .user-avatar img {
-  margin-top: 20px;
-  margin-left: 306px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
 }
 .user-info .user-avatar .caret {
-  margin-left: 350px;
-  margin-top: -75px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
 }
 .user-info:hover .user-menu{
   display: block;
@@ -298,8 +302,7 @@ position: absolute;
 .user-menu {
   display: none;
   position: absolute;
-  right: -315px;
-  top: 80px;
+  top: 60px;
   border: 1px solid #d8d8d8;
   border-top: none;
   background-color: #fff;
@@ -347,13 +350,9 @@ position: absolute;
 
 
 
-
-
-
-
 .hit-move{
   width: 1200px;
-  margin:0 auto;
+  margin:135px auto 0;
 }
 
 .content{
@@ -851,6 +850,7 @@ a{
   background-position: 50%;
   background-size: 68px 62px;
   background-repeat: no-repeat;
+  border-bottom: 1px solid rgb(191, 191, 191);
 }
 .ranking-img {
   vertical-align: middle;
