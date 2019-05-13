@@ -405,3 +405,6 @@ a:hover {
 .yellow {
     color: #ffb400;
 }
+.video-list-title span:hover {
+    color: #ef4238;
+}
