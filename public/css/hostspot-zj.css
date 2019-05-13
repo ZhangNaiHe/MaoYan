@@ -15,7 +15,15 @@ h4 {
 .red {
     color: #ef4238;
 }
- 
+
+.blue {
+    color: #2d98f3;
+}
+
+.yellow {
+    color: #ffb400;
+}
+
 a:hover {
     color: #ef4238;
 }
@@ -29,7 +37,7 @@ a:hover {
 }
 
 /* 清除浮动 */
-.clearfix {
+.clearfix:after{
     content: "";
     overflow: hidden;
     clear: both;
@@ -82,6 +90,18 @@ a:hover {
 
 .container-news, .container-video, .container-page {
     margin-top: 40px;
+    width: 1200px;
+}
+.container-news {
+
+    height: 484px;
+}
+.container-video {
+
+    height: 486px;
+}
+.container-page {
+    height: 552px;
 }
 /* 最新资讯 */
 .new-container {
@@ -148,7 +168,7 @@ a:hover {
     float: right;
     color: #aaa;
     padding-left: 23px;
-    background: url('./imgs/cateye-eye-zj.png') 0 no-repeat;
+    background: url('../images/imgs-zj/cateye-eye-zj.png') 0 no-repeat;
     background-size: 18px 14px;
 }
 /* 热门资讯 */
@@ -239,7 +259,15 @@ a:hover {
 }
 
 .redarrow {
-    background: url("./imgs/cateye-redarrow-zj.png") top no-repeat;
+    background: url("../images/imgs-zj/cateye-redarrow-zj.png") top no-repeat;
+}
+
+.bluearrow {
+    background: url("../images/imgs-zj/cateye-bluearrow-zj.png") top no-repeat;
+}
+
+.yellowarrow {
+    background: url("../images/imgs-zj/cateye-yellowarrow-zj.png");
 }
 
 .top-list {
@@ -252,7 +280,7 @@ a:hover {
     bottom: 6px;
     width: 24px;
     height: 24px;
-    background: url("./imgs/cateye-play-zj.png") no-repeat;
+    background: url("../images/imgs-zj/cateye-play-zj.png") no-repeat;
     background-size: 24px;
 }
 
@@ -284,4 +312,86 @@ a:hover {
     border-width: 5px 0 5px 8px;
     border-style: solid;
     border-color: transparent transparent transparent #d8d8d8;
+}
+
+.video-list {
+    float: left;
+    margin: 0 20px 20.1px 0;
+    position: relative;
+}
+
+.video-list img {
+    width: 230px;
+    height: 125px;
+}
+
+.video-big img {
+    width: 480px;
+    height: 270px;
+}
+
+.video-list-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    padding: 40px 10px 0 0;
+    background: url('../images/imgs-zj/cateye-videobg-zj.png') repeat-x bottom;
+}
+
+.video-list-title p {
+    margin: 0 0 8px 10px;
+    color: #fff;
+    font-size: 12px;
+    width: 180px;
+}
+
+.oneline span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.page-list {
+    position: relative;
+    float: left;
+    width: 355px;
+    margin: 0 20px 20px 0;
+}
+
+.list-images {
+    float: left;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+
+
+.list-images img {
+    width: 120px;
+    height: 84px;
+}
+
+.list-images .images-big {
+    width: 230px;
+    height: 172px;
+    margin-right: 5px;
+}
+
+.page-num {
+    display: block;
+    background-color: rgba(55,55,55,.5);
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 88px;
+    width: 120px;
+    height: 84px;
+    line-height: 84px;
+    text-align: center;
+}
+
+.page-num:hover,.page-num a {
+    background-color: rgba(55,55,55,.8);
+    color: #fff;
 }
