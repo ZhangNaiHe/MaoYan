@@ -1,0 +1,80 @@
+/* 导航 */
+.subnav {
+    background-color: #47464a;
+    height: 60px;
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar{
+    display: inline-block;
+}
+
+.clearfix>li {
+    float: left;
+} 
+
+.navbar>li>a {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+}
+
+.navbar>li>a.active{
+    color: #ef4238;
+    position: relative;
+    cursor: default;
+}
+
+ .navbar>li>a.active:before {
+    content: "";
+    width: 2px;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 53px;
+    border-bottom: 7px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: none;
+ }
+
+/* 主要内容 */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-news, .container-video, .container-page {
+    margin-top: 40px;
+}
+
+.new-container {
+    float: left;
+    width: 730px;
+    margin-right: 0;
+}
+
+.headerlist{
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.container-list {
+    margin-right: -20px;
+}
+
