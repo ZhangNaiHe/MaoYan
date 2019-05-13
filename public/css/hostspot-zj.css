@@ -12,17 +12,6 @@ h4 {
     font-weight: 400;
 }
 
-.red {
-    color: #ef4238;
-}
-
-.blue {
-    color: #2d98f3;
-}
-
-.yellow {
-    color: #ffb400;
-}
 
 a:hover {
     color: #ef4238;
@@ -394,4 +383,25 @@ a:hover {
 .page-num:hover,.page-num a {
     background-color: rgba(55,55,55,.8);
     color: #fff;
+}
+
+.eye-ico {
+    display: inline-block;
+    font-size: 12px;
+    color: #aaa;
+    padding-left: 23px;
+    background: url("../images/imgs-zj/cateye-eye-zj.png") 0 no-repeat;
+    background-size: 18px 14px;
+}
+
+.red {
+    color: #ef4238;
+}
+
+.blue {
+    color: #2d98f3;
+}
+
+.yellow {
+    color: #ffb400;
 }
