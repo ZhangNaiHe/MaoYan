@@ -33,3 +33,19 @@ let show = function () {
   }
 }
 show();
+
+
+// 显示页面
+let filmShow = function(){
+  $.ajax({
+    type:'get',
+    url:'/filmShow',
+    data:'',
+    success: function(data){
+     if(data.code == 1000){
+      $('.movie-list').html('<div>'+data.msg+'</div>');
+     }
+    }
+  })
+}
+filmShow();
