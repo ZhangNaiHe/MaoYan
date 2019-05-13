@@ -14,7 +14,9 @@ ul {
     border: none;
 }
 .container{
+    /* margin-top: 81px; */
     margin: 0 auto;
+    padding-top: 70px;
     width: 1200px;
     height: 1200px;
 }
@@ -23,20 +25,29 @@ body {
     background-color: #fff;
     -webkit-font-smoothing: subpixel-antialiased;
 }
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 /* 顶部导航 */
 
 .dh{
-    /* position: absolute; */
-    background-color: #fff;
+    /* margin-top: 100px; */
+    width: 100%;
+    position: fixed;
     height: 81px;
+    background-color: #fff;
     border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 50px;
 }
 .dh_con{
-    /* position: absolute; */
+    position: relative;
     margin: 0 auto;
     height: 81px;
     width: 1200px;
-    /* background-color: lightblue; */
+    background-color: #fff;
+    border-bottom: 1px solid #d8d8d8;
 }
 /* log */
 .log{
@@ -186,7 +197,7 @@ body {
 .app-xz>a{
     position: absolute;
     display: block;
-    height: 24px;
+    height: 63px;
     width: 100px;
 }
 .app-zi{
@@ -285,11 +296,15 @@ body {
 }
 /* 登录 */
 .user-info {
+    position: absolute;
+    top: 20px;
+    right: 0px;
     float: right;
     height: 100%;
 }
 .user-info .user-avatar {
-    position: relative;
+  
+    /* position: relative; */
     display: block;
     border: 1px solid transparent;
     border-top: none;
@@ -300,16 +315,13 @@ body {
     border-style: none;
 }
 .user-info .user-avatar img {
-    margin-top: 20px;
-    margin-left: 306px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
-.user-info .user-avatar .caret {
-    margin-left: 350px;
-    margin-top: -75px;
+.user-info .user-avatar .careta {
+    margin-top: -39px;
 }
 .user-info:hover .user-menu{
     display: block;
@@ -317,8 +329,8 @@ body {
 .user-menu {
     display: none;
     position: absolute;
-    right: -315px;
-    top: 80px;
+    /* right: -315px; */
+    top: 61px;
     border: 1px solid #d8d8d8;
     border-top: none;
     background-color: #fff;
@@ -331,13 +343,25 @@ body {
 .user-menu li {
     margin-bottom: 6px;
 }
-.user-menu li>a {
+.user-menu li>p {
     color: #999;
     display: block;
     word-break: keep-all;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.careta {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 5px solid #666;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
 }
 /* 箭头 */
 .caret {
