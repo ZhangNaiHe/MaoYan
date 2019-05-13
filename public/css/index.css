@@ -2,6 +2,247 @@ body{
   font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
   background-color: #fff;
 }
+
+
+
+
+
+
+
+/* 1.顶部start */
+.dh{
+  /* position: absolute; */
+  background-color: #fff;
+  height: 81px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.dh_con{
+  /* position: absolute; */
+  margin: 0 auto;
+  height: 81px;
+  width: 1200px;
+  /* background-color: lightblue; */
+}
+/* log */
+.log{
+  display:inline-block;
+  width: 133px;
+  height: 80px;
+  background: url(../images/shopping-mall/log.png) no-repeat 0;
+}
+/* 城市 */
+.spm_sy{
+  margin-left: 8px;
+  margin-top: 0px;
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  line-height: 80px;
+}
+.sy{
+position: absolute;
+  margin-top: 0px;
+  display:inline-block;
+
+}
+.sy .caret{
+  /* float: left; */
+  float: right;
+  margin-top: 40px;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 5px solid #666;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  transition: all .2s ease;
+
+}
+.sy:hover .city-list{
+  display: block;
+}
+
+
+
+.city-list {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  position: absolute;
+  z-index: 100;
+  width: 478px;
+  height: 330px;
+  overflow-y: scroll;
+  left: -6px;
+  top: 81px;
+  display: none;
+}
+.city-list .city-list-header {
+  padding-left: 20px;
+  line-height: 58px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+.city-list ul li span {
+  margin-left: 20px;
+  width: 20px;
+  text-align: center;
+  float: left;
+  /* vertical-align: top; */
+  display: block;
+  background-color: #eee;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.city-list ul li {
+  line-height: 30px;
+}
+.city-list ul li div {
+  margin-left: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+.city-list ul li div a {
+  position: relative;
+  left: 1px;
+  display: inline-block;
+  line-height: 24px;
+  margin-top: 3px;
+  padding: 0 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.city-list ul li div a:hover {
+  color: #ffffff;
+  background-color: #ff3024;
+}
+
+
+/* 导航 */
+.nav {
+  display: inline-block;
+  margin-left: 66px;
+  width: 490px;
+  height: 100%;
+}
+.nav-ul{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+}
+.nav-ul>li{
+  float: left;
+}
+.nav-ul>li>a{
+  text-align: center;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  width: 70px;
+  font-size: 18px;
+  color: #333;
+}
+.nav-ul>.ys{
+  color: #fff;
+  background-color: #ef4238;
+
+}
+.nav-ul>.ys>a{
+ color: #fff;
+} 
+/* app下载 */
+.app-xz{
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 29px;
+  display: inline-block;
+}
+.app-xz>a{
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 100px;
+}
+.app-zi{
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #000;
+  height: 24px;
+  top: -5px;
+
+}
+.app-tu{
+  display: inline-block;
+  width: 15px;
+  height: 24px;
+
+  background: url(../images/shopping-mall/app-xz下载.png) no-repeat 0;
+}
+.app-jt{
+  position: absolute;
+  top: 7px;
+  right: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 5px solid #666;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  transition: all .2s ease;
+}
+
+.appa:hover .download-icon{
+  display: block;
+  z-index: 100;
+}
+
+.download-icon {
+  display: none;
+  width: 130px;
+  height: 165px;
+  position: absolute;
+  left: -12px;
+  top: 52px;
+  background-color: #fff;
+  background-image: url(../images/shopping-mall/app.png);
+  background-position: 24px 14px;
+  background-size: 82px 82px;
+  background-repeat: no-repeat;
+  border: 1px solid #dcd4d7;
+  border-top: 0;
+}
+.download-icon .down-title {
+  margin-top: 115px;
+  margin-bottom: 3px;
+  color: #000;
+}
+.download-icon p {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hit-move{
   width: 1200px;
   margin:0 auto;
@@ -286,7 +527,108 @@ a{
 }
 
 .ranking-top-wish{
+  margin-top: 12px;
   font-size: 14px;
   color: #ef4238;
   line-height: 1;
 }
+.stonefont {
+  font-family: stonefont;
+}
+.normal-link{
+  display: block;
+  height: 35px;
+  line-height: 35px;
+}
+.ranking-index{
+  color: #ef4238;
+  display: inline-block;
+  width: 20px;
+  font-size: 18px;
+  vertical-align: top;
+  line-height: 35px;
+}
+.ranking-movie-name{
+  display: inline-block;
+  max-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #333;
+  vertical-align: top;
+}
+.ranking-num-info{
+  color: #ef4238;
+  float: right;
+    font-size: 14px;
+}
+
+.textcolor_graa{
+  color: #999 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 4.底部start */
+.footer {
+  background-color: #262426;
+  padding: 56px 0;
+  margin: 0 auto;
+  min-width: 1200px;
+  margin-top: 110px;
+  visibility: hidden;
+}
+.footer p, .footer p a {
+  color: #666;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer .friendly-links a:hover {
+  text-decoration: underline;
+}
+.footer .friendly-links a {
+  color: #ef4238;
+}
+.friendly-links span {
+  display: inline-block;
+  border-left: 1px solid #444;
+  margin: 0 7px;
+  height: 12px;
+  position: relative;
+  top: 1px;
+}
+/* 4.底部end */
