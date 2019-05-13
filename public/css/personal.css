@@ -366,4 +366,141 @@ position: absolute;
     height: 900px;
     border: 1px solid #e1e1e1;
 }
+
+.yz_user_profile_nav {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #f5f4f5;
+    border-right: 1px solid #e1e1e1;
+}
+
+.yz_user_profile_nav > h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #222;
+    font-weight: 400;
+    text-align: center;
+}
+
+.yz_user_profile_nav > a {
+    display: block;
+    font-weight: 400;
+    height: 40px;
+    width: 202px;
+    margin-left: -1px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.yz_profile {
+    color: #ffffff;
+    background-color: #ff240c;
+}
+
+.yz_profile_container {
+    float: right;
+    width: 935px;
+    height: 100%;
+}
+
+.yz_profile_title {
+    padding: 26px 0;
+    color: #ec443f;
+    font-size: 18px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 30px;
+}
+
+/* 个人填写信息处 */
+.yz_avatar-container {
+    float: left;
+}
+
+.yz_upload_avatar_w {
+    position: relative;
+    cursor: pointer;
+    /* text-align: center; */
+    padding-left: 55px;
+}
+
+/* 按钮1 */
+.yz_upload_avatar {
+    cursor: pointer;
+    margin: 20px auto 0;
+    width: 182px;
+    height: 56px;
+    line-height: 56px;
+    color: #5b5b5b;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    border: 1px;
+    font-size: 18px;
+    padding: 0;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+}
+
+/* 按钮2--上传头像按钮 */
+.yz_upload_avatar2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    bottom: -50px;
+    direction: ltr;
+    font-size: 200px!important;
+    cursor: pointer;
+}
+
+.yz_tips {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.yz_userexinfo-form {
+    float: left;
+}
+
 /* 2.内容end*/
+
+
+/* 3.底部start */
+.footer {
+    background-color: #262426;
+    padding: 56px 0;
+    margin: 0 auto;
+    min-width: 1200px;
+    margin-top: 110px;
+    visibility: hidden;
+}
+.footer p, .footer p a {
+    color: #666;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer .friendly-links a:hover {
+    text-decoration: underline;
+}
+.footer .friendly-links a {
+    color: #ef4238;
+}
+.friendly-links span {
+    display: inline-block;
+    border-left: 1px solid #444;
+    margin: 0 7px;
+    height: 12px;
+    position: relative;
+    top: 1px;
+}
+/* 3.底部end */
