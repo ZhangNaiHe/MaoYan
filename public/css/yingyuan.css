@@ -1,0 +1,81 @@
+/* .main {
+
+} */
+
+.container {
+    width:1200px;
+    margin: 0 auto;
+    /* 顶部导航栏添加时删除更改 */
+    padding-top:200px;
+}
+
+.search-top {
+    /* padding-left: 28px; */
+    /* margin-left: 125px; */
+    border: 1px solid #e5e5e5;
+    padding: 3px 20px;
+    margin: 40px 90px;
+    position: relative;
+    /* margin-left: 79px; */
+}
+
+.search-top li,
+.search-top ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.brand {
+    padding: 10px 0 !important
+}
+
+.brand-border {
+    border-top: 1px dashed #e5e5e5
+}
+
+.brand-title {
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    color: #999;
+    font-size: 14px
+}
+
+.pre-date {
+    font-size: 12px;
+    color: #faaf00
+}
+
+.search-top ul.tags {
+    margin-left: 40px;
+}
+
+.tags a:hover {
+    color: #ef4238
+}
+
+.tags li {
+    border-radius: 14px;
+    padding: 3px 9px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.tags li.active {
+    background: #f34d41;
+    color: #fff
+}
+
+.tags li.active .pre-date {
+    color: #fff
+}
+
+.tags li a {
+    color: #333;
+    font-size: 14px
+}
+
+.tags li.active a {
+    color: #fff
+}
