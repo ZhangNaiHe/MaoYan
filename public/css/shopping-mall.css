@@ -295,14 +295,14 @@ body {
     border: none;
 }
 /* 登录 */
-.user-info {
+.user- {
     position: absolute;
     top: 20px;
     right: 0px;
     float: right;
     height: 100%;
 }
-.user-info .user-avatar {
+.user- .user-avatar {
   
     /* position: relative; */
     display: block;
@@ -314,16 +314,16 @@ body {
     height: 100%;
     border-style: none;
 }
-.user-info .user-avatar img {
+.user- .user-avatar img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
-.user-info .user-avatar .careta {
+.user- .user-avatar .careta {
     margin-top: -39px;
 }
-.user-info:hover .user-menu{
+.user-:hover .user-menu{
     display: block;
 }
 .user-menu {
@@ -446,21 +446,21 @@ body {
     width: 380px;
     height: 285px;
 }
-.product .prodect-item .product-info {
+.product .prodect-item .product- {
     padding: 20px 0 0;
 }
 .product .prodect-item img {
     height: 100%;
 }
-.product .prodect-item .product-info p {
+.product .prodect-item .product- p {
     font-size: 18px;
     color: #333;
 }
-.product .prodect-item .product-info strong {
+.product .prodect-item .product- strong {
     color: #f03d37;
     margin-right: 6px;
 }
-.product .prodect-item .product-info span {
+.product .prodect-item .product- span {
     color: #999;
     text-decoration: line-through;
 }
