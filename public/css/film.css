@@ -1,0 +1,181 @@
+/* 公共宽度 */
+.common {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* 字体 */
+body {
+  font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+}
+
+/* 清除浮动 */
+.clear-fix {
+  overflow: hidden
+}
+
+/* 电影分类选中效果 */
+.film-classify-three  .active {
+  color: #ef4238;
+}
+
+/* 选中的小三角 */
+.film-classify-three .active::before {
+  content: "";
+  width: 2px;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  top: 53px;
+  border-bottom: 7px solid #fff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: none;
+}
+
+/* 类型选择的效果 */
+.channel-btn-one .active{
+  color: #ffffff;
+  background-color: #ef4238;
+  border-radius: 10px;
+}
+
+/* 电影分类开始 */
+.film-classify {
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  background-color: #47464a;
+}
+
+.film-classify-three {
+  width: 400px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.film-classify-three>li {
+  float: left;
+  width: 110px;
+  height: 60px;
+}
+
+.film-classify-three>li>a {
+  position: relative;
+  width: 90px;
+  height: 60px;
+  color: #999999;
+  font-size: 16px;
+  line-height: 60px;
+  text-align: center;
+  display: inline-block;
+}
+
+.film-classify-three>li>a.hv:hover {
+  color: #ffffff;
+}
+
+/* 电影分类结束 */
+
+/* 电影类型选择开始 */
+.channel {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.channel-btn {
+  margin-top: 40px;
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e6e6e6;
+}
+
+.channel-btn-type {
+  width: 98%;
+  height: 70px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.channel-btn-type>div {
+  display: inline-block;
+  width: 43px;
+  color: #9f9da7;
+  font-size: 14px;
+}
+
+.channel-btn-one {
+  display: inline-block;
+  margin-bottom: -37px;
+  width: 1100px;
+}
+
+.channel-btn-one>li {
+  display: inline-block;
+  float: left;
+  width: 74px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+}
+
+.channel-btn-one>li>a {
+  display: inline-block;
+  font-size: 14px;
+  width: 62px;
+  height: 100%;
+}
+
+.channel-btn-one>li>a.hv:hover {
+  color: #ef4238;
+}
+
+.channel-btn-type:nth-child(3) {
+  border: none;
+}
+
+/* 电影类型选择结束 */
+
+/* 内容显示开始 */
+.film-panel {
+  margin-top: 40px;
+}
+
+.film-panel-sort {
+  margin-bottom: 30px;
+}
+
+.film-panel-sort-ul {
+  overflow: hidden;
+}
+
+.film-panel-sort-ul>li {
+  float: left;
+  width: 140px;
+}
+
+.film-panel-sort-ul span {
+  display: inline-block;
+}
+
+.film-panel-sort-wz {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.film-panel-sort-btn {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/index.png);
+}
+
+.film-panel-content>div {
+  font-size: 15px;
+}
+
+/* 内容显示结束 */
