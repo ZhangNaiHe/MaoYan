@@ -32,6 +32,13 @@ app.use(AromatherapyRoute);
 // 商城结束
 
 
+
+// 登录
+const loginRoute = require('./routers/loginRoute')
+app.use(loginRoute);
+
+
+
 app.listen(3009,()=>{
   console.log("http://127.0.0.1:3009")
 })
