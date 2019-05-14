@@ -22,6 +22,7 @@ body {
     /* margin-top: 100px; */
     width: 100%;
     position: fixed;
+    top: 0px;
     height: 81px;
     background-color: #fff;
     border-bottom: 1px solid #d8d8d8;

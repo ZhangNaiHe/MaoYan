@@ -32,6 +32,6 @@ app.use(AromatherapyRoute);
 // 商城结束
 
 
-app.listen(3000,()=>{
-  console.log("http://127.0.0.1:3000")
+app.listen(3009,()=>{
+  console.log("http://127.0.0.1:3009")
 })
