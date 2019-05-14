@@ -8,6 +8,7 @@ window.onload = function () {
         // 3.给每个a标签添加点击事件
         yz_aLink[i].onclick = function () {
             var yz_activeA = document.querySelector('.yz_category_navbar li .yz_active');
+            var yz_activeB = document.querySelector('.yz_category_navbar li .yz_active2');
             var yz_cont = yz_activeA.getAttribute('cont');
             document.getElementById(yz_cont).style.display = 'none';
             // 4.4 删除自己身上的class的类名

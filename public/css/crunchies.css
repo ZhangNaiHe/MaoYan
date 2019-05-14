@@ -576,8 +576,6 @@ position: absolute;
     color: #999;
     text-align: right;
 }
-
-
 /* 3.内容部分end */
 
 
@@ -590,7 +588,9 @@ position: absolute;
     margin-top: 110px;
     visibility: hidden;
 }
-.footer p, .footer p a {
+
+.footer p,
+.footer p a {
     color: #666;
 }
 
@@ -601,12 +601,15 @@ position: absolute;
     font-size: 14px;
     line-height: 20px;
 }
+
 .footer .friendly-links a:hover {
     text-decoration: underline;
 }
+
 .footer .friendly-links a {
     color: #ef4238;
 }
+
 .friendly-links span {
     display: inline-block;
     border-left: 1px solid #444;
