@@ -1,18 +1,15 @@
 
-
-// // 顶部导航
-// $(function(){
-//     var pcontent_right_height =( $(".tpbf").offset().top);
-    
-//     $(window).scroll(function(){
-//     if($(window).scrollTop()>pcontent_right_height){
-    
-//     $(".js-topoption").show();
-//     }
-//     else{
-//     $(".js-topoption").hide();
-//     }
-    
-//     })
-    
-//     })
+let Show = function () {
+    $.ajax({
+      type: 'get',
+      url: '/shoppingxs',
+      data: '',
+      success: function (data) {
+        // console.log(data);
+        let cateshowHtml = template('cate_show_template', { list: data });
+        $('section').html(cateshowHtml);
+        console.log(111)
+      }
+    })
+  }
+  Show();
