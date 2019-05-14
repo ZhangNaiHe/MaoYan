@@ -464,11 +464,11 @@ position: absolute;
 .ui-checkbox{
     border: none;
     outline: none;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     width: 15px;
     height: 15px;
     border: 1px solid lightgray;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 
