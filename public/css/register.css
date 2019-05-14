@@ -1,0 +1,157 @@
+body {
+  font: 400 14px/1.5 'Hiragino Sans GB','WenQuanYi Micro Hei',tahoma,sans-serif;
+  color: #666;
+  background-color: #fff;
+}
+
+
+.header--mini {
+  border-bottom: 2px solid #2bb8aa;
+  min-width: 980px;
+  color: #666;
+  
+  border-bottom-color: #e02025;
+}
+
+.header--mini .wrapper {
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 980px;
+}
+.cf:after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.header--mini .site-logo {
+  width: 133px;
+  background-position: -536px -748px;
+  background-image: url(../images/icon.png);
+  height: 40px;
+  margin-top: -2px;
+}
+.header--mini .site-logo, .header--mini .site-name {
+  float: left;
+}
+ .content {
+  margin: 0 auto 30px;
+  padding-top: 30px;
+  width: 980px;
+  min-height: 300px;
+}
+
+.form-field {
+  position: relative;
+  padding: 8px 0 8px 110px;
+  zoom: 1;
+}
+
+.form-field label {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    padding-top: 6px;
+    font-size: 14px;
+    text-align: right;
+    color: #333;
+}
+
+.form-field .f-text {
+  width: 248px;
+  height: 24px;
+  margin: -1px auto;
+  padding: 5px;
+  border: 1px solid #aaa;
+  line-height: 24px;
+  vertical-align: top;
+}
+
+.form-field .unitive-tip {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 6px 0;
+  line-height: 24px;
+  font-size: 12px;
+  color: #999;
+  vertical-align: top;
+  zoom: 1;
+}
+
+.btn-mini {
+  padding: 1px 8px 0;
+  font-size: 12px;
+}
+.btn-mini, .btn-small {
+  font-weight: 400;
+  -webkit-font-smoothing: initial;
+}
+
+.btn-normal {
+  color: #333;
+  background-color: #dedede;
+  border: 1px solid #e3e3e3;
+  border-bottom: 1px solid #aaa;
+  line-height: 1.5;
+  letter-spacing: .1em;
+  text-align: center;
+  text-decoration: none;
+  border-width: 0 0 1px;
+  border-style: solid;
+  background-repeat: repeat-x;
+  border-radius: 2px;
+
+  user-select: none;
+  cursor: pointer;
+  background-image: url(../images/btn.svg);
+  background-size: 100%
+}
+.Dynamic{
+  padding: 0 0 0 110px;
+}
+
+.submit input{
+  border: #e02025;
+  color: #FFF;
+  background: #ec454a;
+  background: linear-gradient(to bottom,#ec454a 0,#e02025 100%);
+  padding: 7px 20px 6px;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    letter-spacing: .1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.terms{
+  position: relative;
+  padding: 3px 10px 3px 110px;
+  margin: 0 auto 8px;
+  zoom: 1;
+}
+.terms a{
+  font-size: 13px;
+  color: #ec454a;
+}
+
+.footer--mini {
+  border-top: 1px solid #EEE;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer--mini .copyright {
+  font-size: 12px;
+  font-family: initial;
+}
+
+.f1 {
+  color: #999;
+  font-size: 13px;
+}
