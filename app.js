@@ -30,7 +30,11 @@ app.use(UnicornRoute);
 const AromatherapyRoute=require('./routers/AromatherapyRoute')
 app.use(AromatherapyRoute);
 // 商城结束
+const filmRouter = require('./routers/filmRouter');
+app.use(filmRouter);
 
+const filmAboutRouter = require('./routers/film-aboutRouter');
+app.use(filmAboutRouter);
 
 app.listen(3009,()=>{
   console.log("http://127.0.0.1:3009")
