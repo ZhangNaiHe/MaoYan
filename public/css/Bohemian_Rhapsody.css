@@ -924,6 +924,7 @@ position: absolute;
     width:18px;
     height: 14px;
     background-image: url(../images/yz_icon_19.png);
+    margin-right: 3px;
 }
 
 .yz_news_info > span:nth-child(2), 
@@ -937,6 +938,7 @@ position: absolute;
     width:16px;
     height: 14px;
     background-image: url(../images/yz_icon_20.png);
+    margin-right: 3px;
 }
 
 
