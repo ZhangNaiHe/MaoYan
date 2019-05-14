@@ -4,7 +4,9 @@ const express = require('express');
 const router = express.Router();
 // 引入控制器
 const shoppingCtrl = require('../controller/ShoppingCter');
+// 显示页面
 router.get('/shopping',shoppingCtrl.shopping);
-
+//显示内容
+router.get('/shoppingxs',shoppingCtrl.shoppingxs);
 // 暴露路由
 module.exports = router;
