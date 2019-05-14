@@ -180,14 +180,18 @@ body {
   font-size: 15px;
 }
 
-.movie-list>dd {
+.movie-list {
   overflow: hidden;
+}
+
+.movie-list>dd>img{
+  width: 180px;
 }
 
 .movie-list>dd {
   float: left;
-  width: 160px;
-  height: 285px;
+  width: 200px;
+  height: 315px;
   text-align: center;
   margin: 30px 0 0 30px;
   display: inline-block;

@@ -1,0 +1,24 @@
+
+
+
+
+
+
+<script type="text/template" id="film-template">
+{{each list}}
+    <div class="prodect-item">
+        <a href="{{$value.shopping_link}}" target="_blank">
+        <div class="product-img"><img
+                src="{{$value.shopping_pic}}"
+                title="{{$value.shopping_title}}"></div>
+        <div class="product-info">
+            <p>{{$value.shopping_namep}}</p>
+            <p><strong>{{$value.shopping_jg}}</strong><span>{{$value.shopping_yj}}</span></p>
+        </div>
+        </a>
+    </div>
+{{/each}}   
+
+
+
+</script>

@@ -1,8 +1,11 @@
-<script type="text/template" id="film-template">
+<script type="text/template" id="filmabout-template">
   {{each list}}
         <dd>
-          <img src="{{$value.showing_pic}}" alt="">
-          <strong>{{$value.showing_name}}</strong>
+          <img src="{{$value.show_pic}}" alt="">
+          <strong>{{$value.show_name}}</strong>
+          <i>{{$value.show_look}}
+            <span>人想看</span>
+          </i>
         </dd>
         {{/each}}     
 </script>

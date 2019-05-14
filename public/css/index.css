@@ -3,13 +3,6 @@ body{
   background-color: #fff;
 }
 
-
-
-
-
-
-
-
 /* 1.顶部start */
 .dh{
   position: fixed;
@@ -340,15 +333,7 @@ position: absolute;
 /* 1.顶部end*/
 
 
-
-
-
-
-
-
-
-
-
+/* 2.中部模块 */
 
 .hit-move{
   width: 1200px;
