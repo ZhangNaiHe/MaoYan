@@ -22,7 +22,7 @@ ul {
 }
 body {
     font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
-    background-color: rgb(197, 183, 183);
+    /* background-color: rgb(197, 183, 183); */
     -webkit-font-smoothing: subpixel-antialiased;
 }
 .clearfix:after {
@@ -33,9 +33,11 @@ body {
 /* 顶部导航 */
 
 .dh{
+   
     /* margin-top: 100px; */
     width: 100%;
     position: fixed;
+    top:0px;
     height: 81px;
     background-color: #fff;
     border-bottom: 1px solid #d8d8d8;
@@ -179,6 +181,9 @@ body {
     font-size: 18px;
     color: #333;
 }
+.nav-ul>li>a:hover{
+    color: #ef4238;
+}
 .nav-ul>.ys{
     color: #fff;
     background-color: #ef4238;
@@ -295,14 +300,14 @@ body {
     border: none;
 }
 /* 登录 */
-.user- {
+.user-info{
     position: absolute;
     top: 20px;
     right: 0px;
     float: right;
     height: 100%;
 }
-.user- .user-avatar {
+.user-avatar {
   
     /* position: relative; */
     display: block;
@@ -314,16 +319,16 @@ body {
     height: 100%;
     border-style: none;
 }
-.user- .user-avatar img {
+.user-avatar img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
-.user- .user-avatar .careta {
+.user-info .user-avatar .careta {
     margin-top: -39px;
 }
-.user-:hover .user-menu{
+.user-info:hover .user-menu{
     display: block;
 }
 .user-menu {
