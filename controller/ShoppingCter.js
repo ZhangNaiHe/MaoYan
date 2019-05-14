@@ -7,7 +7,7 @@ module.exports.shopping = (req, res) => {
 module.exports.shoppingxs = (req, res) => {
   conn.query('select * from shopping', (error, results) => {
     if (error) return console.log(error);
-
+    console.log(results);
     res.json(results);
   })
 }

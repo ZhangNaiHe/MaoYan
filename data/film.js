@@ -3,13 +3,13 @@ const mysql = require('mysql');
 // 配置数据库
 const conn = mysql.createConnection({
   // 网址
-  host:'127.0.0.1',
+  host:'192.168.26.123',
   // 端口
   port:3306,
   // 账号
   user:'root',
   // 密码
-  password:'root',
+  password:'123456',
   // 数据库名
   database:'movie'
 })
