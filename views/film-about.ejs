@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>正在热映-猫眼电影-一网打尽好电影</title>
   <!-- 清除浏览器默认样式 -->
-  <link rel="stylesheet" href="../public/css/reset.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <!-- css样式 -->
-  <link rel="stylesheet" href="../public/css/film.css">
+  <link rel="stylesheet" href="./css/film.css">
 </head>
 
 <body>
@@ -1638,13 +1638,13 @@
         <div class="channel-btn-type">
           <div>类型：</div>
           <ul class="channel-btn-one btn-o">
-            <li>
+            <!-- <li>
               <a href="javascript:;" class="active">
                 全部
               </a>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href="javascript:;" class="aq" id="1">
                 爱情
               </a>
             </li>
@@ -1769,7 +1769,8 @@
               <a href="javascript:;">
                 其他
               </a>
-            </li>
+            </li> -->
+           
           </ul>
         </div>
 
@@ -1996,7 +1997,7 @@
         <div class="film-panel-content">
           <dl class="movie-list">
             <dd>
-              <img src="../public/images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
+              <img src="./images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
               <strong>少年的你</strong>
               <i>
                 147353
@@ -2006,7 +2007,7 @@
 
 
             <dd>
-              <img src="../public/images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
+              <img src="./images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
               <strong>少年的你</strong>
               <i>
                 147353
@@ -2016,7 +2017,7 @@
 
 
             <dd>
-              <img src="../public/images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
+              <img src="./images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
               <strong>少年的你</strong>
               <i>
                 147353
@@ -2026,7 +2027,7 @@
 
 
             <dd>
-              <img src="../public/images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
+              <img src="../images/film/film1.jpg" alt="">
               <strong>少年的你</strong>
               <i>
                 147353
@@ -2035,7 +2036,7 @@
             </dd>
 
             <dd>
-              <img src="../public/images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
+              <img src="../images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
               <strong>少年的你</strong>
               <i>
                 147353
@@ -2044,7 +2045,7 @@
             </dd>
 
             <dd>
-              <img src="../public/images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
+              <img src="../images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
               <strong>少年的你</strong>
               <i>
                 147353
@@ -2058,8 +2059,12 @@
   </div>
 
   <!-- 引入jquery-->
-  <script src="../public/lib/jquery/dist/jquery.js"></script>
-  <script src="../public/js/film.js"></script>
+  <script src="./lib/jquery/dist/jquery.js"></script>
+  <script src="./lib/art-template/lib/template-web.js"></script>
+  <script src="./js/film-about.js"></script>
+  <script src="./js/film.js"></script>
+  <%-include('./template/film-aboutTemplate.ejs') %>
+  <%-include('./template/navtemplate.ejs') %>
+  <%-include('./template/areaTemplate.ejs') %>
 </body>
-
 </html>
