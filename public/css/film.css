@@ -170,6 +170,12 @@ body {
   background-image: url(../images/index.png);
 }
 
+.film-panel-sort-ul .active{
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/index1.png);
+}
+
 .film-panel-content>div {
   font-size: 15px;
 }

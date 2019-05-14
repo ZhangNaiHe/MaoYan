@@ -1,9 +1,10 @@
 // 导入连接数据库的包
 const conn = require('../data/film');
+// #region 显示首页
 module.exports.show = (req, res) => {
   res.render('film');
 }
-// 显示首页
+
 module.exports.filmShow = (req, res) => {
   conn.query('select * from showing', (error, result) => {
     if (error) return console.log(error);
@@ -18,3 +19,4 @@ module.exports.filmShow = (req, res) => {
     }
   })
 }
+// #endregion

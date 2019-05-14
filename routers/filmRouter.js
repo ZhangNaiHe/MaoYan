@@ -4,8 +4,8 @@ const express = require('express');
 const router = express.Router();
 // 引入控制器
 const filmCtrl = require('../controller/filmCtrl');
-router.get('/film',filmCtrl.show);
 // 显示页面
+router.get('/film',filmCtrl.show);
 router.get('/filmShow',filmCtrl.filmShow);
 // 暴露路由
 module.exports = router;
