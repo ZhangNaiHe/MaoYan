@@ -1,13 +1,7 @@
-
-
-
-
-
-
-<script type="text/template"  id="cate_edit_template">
+<script type="text/template" id="cate_edit_template">
 {{each list}}
-    <div class="prodect-item">
-        <a href="{{$value.shopping_link}}" target="_blank">
+    <div class="prodect-item" data-id='{{$value.shopping_id}}'>
+        <a href="/commodity?id={{$value.shopping_id}}" target="_blank">
         <div class="product-img"><img
                 src="{{$value.shopping_pic}}"
                 title="{{$value.shopping_title}}"></div>

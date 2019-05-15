@@ -8,5 +8,9 @@ const shoppingCtrl = require('../controller/ShoppingCter');
 router.get('/shopping',shoppingCtrl.shopping);
 // //显示内容
 router.get('/shoppingxs',shoppingCtrl.shoppingxs);
+
+
+// 详情
+router.get('/commodity',shoppingCtrl.commodity);
 // 暴露路由
 module.exports = router;
