@@ -42,6 +42,11 @@ app.use(UnicornRoute);
 // 详情
 const AromatherapyRoute=require('./routers/AromatherapyRoute')
 app.use(AromatherapyRoute);
+
+// 详情实验
+const commodityRoute=require('./routers/CommodityRoute')
+app.use(commodityRoute);
+
 // 商城结束
 const filmRouter = require('./routers/filmRouter');
 app.use(filmRouter);
@@ -56,6 +61,10 @@ app.use(filmroomRouter);
 const crunchiesRoute = require('./routers/crunchiesRoute');
 // 挂载榜单页面路由
 app.use(crunchiesRoute);
+// 引入波西米亚狂想曲页面路由
+const Bohemian_RhapsodyRoute = require('./routers/Bohemian_RhapsodyRoute');
+// 挂载波西米亚狂想曲页面路由
+app.use(Bohemian_RhapsodyRoute);
 
 
 // 登录

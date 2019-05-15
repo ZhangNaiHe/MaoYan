@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/Avengers.css">
+</head>
+
+<body>
+    <div class="avegers">
+        <!-- 导航 -->
+        <%- include('./layouts/heade.ejs')%>
+        <!-- 导航结束 -->
+        <!-- 内容 -->
+        <div class="container clearfix" data-id="<%= shopping_id %>">
+            <nav><span class="index">首页</span>
+                <div class="triangle"></div><span>商城</span>
+                <div class="triangle"></div><span><%= shoping_namep%></span>
+            </nav>
+            <section class="general">
+                <div class="detail-titleImages">
+                    <div class="big">
+                        <img id="Img" src="<%= shopping_pic %>"></div>
+                    <div class="small">
+                        <ul class="small-ul" style="width: 482px">
+                            <!-- <li>
+                                <img class="activeImg" src="./images/shopping-mall/Avengers/xxj.jpg">
+                            </li>
+                            <li class="">
+                                <img class="activeImg" src="./images/shopping-mall/Avengers/xxj-2.jpg">
+                            </li>
+                            <li class="">
+                                <img class="activeImg" src="./images/shopping-mall/Avengers/xxj-3.jpg">
+                            </li>
+                            <li class="">
+                                <img class="activeImg" src="./images/shopping-mall/Avengers/xxj-4.jpg">
+                            </li>
+                            <li class="">
+                                <img class="activeImg" src="./images/shopping-mall/Avengers/xxj-5.jpg">
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="detail-purchase">
+                    <h3><%= shoping_namep %></h3>
+                    <p class="price"><span>￥<%= shopping_jg %></span><span>￥<%= shopping_jg %></span></p>
+                    <p class="service"><span>服务：</span><span><span class="dot">·</span> 正版授权</span><span
+                            class="service-saled">《售后服务》</span></p>
+                    <p class="notic"><span>说明：</span>该商品由第三方卖家提供</p>
+                    <div class="purchase-btn">立即抢购</div>
+
+
+                    <!-- 立即抢购弹框 -->
+                    <div class="qg">
+                        <span>该商品暂无库存</span>
+                    </div>
+                    <!-- 结束 -->
+                </div>
+            </section>
+
+            <!-- 详细 -->
+            <div class="xiangxi">
+                <div class="list">
+                    <div class="figure ">图文详情</div>
+                    <div>购买须知</div>
+                </div>
+
+                <div class="content">
+                    <div class="dv">
+                        <div class="info-text">
+                            <div>
+                                <p><span>商品名称</span>:<span><%= shoping_namep%></span></p>
+                                <p><span>数量</span>:<span><%= shopping_number%>件</span></p>
+                                <p><span>价格</span>:<span><%= shopping_jg %>元</span></p>
+                            </div>
+                            <div>
+                                <p><span>品牌</span>:<span><%= shopping_brand %></span></p>
+                            </div>
+                            <div>
+                                <p><span>产地</span>:<span><%= shopping_address %></span></p>
+                            </div>
+                        </div>
+                        <!-- 图 -->
+                        <div class="info-image">
+                            <!-- <img src="./images/shopping-mall/Avengers/xxj-nr1.jpg" alt="">
+                            <img src="./images/shopping-mall/Avengers/xxj-nr2.jpg" alt=""> -->
+                        </div>
+                    </div>
+
+
+                    <div class="dv" style="display:none">
+
+                        <div class="notic">
+                            <p>商家QQ</p>
+                            <p>2859570651</p>
+                        </div>
+                        <div class="notic">
+                            <p>产品咨询</p>
+                            <p>商家电话：15013205358；联系时间：09:00-18:00</p>
+                        </div>
+                        <div class="notic">
+                            <p>配送范围</p>
+                            <p>全国（除港澳台外）均可配送</p>
+                        </div>
+                        <div class="notic">
+                            <p>快递公司</p>
+                            <p>本单使用EMS（11183）</p>
+                        </div>
+                        <div class="notic">
+                            <p>配送费用</p>
+                            <p>本单包邮，配送范围内无需再额外支付邮费</p>
+                        </div>
+                        <div class="notic">
+                            <p>配送时段</p>
+                            <p>下单后 2-3 天</p>
+                        </div>
+                        <div class="notic">
+                            <p>售后保障</p>
+                            <p>如需退换货，请进入我的订单</p>
+                        </div>
+                        <div class="notic">
+                            <p>温馨提示</p>
+                            <p>全国包邮，包邮快递无法更换。</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 内容结束 -->
+        <!-- 底部 -->
+        <%- include('./layouts/bottom.ejs')%>
+
+        <!-- 底部结束 -->
+    </div>
+</body>
+<script src="./js/Avengers.js"></script>
+<!-- <script src="../public/js/jquery-3.3.1.min.js"></script> -->
+<%- include('./template/details-pic1')%>
+<%- include('./template/details-pic2')%>
+
+</html>
