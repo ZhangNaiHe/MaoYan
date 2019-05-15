@@ -42,6 +42,11 @@ app.use(UnicornRoute);
 // 详情
 const AromatherapyRoute=require('./routers/AromatherapyRoute')
 app.use(AromatherapyRoute);
+
+// 详情实验
+const commodityRoute=require('./routers/CommodityRoute')
+app.use(commodityRoute);
+
 // 商城结束
 const filmRouter = require('./routers/filmRouter');
 app.use(filmRouter);
