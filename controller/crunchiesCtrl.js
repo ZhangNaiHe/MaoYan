@@ -7,7 +7,7 @@ module.exports.crunchies = (req, res) => {
 // #endregion
 
 // #region  波西米亚页面
-module.exports.Bohemian_Rhapsody = (req,res)=>{
+module.exports.Bohemian_Rhapsody = (req, res) => {
     res.render('Bohemian_Rhapsody');
 }
 // #endregion
