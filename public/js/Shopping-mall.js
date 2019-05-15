@@ -12,23 +12,3 @@ let Show = function () {
   })
 }
 Show();
-// 查询
-$('.product').on('click', '.prodect-item', function () {
-  let id = $(this).data('id');
-  // console.log(id)
-  // 请求方式: get(获取数据) post(发送数据) delete(删除数据) put(更新数据) 
-  $.ajax({
-    type: 'get',
-    url: '/cx',
-    data: {
-      id: id
-    },
-    success:function (data) {
-      // console.log(data);
-      
-        // location.href=('/commodity');
-      
-     
-    }
-  })
-})
