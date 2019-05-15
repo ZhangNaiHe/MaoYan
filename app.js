@@ -39,6 +39,11 @@ app.use(filmAboutRouter);
 const filmroomRouter = require('./routers/filmroomRoute');
 app.use(filmroomRouter);
 
+// 引入榜单页面路由
+const crunchiesRoute = require('./routers/crunchiesRoute');
+// 挂载榜单页面路由
+app.use(crunchiesRoute);
+
 
 // 登录
 const loginRoute = require('./routers/loginRoute')
