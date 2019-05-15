@@ -23,6 +23,14 @@ const indexRoute =require('./routers/indexRoute')
 app.use(indexRoute);
 
 
+// 登录
+const loginRoute = require('./routers/loginRoute')
+app.use(loginRoute);
+
+// 注册
+const registerRoute = require('./routers/registerRoute')
+app.use( registerRoute);
+
 
 // 商城
 const shoppingRoute=require('./routers/ShoppingRoute')
@@ -66,10 +74,6 @@ const Bohemian_RhapsodyRoute = require('./routers/Bohemian_RhapsodyRoute');
 // 挂载波西米亚狂想曲页面路由
 app.use(Bohemian_RhapsodyRoute);
 
-
-// 登录
-const loginRoute = require('./routers/loginRoute')
-app.use(loginRoute);
 
 
 
