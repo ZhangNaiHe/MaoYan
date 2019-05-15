@@ -36,6 +36,8 @@ app.use(filmRouter);
 const filmAboutRouter = require('./routers/film-aboutRouter');
 app.use(filmAboutRouter);
 
+const filmroomRouter = require('./routers/filmroomRoute');
+app.use(filmroomRouter);
 app.listen(3009,()=>{
   console.log("http://127.0.0.1:3009")
 })
