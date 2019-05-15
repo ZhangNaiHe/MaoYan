@@ -45,6 +45,7 @@ let showMovie1 = function () {
         success: function (data) {
             let str = template('crunchies_template', { list: data });
             $('.yz_board-wrapper_1').html(str);
+            $('.yz_board-index_1').html('');
         }
     })
 }
@@ -61,6 +62,7 @@ let showMovie2 = function () {
             // console.log(data);
             let str = template('crunchies_qidai_template', { list: data });
             $('.yz_board-wrapper_2').html(str);
+            $('.yz_board-index_1').html('');
         }
     })
 }
@@ -77,6 +79,7 @@ let showMovie3 = function () {
             // console.log(data);
             let str = template('crunchies_guonei_template', { list: data });
             $('.yz_board-wrapper_3').html(str);
+            $('.yz_board-index_1').html('');
         }
     })
 }
@@ -93,6 +96,7 @@ let showMovie4 = function () {
             // console.log(data);
             let str = template('crunchies_beimei_template', { list: data });
             $('.yz_board-wrapper_4').html(str);
+            $('.yz_board-index_1').html('');
         }
     })
 }
@@ -109,6 +113,7 @@ let showMovie5 = function () {
             // console.log(data);
             let str = template('crunchies_template', { list: data });
             $('.yz_board-wrapper_5').html(str);
+            $('.yz_board-index_1').html('');
         }
     })
 }

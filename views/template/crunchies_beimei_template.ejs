@@ -1,7 +1,7 @@
 <script type="text/template" id="crunchies_beimei_template">
     {{each list}}
     <dd class="yz_clearfix">
-        <i class="yz_board-index yz_board-index_{{$value.movieRanking_id}}">{{$value.movieRanking_id}}</i>
+        <i class="yz_board-index yz_board-index_{{$index+1}}">{{$index+1}}</i>
         <a href="../views/Bohemian_Rhapsody.html" class="yz_image_link">
             <img src="{{$value.movieRanking_cover}}" alt="" data-id="{{$value.movieRanking_id}}">
         </a>
