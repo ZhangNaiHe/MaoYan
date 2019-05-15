@@ -1,5 +1,5 @@
 
-// js效果代码
+// #region js效果代码
 window.onload = function () {
     // #region  导航条
     // 1.获取所有的a标签
@@ -29,11 +29,13 @@ window.onload = function () {
 
 }
 
+// #endregion
 
 
 
 
-// node代码
+
+// #region node代码
 // #region 热映口碑榜数据
 let showMovie1 = function () {
     $.ajax({
@@ -111,6 +113,8 @@ let showMovie5 = function () {
     })
 }
 showMovie5();
+// #endregion
+
 // #endregion
 
 
