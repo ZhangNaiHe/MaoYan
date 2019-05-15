@@ -36,8 +36,18 @@ app.use(filmRouter);
 const filmAboutRouter = require('./routers/film-aboutRouter');
 app.use(filmAboutRouter);
 
+<<<<<<< HEAD
 const filmroomRouter = require('./routers/filmroomRoute');
 app.use(filmroomRouter);
+=======
+
+// 登录
+const loginRoute = require('./routers/loginRoute')
+app.use(loginRoute);
+
+
+
+>>>>>>> 8868ce828ce4b479437ff152c963b23a5e08e805
 app.listen(3009,()=>{
   console.log("http://127.0.0.1:3009")
 })
