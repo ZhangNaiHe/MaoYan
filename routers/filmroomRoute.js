@@ -11,8 +11,8 @@ router.get('/filmRoomBrand',filmroomCtrl.filmRoomBrand);
 router.get('/filmRoomPP',filmroomCtrl.filmRoomPP);
 router.get('/filmRoomDistrict',filmroomCtrl.filmRoomDistrict);
 router.get('/filmRoomXZQ',filmroomCtrl.filmRoomXZQ);
-router.get('/filmroomSpecial',filmroomCtrl.filmRoomSpecial);
-// router.get()
+router.get('/filmRoomSpecial',filmroomCtrl.filmRoomSpecial);
+router.get('/filmRoomTST',filmroomCtrl.filmRoomTST);
 
 // router.get('/filmroomShow',filmroomCtrl.filmroomFild);
 // router.get('/filmroom')

@@ -116,6 +116,28 @@ let y = function () {
   y();
 
 
+  // 点击特殊厅进行查询
+  $('.c').on('click','.btn-type',function () {
+    let id = $(this).data('id');
+  
+    $.ajax({
+        type: 'get',
+        url: '/filmRoomTST',
+        data: { id: id },
+        success:function (data) {
+             if (data.code == '1012') {
+                 $('.e').html('<div>' + data.msg + '</div>')     
+             } else {
+                console.log(data);
+                let str = template('film-template',{list:data});
+                $('.e').html(str);
+             }
+            console.log(data)
+        }
+    })
+  })
+
+
 
 //   $('.btn-t').on('click', '.btn-type', function () {
 //     let id = $(this).data('id');

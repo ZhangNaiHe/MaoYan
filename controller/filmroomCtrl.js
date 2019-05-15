@@ -53,13 +53,14 @@ module.exports.filmRoomDistrict = (req, res) => {
     })
 }
 
-// 渲染行政区搜索内容
+
+// 渲染行政厅搜索内容
 module.exports.filmRoomXZQ = (req, res) => {
     conn.query('select * from film where dis_id=?',req.query.id,(error,result) => {
         if (error) return console.log(error);
         if (result == '') {
             res.json({
-                code: '1011',
+                code: '1012',
                 msg: '抱歉，没有找到相关结果，请尝试用其他条件筛选。'
             })
         } else if (result) {
@@ -71,10 +72,29 @@ module.exports.filmRoomXZQ = (req, res) => {
 
 
 
+
+
 // 渲染特殊厅
 module.exports.filmRoomSpecial = (req, res) => {
     conn.query('select * from special', (error, result) => {
         if (error) return console.log(error);
         res.json(result);
+    })
+}
+
+
+// 渲染特殊厅搜索内容
+module.exports.filmRoomTST = (req, res) => {
+    conn.query('select * from film where spe_id=?',req.query.id,(error,result) => {
+        if (error) return console.log(error);
+        if (result == '') {
+            res.json({
+                code: '1012',
+                msg: '抱歉，没有找到相关结果，请尝试用其他条件筛选。'
+            })
+        } else if (result) {
+            res.json(result);
+            console.log(result)
+        }
     })
 }
