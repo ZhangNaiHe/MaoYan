@@ -18,3 +18,7 @@ insert into shopping values
 (null, '/avengers', '/images/shopping-mall/fclmsb.jpg', '复仇者联盟 7寸底座钢铁侠手办','复仇者联盟 7寸底座钢铁侠手办','108','108'),
 (null, '/gin', '/images/shopping-mall/yh.jpg', '银魂系列B0石英表','银魂系列B0石英表','169','376');
 
+insert into shopping values
+(null, '/nightwalk', '/images/shopping-mall/Avengers/byx.jpg', '白夜行 东野圭吾(2017版)','白夜行 东野圭吾(2017版)','47.5','59.6'),
+(null, '/Unicorn', '/images/shopping-mall/Avengers/djs.jpg', '独角兽迷你移动电源','独角兽迷你移动电源','169','169'),
+(null, '/aromatherapy', '/images/shopping-mall/Avengers/xxj.jpg', '8thdays 便携式香薰机','8thdays 便携式香薰机','89','89');
