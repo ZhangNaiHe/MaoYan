@@ -7,6 +7,7 @@ const CommodityCtrl = require('../controller/CommodityCter');
 
 router.get('/commodity',CommodityCtrl.commodity);
 
-
+router.get('/detaily',CommodityCtrl.detaily);
+router.get('/detaile',CommodityCtrl.detaile);
 // 暴露路由
 module.exports = router;

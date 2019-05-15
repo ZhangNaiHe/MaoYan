@@ -1,9 +1,23 @@
 <script type="text/template" id="film-template">
 {{each list}}
-<div class="film-info">
-    <a href="" class="film-name">{{$value.names}}</a>
-    <p class="film-address">{{$value.address}}</p>
-</div>
+<!-- <div class="film-info">
+    <a href="" class="film-name"></a>
+    <p class="film-address"></p>
+</div> -->
 
+<div class="film-border">
+    <div class="film-info">
+        <a href="" class="film-name">{{$value.names}}</a>
+        <p class="film-address">{{$value.address}}</p>
+    </div>
+    <div class="choose-down">
+        <a href="">选座购票</a>
+    </div>
+    <div class="film-price">
+        <span class="yuan red">¥</span>
+        <span class="price-num red"><span class="num">{{$value.prices}}</span></span>
+        <span>起</span>
+    </div>
+</div>
 {{/each}} 
 </script>

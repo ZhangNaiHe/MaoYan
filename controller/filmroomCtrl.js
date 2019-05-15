@@ -6,18 +6,95 @@ module.exports.show = (req, res) => {
     res.render('filmroom');
 }
 
-module.exports.filmroomShow = (req, res) => {
-    conn.query('select * from film',(error,result) => {
+// 渲染模板
+module.exports.filmRoomShow = (req, res) => {
+    conn.query('select * from film', (error, result) => {
+      if (error) return console.log(error);
+      res.json(result);
+      console.log(result);
+    })
+  }
+
+//   渲染品牌/
+module.exports.filmRoomBrand = (req, res) => {
+    conn.query('select * from brand', (error,result) => {
         if (error) return console.log(error);
-        console.log(result);
+        res.json(result);
+    })
+
+}
+
+// 渲染品牌搜索内容
+module.exports.filmRoomPP = (req, res) => {
+    console.log(req.query.id)
+    conn.query('select * from film where bra_id=?',req.query.id,(error,result) => {
+        if (error) return console.log(error);
         if (result == '') {
             res.json({
-                code: 1001,
-                msg: '抱歉,没有找到相关结果,请尝试用其他条件筛选.'
+                code:'1010',
+                msg:'抱歉，没有找到相关结果，请尝试用其他条件筛选。'
             })
 
-        } else {
+        } else if (result) {
             res.json(result);
+            console.log(result);
+        }
+    })
+}
+
+
+
+
+// 渲染行政厅
+module.exports.filmRoomDistrict = (req, res) => {
+    conn.query('select * from district', (error, result) => {
+        if (error) return console.log(error);
+        res.json(result);
+    })
+}
+
+
+// 渲染行政厅搜索内容
+module.exports.filmRoomXZQ = (req, res) => {
+    conn.query('select * from film where dis_id=?',req.query.id,(error,result) => {
+        if (error) return console.log(error);
+        if (result == '') {
+            res.json({
+                code: '1012',
+                msg: '抱歉，没有找到相关结果，请尝试用其他条件筛选。'
+            })
+        } else if (result) {
+            res.json(result);
+            console.log(result)
+        }
+    })
+}
+
+
+
+
+
+// 渲染特殊厅
+module.exports.filmRoomSpecial = (req, res) => {
+    conn.query('select * from special', (error, result) => {
+        if (error) return console.log(error);
+        res.json(result);
+    })
+}
+
+
+// 渲染特殊厅搜索内容
+module.exports.filmRoomTST = (req, res) => {
+    conn.query('select * from film where spe_id=?',req.query.id,(error,result) => {
+        if (error) return console.log(error);
+        if (result == '') {
+            res.json({
+                code: '1012',
+                msg: '抱歉，没有找到相关结果，请尝试用其他条件筛选。'
+            })
+        } else if (result) {
+            res.json(result);
+            console.log(result)
         }
     })
 }

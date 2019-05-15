@@ -3,6 +3,6 @@ const router =express.Router();
 
 const indexCtrl = require('../controller/indexCtrl');
 
-router.get('/index',indexCtrl.show)
+router.get('/',indexCtrl.show)
 
 module.exports=router;
