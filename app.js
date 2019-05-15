@@ -16,14 +16,14 @@ app.use(session({
     }
 }));
 
-app.use(express.static('public'));
-// 配置模板(ejs)
-//  引入 ejs包
-const ejs = require('ejs');
-// 设置模板引擎的后缀 ejs
-app.set('view engine', 'ejs');
-// 设置模板引擎所使用的模板的路径是 ./views
-app.set('views', './views');
+
+
+// 首页
+const indexRoute =require('./routers/indexRoute')
+app.use(indexRoute);
+
+
+
 // 商城
 const shoppingRoute=require('./routers/ShoppingRoute')
 app.use(shoppingRoute);
@@ -61,6 +61,19 @@ app.use(crunchiesRoute);
 // 登录
 const loginRoute = require('./routers/loginRoute')
 app.use(loginRoute);
+
+
+
+app.use(express.static('public'));
+// 配置模板(ejs)
+//  引入 ejs包
+const ejs = require('ejs');
+// 设置模板引擎的后缀 ejs
+app.set('view engine', 'ejs');
+// 设置模板引擎所使用的模板的路径是 ./views
+app.set('views', './views');
+
+
 
 app.listen(3009,()=>{
   console.log("http://127.0.0.1:3009")
