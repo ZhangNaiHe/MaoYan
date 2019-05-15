@@ -61,10 +61,6 @@ app.use(filmroomRouter);
 const crunchiesRoute = require('./routers/crunchiesRoute');
 // 挂载榜单页面路由
 app.use(crunchiesRoute);
-// 引入波西米亚狂想曲页面路由
-const Bohemian_RhapsodyRoute = require('./routers/Bohemian_RhapsodyRoute');
-// 挂载波西米亚狂想曲页面路由
-app.use(Bohemian_RhapsodyRoute);
 
 
 // 登录
