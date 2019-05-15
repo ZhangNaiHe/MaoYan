@@ -1,0 +1,62 @@
+.order-progress-bar {
+    height: 60px;
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.step {
+    float: left;
+    width: 25%;
+}
+
+.step-num {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffd8d7;
+    top: 10px;
+}
+
+.bar {
+    width: 0;
+    height: 4px;
+    border-left: 150px solid #ffd8d7;
+    border-right: 150px solid #ffd8d7
+}
+
+.done .bar,.done .step-text{
+    border-color: #fd3037;
+    color: #f03d37;
+}
+
+.done .step-num {
+    background-color: #fd3037;
+}
+
+.first .bar{
+    border-left-color: transparent;
+}
+.last .bar{
+    border-right-color: transparent;
+}
+
+
+.step-text {
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.select-ticket {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    font-size: 0;
+}
