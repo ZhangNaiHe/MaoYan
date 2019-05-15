@@ -105,10 +105,15 @@ body {
   font-size: 14px;
 }
 
+.channel-btn-type>i{
+  font-size: 14px;
+  
+}
+
 .channel-btn-one {
   display: inline-block;
   margin-bottom: -37px;
-  width: 1100px;
+  width: 1070px;
 }
 
 .channel-btn-one>li {
@@ -123,7 +128,7 @@ body {
 .channel-btn-one>li>a {
   display: inline-block;
   font-size: 14px;
-  width: 72px;
+  width: 95px;
   height: 100%;
 }
 

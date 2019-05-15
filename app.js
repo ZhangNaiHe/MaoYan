@@ -1,8 +1,21 @@
 const express = require('express');
 const app = express();
+
 // 配置body-parser
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// 配置express-session
+const session = require('express-session');
+app.use(session({
+    secret:'itcast',
+    resave:false,
+    saveUninitialized:false,
+    cookie:{
+        maxAge:60000
+    }
+}));
+
 app.use(express.static('public'));
 // 配置模板(ejs)
 //  引入 ejs包
@@ -43,6 +56,11 @@ app.use(filmAboutRouter);
 
 const filmroomRouter = require('./routers/filmroomRoute');
 app.use(filmroomRouter);
+
+// 引入榜单页面路由
+const crunchiesRoute = require('./routers/crunchiesRoute');
+// 挂载榜单页面路由
+app.use(crunchiesRoute);
 
 
 // 登录

@@ -1,0 +1,25 @@
+<script type="text/template" id="crunchies_template">
+    {{each list}}
+    <dd class="yz_clearfix">
+        <i class="yz_board-index yz_board-index_1"></i>
+        <a href="../views/Bohemian_Rhapsody.html" class="yz_image_link">
+            <img src="{{$value.movieRanking_cover}}" alt="" data-id="{{$value.movieRanking_id}}">
+        </a>
+        <div class="yz_board-item-main">
+            <div class="yz_board-item-content">
+                <div class="yz_movie-item-info">
+                    <p class="yz_name"><a href="../views/Bohemian_Rhapsody.html">{{$value.movieRanking_name}}</a></p>
+                    <p class="yz_star">{{$value.movieRanking_star}}</p>
+                    <p class="yz_releasetime">上映时间：{{$value.movieRanking_releasetime}}</p>
+                </div>
+                <div class="yz_movie-item-number">
+                    <p class="yz_score">
+                        <i class="yz_integer">{{$value.movieRanking_grade1}}</i>
+                        <i class="yz_fraction">{{$value.movieRanking_grade2}}</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </dd>
+    {{/each}}
+</script>
