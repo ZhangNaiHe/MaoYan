@@ -399,7 +399,7 @@ body {
     margin-left: 12px;
 }
 
-.tags li.active {
+.tags .active {
     background: #f34d41;
     color: #fff
 }
@@ -538,5 +538,7 @@ body {
 .footer .friendly-links a {
     color: #ef4238;
 } 
+
+
 
 
