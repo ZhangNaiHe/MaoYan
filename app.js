@@ -44,6 +44,8 @@ const crunchiesRoute = require('./routers/crunchiesRoute');
 // 挂载榜单页面路由
 app.use(crunchiesRoute);
 
+const filmClassicsRouter = require('./routers/film-classicsRoutet');
+app.use(filmClassicsRouter);
 
 // 登录
 const loginRoute = require('./routers/loginRoute')

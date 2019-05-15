@@ -1,4 +1,31 @@
-// 显示页面
+
+// 模拟数据
+// let arr = [
+//   {时间:2018,播放量:200},
+//   {时间:1999,播放量:1306},
+//   {时间:2019,播放量:150},
+//   {时间:2010,播放量:80},
+//   {时间:2011,播放量:2000},
+//   {时间:2020,播放量:999}
+// ];
+// function arrSort(排序字段名,数据){
+//   数据.sort(function(a,b){
+//     if(a[排序字段名]>b[排序字段名]){
+//       return 1;
+//     }else{
+//       return -1;
+//     }
+//   });
+//   // 返回排序好的数据
+//   return 数据
+// }
+// let 排好的数据 = arrSort('播放量',arr);
+// console.log(排好的数据);
+
+
+
+
+
 let filmAboutShow = function (pageNum,pageSize) {
   $.ajax({
     type: 'get',
@@ -28,6 +55,20 @@ let filmAboutShow = function (pageNum,pageSize) {
 }
 filmAboutShow(1,5);
 
+
+// let filmAboutShow = function () {
+//   $.ajax({
+//     type: 'get',
+//     url: '/filmAboutShow',
+//     data: "",
+//     success: function (data) {
+//       let str = template('filmabout-template', { list: data });
+//       $('.movie-list').html(str);
+//     }
+//   })
+// }
+// filmAboutShow();
+
 let s = function () {
   $.ajax({
     type: 'get',
@@ -42,7 +83,6 @@ let s = function () {
 }
 s();
 
-// 点击类型进行选择
 $('.btn-o').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
@@ -61,8 +101,6 @@ $('.btn-o').on('click', '.btn-type', function () {
 })
 
 
-
-// 渲染
 let a = function () {
   $.ajax({
     type: 'get',
@@ -95,6 +133,9 @@ $('.btn-t').on('click', '.btn-type', function () {
     }
   })
 })
+
+
+
 let y = function () {
   $.ajax({
     type: 'get',
@@ -102,6 +143,7 @@ let y = function () {
     data: '',
     success: function (data) {
       let str = template('year_template', { list: data });
+      console.log(data);
       $('.btn-e').html(str);
     }
   })
@@ -127,21 +169,6 @@ $('.btn-e').on('click', '.btn-type', function () {
     }
   })
 })
-// 渲染年代
-
-
-
-// $('.btn-qb').click(function () {
-//   console.log(1);
-//   $.ajax({
-//     type: 'get',
-//     url: '/filmAboutSelect',
-//     data: "",
-//     success: function (data) {
-//       filmAboutShow();
-//     }
-//   })
-// })
 
 $('.btn-rm').click(function () {
   $.ajax({
@@ -155,16 +182,19 @@ $('.btn-rm').click(function () {
     }
   })
 })
-
 $('.btn-sj').click(function () {
   $.ajax({
     type: 'get',
     url: '/filmAboutSj',
     data: '',
     success: function (data) {
+   
       console.log(data);
       let str = template('filmabout-template', { list: data });
       $('.movie-list').html(str);
     }
   })
 })
+
+
+

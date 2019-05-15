@@ -1,6 +1,6 @@
 let show = function () {
-  var btn = document.querySelectorAll('.btn-o a');
-  console.log(btn);
+  var btn = document.querySelectorAll('.btn-o>li>a');
+console.log(btn);
   for (var i = 0; i < btn.length; i++) {
     btn[i].onclick = function () {
       for (var j = 0; j < btn.length; j++) {
@@ -65,10 +65,3 @@ let filmShow = function(){
   })
 }
 filmShow();
-
-// 点击全部
-// $('.btn-qb').click(function(){
-//   $.ajax({
-
-//   })
-// })

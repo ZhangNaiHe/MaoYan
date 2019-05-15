@@ -8,9 +8,32 @@ module.exports.filmAbout = (req, res) => {
 
 // 渲染模板
 module.exports.filmFild = (req, res) => {
-  conn.query('select * from showing', (error, result) => {
-    if (error) return console.log(error);
-    res.json(result);
+  let s = 'coming';
+  console.log(req.query);
+  let pageNum = req.query.pageNum;
+  // 一页显示多少条数据
+  let pageSize = req.query.pageSize;
+
+  conn.query(`SELECT COUNT(*) pageTotal FROM showing;`, (error, results) => {
+    // console.log(results);
+    if (error) {
+      return console.log(error);
+    }
+    conn.query('select * from showing where show_state=? order by show_year desc limit '+(pageNum - 1) * pageSize+','+pageSize+'',s,(error,result)=>{
+      if (error) {
+        return console.log(error);
+      }
+      res.json({
+        code: '1601',
+        message: '数据查询成功',
+        pageNum: pageNum,
+        pageSize: pageSize,
+        pageTotal: results[0].pageTotal,
+        data: result
+      })
+      console.log(result);
+    })
+  
   })
 }
 
@@ -24,7 +47,9 @@ module.exports.filmAboutType = (req, res) => {
 
 // 搜索对应的内容
 module.exports.filmAboutAq = (req,res) => {
-  conn.query('select * from showing s where t_id=?  order by show_look desc',req.query.id,(error,result) => {
+  let aq = [req.query.id,'coming'];
+  // console.log(aq);
+  conn.query('select * from showing s where t_id=? and show_state=?  order by show_look desc',aq,(error,result) => {
     if (error) return console.log(error);
     if(result == ''){
       res.json({
@@ -33,7 +58,7 @@ module.exports.filmAboutAq = (req,res) => {
       })
     }else if(result){
       res.json(result);
-      console.log(result);
+      // console.log(result);
     }
   })
 }
@@ -48,7 +73,8 @@ module.exports.filmAboutArea = (req,res) => {
 
 // 查到区域对应的内容
 module.exports.filmAboutQy = (req,res) => {
-  conn.query('select * from showing s where a_id=? order by show_look desc',req.query.id,(error,result) => {
+  let aq = [req.query.id,'coming'];
+  conn.query('select * from showing s where a_id=?and show_state=?  order by show_look desc',aq,(error,result) => {
     if (error) return console.log(error);
     if(result == ''){
       res.json({
@@ -72,7 +98,8 @@ module.exports.filmAboutYear = (req,res) => {
 
 // 点击选择
 module.exports.filmAboutNd = (req,res) => {
-  conn.query('select * from showing s where y_id=?',req.query.id,(error,result) => {
+  let aq = [req.query.id,'coming'];
+  conn.query('select * from showing s where y_id=?and show_state=?  order by show_look desc',aq,(error,result) => {
     if (error) return console.log(error);
     if(result == ''){
       res.json({
@@ -81,21 +108,30 @@ module.exports.filmAboutNd = (req,res) => {
       })
     }else if(result){
       res.json(result);
-      console.log(result);
+      // console.log(result);
     }
   })
 }
 
 // 
-module.exports.filmAboutSelect = (req,res) => {
-  conn.query('select * from showing',(error,result) => {
+// module.exports.filmAboutSelect = (req,res) => {
+//   conn.query('select * from showing',(error,result) => {
+//     if(error) return console.log(error);
+//     res.json(result);
+//   })
+// }
+
+module.exports.filmAboutRm = (req,res) => {
+  let aq = 'coming';
+  conn.query('select * from showing where show_state=? order by show_look desc',aq,(error,result) => {
     if(error) return console.log(error);
     res.json(result);
   })
 }
 
-module.exports.filmAboutRm = (req,res) => {
-  conn.query('select * from showing order by show_look desc',(error,result) => {
+module.exports.filmAboutSj = (req,res) => {
+  let aq = 'coming';
+  conn.query('select * from showing where show_state=? order by show_year asc',aq,(error,result) => {
     if(error) return console.log(error);
     res.json(result);
   })

@@ -7,9 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>正在热映-猫眼电影-一网打尽好电影</title>
   <!-- 清除浏览器默认样式 -->
-  <link rel="stylesheet" href="../public/css/reset.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <!-- css样式 -->
-  <link rel="stylesheet" href="../public/css/film.css">
+  <link rel="stylesheet" href="./css/film.css">
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -1614,15 +1615,15 @@
     <div class="common">
       <ul class="film-classify-three">
         <li>
-          <a href="./film.html" class="film-classify-being hv ">正在热映</a>
+          <a href="./film" class="film-classify-being ">正在热映</a>
         </li>
         <li>
-          <a href="./film-about.html" class="hv">
+          <a href="./filmabout" class="hv">
             即将上映
           </a>
         </li>
         <li>
-          <a href="./film-classics.html" class="active">
+          <a href="./filmClassics" class="hv active">
             经典影片
           </a>
         </li>
@@ -2045,7 +2046,7 @@
             </dd>
 
             <dd>
-              <img src="../public/images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
+              <img src="./images/film/e11213b2676bcf6f4eac41c482af2bdd327884.jpg@160w_220h_1e_1c.jpg" alt="">
               <strong>少年的你</strong>
               <i>
                 147353
@@ -2055,12 +2056,28 @@
           </dl>
         </div>
       </div>
+
+      <ul class="pagination pagination-sm pull-right">
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">下一页</a></li>
+      </ul>
     </div>
   </div>
 
   <!-- 引入jquery-->
-  <script src="../public/lib/jquery/dist/jquery.js"></script>
-  <script src="../public/js/film.js"></script>
+  <script src="./lib/jquery/dist/jquery.js"></script>
+  <script src="./lib/art-template/lib/template-web.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./lib/twbs-pagination/jquery.twbsPagination.min.js"></script>
+  <script src="./js/film.js"></script>
+  <script src="./js/film-classics.js"></script>
+  <%-include('./template/film-aboutTemplate.ejs') %>
+  <%-include('./template/navtemplate.ejs') %>
+  <%-include('./template/areaTemplate.ejs') %>
+  <%-include('./template/yearTemplate.ejs') %>
 </body>
 
 </html>

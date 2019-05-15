@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./css/reset.css">
   <!-- css样式 -->
   <link rel="stylesheet" href="./css/film.css">
+
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -1613,15 +1615,15 @@
     <div class="common">
       <ul class="film-classify-three">
         <li>
-          <a href="./film.html" class="film-classify-being">正在热映</a>
+          <a href="./film" class="film-classify-being">正在热映</a>
         </li>
         <li>
-          <a href="./film-about.html" class="active">
+          <a href="./filmabout" class="hv  active">
             即将上映
           </a>
         </li>
         <li>
-          <a href="./film-classics.html" class="hv">
+          <a href="./filmClassics" class="hv">
             经典影片
           </a>
         </li>
@@ -1637,9 +1639,9 @@
         <!-- 类型 -->
         <div class="channel-btn-type">
           <div>类型：</div>
-              <i class="btn-qb">全部</i>
+
           <ul class="channel-btn-one btn-o">
-           
+
             <!-- <li>
               <a href="javascript:;" class="active">
                 全部
@@ -1772,14 +1774,13 @@
                 其他
               </a>
             </li> -->
-           
+
           </ul>
         </div>
 
         <!-- 区域 -->
         <div class="channel-btn-type">
           <div>区域：</div>
-          <i class="btn-qb">全部</i>
           <ul class="channel-btn-one btn-t">
             <li>
               <a href="javascript:;" class="active">
@@ -1884,7 +1885,6 @@
         <!-- 年代 -->
         <div class="channel-btn-type">
           <div>年代：</div>
-          <i class="btn-qb">全部</i>
           <ul class="channel-btn-one btn-e">
             <li>
               <a href="javascript:;" class="active">
@@ -1990,7 +1990,7 @@
             </li>
             <li>
               <span>
-                <span class="film-panel-sort-btn"></span>
+                <span class="film-panel-sort-btn btn-sj"></span>
                 <span class="film-panel-sort-wz">按时间排序</span>
               </span>
             </li>
@@ -2059,18 +2059,30 @@
           </dl>
         </div>
       </div>
+
+      <ul class="pagination pagination-sm pull-right">
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">下一页</a></li>
+      </ul>
     </div>
   </div>
+
 
   <!-- 引入jquery-->
   <script src="./lib/jquery/dist/jquery.js"></script>
   <script src="./lib/art-template/lib/template-web.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./lib/twbs-pagination/jquery.twbsPagination.min.js"></script>
   <script src="./js/film-about.js"></script>
   <script src="./js/film.js"></script>
   <%-include('./template/film-aboutTemplate.ejs') %>
   <%-include('./template/navtemplate.ejs') %>
   <%-include('./template/areaTemplate.ejs') %>
   <%-include('./template/yearTemplate.ejs') %>
-  
+
 </body>
+
 </html>

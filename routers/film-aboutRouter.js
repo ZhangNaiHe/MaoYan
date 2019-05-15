@@ -10,6 +10,7 @@ router.get('/filmAboutArea',filmAboutctrl.filmAboutArea);
 router.get('/filmAboutQy',filmAboutctrl.filmAboutQy);
 router.get('/filmAboutYear',filmAboutctrl.filmAboutYear);
 router.get('/filmAboutNd',filmAboutctrl.filmAboutNd);
-router.get('/filmAboutSelect',filmAboutctrl.filmAboutSelect);
+// router.get('/filmAboutSelect',filmAboutctrl.filmAboutSelect);
 router.get('/filmAboutRm',filmAboutctrl.filmAboutRm);
+router.get('/filmAboutSj',filmAboutctrl.filmAboutSj);
 module.exports = router;
