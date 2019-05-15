@@ -6,6 +6,12 @@ module.exports.crunchies = (req, res) => {
 }
 // #endregion
 
+// #region  波西米亚页面
+module.exports.Bohemian_Rhapsody = (req, res) => {
+    res.render('Bohemian_Rhapsody');
+}
+// #endregion
+
 // #region  热映口碑榜数据
 module.exports.crunchiesData1 = (req, res) => {
     let sql = 'select * from movieranking  where movieranking_category = "reyin" order by movieranking_grade2 desc limit 0,10';
