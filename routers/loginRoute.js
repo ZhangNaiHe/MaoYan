@@ -5,6 +5,6 @@ const router = express.Router();
 // 引入控制器
 const loginCtrl = require('../controller/loginCtrl');
 //顯示頁面
-router.post('/login',loginCtrl.show);
+// router.post('/login',loginCtrl.show);
 // 暴露路由
 module.exports=router;
