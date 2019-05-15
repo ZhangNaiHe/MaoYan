@@ -24,8 +24,7 @@ module.exports.filmAboutType = (req, res) => {
 
 // 搜索对应的内容
 module.exports.filmAboutAq = (req,res) => {
-  console.log(req.query);
-  conn.query('select * from showing s where t_id=?',req.query.id,(error,result) => {
+  conn.query('select * from showing s where t_id=?  order by show_look desc',req.query.id,(error,result) => {
     if (error) return console.log(error);
     if(result == ''){
       res.json({
@@ -34,7 +33,7 @@ module.exports.filmAboutAq = (req,res) => {
       })
     }else if(result){
       res.json(result);
-
+      console.log(result);
     }
   })
 }
@@ -49,8 +48,7 @@ module.exports.filmAboutArea = (req,res) => {
 
 // 查到区域对应的内容
 module.exports.filmAboutQy = (req,res) => {
-  console.log(req.query.id);
-  conn.query('select * from showing s where a_id=?',req.query.id,(error,result) => {
+  conn.query('select * from showing s where a_id=? order by show_look desc',req.query.id,(error,result) => {
     if (error) return console.log(error);
     if(result == ''){
       res.json({
@@ -64,4 +62,41 @@ module.exports.filmAboutQy = (req,res) => {
 }
 
 
-//  
+// 渲染年代模板
+module.exports.filmAboutYear = (req,res) => {
+  conn.query('select *  from year',(error,result) => {
+    if(error) return console.log(error);
+    res.json(result);
+  })
+} 
+
+// 点击选择
+module.exports.filmAboutNd = (req,res) => {
+  conn.query('select * from showing s where y_id=?',req.query.id,(error,result) => {
+    if (error) return console.log(error);
+    if(result == ''){
+      res.json({
+        code:'1003',
+        msg:'抱歉，没有找到相关结果，请尝试用其他条件筛选。'
+      })
+    }else if(result){
+      res.json(result);
+      console.log(result);
+    }
+  })
+}
+
+// 
+module.exports.filmAboutSelect = (req,res) => {
+  conn.query('select * from showing',(error,result) => {
+    if(error) return console.log(error);
+    res.json(result);
+  })
+}
+
+module.exports.filmAboutRm = (req,res) => {
+  conn.query('select * from showing order by show_look desc',(error,result) => {
+    if(error) return console.log(error);
+    res.json(result);
+  })
+}

@@ -74,16 +74,16 @@ let z = function () {
   z();
 
 
-  // 点击品牌进行查询
-$('.a').on('click','.btn-type',function () {
+  // 点击行政区进行查询
+$('.b').on('click','.btn-type',function () {
   let id = $(this).data('id');
 
   $.ajax({
       type: 'get',
-      url: '/filmRoomPP',
+      url: '/filmRoomXZQ',
       data: { id: id },
       success:function (data) {
-           if (data.code == '1010') {
+           if (data.code == '1011') {
                $('.e').html('<div>' + data.msg + '</div>')     
            } else {
               console.log(data);
