@@ -64,4 +64,10 @@ module.exports.filmAboutQy = (req,res) => {
 }
 
 
-//  
+// 
+module.exports.filmAboutYear = (req,res) => {
+  conn.query('select *  from year',(error,result) => {
+    if(error) return console.log(error);
+    res.json(result);
+  })
+} 

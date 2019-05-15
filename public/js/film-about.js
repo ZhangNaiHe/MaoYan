@@ -38,8 +38,9 @@ $('.btn-o').on('click', '.btn-type', function () {
       if (data.code == '1001') {
         $('.movie-list').html('<div>' + data.msg + '</div>');
       } else {
-        let str = template('filmabout-template', { list: data });
-        $('.movie-list').html(str);
+        // let str = template('filmabout-template', { list: data });
+        // $('.movie-list').html(str);
+        s();
       }
     }
   })
@@ -74,8 +75,9 @@ $('.btn-t').on('click', '.btn-type', function () {
         $('.movie-list').html('<div>'+data.msg+'</div>');
         console.log(data);
       } else {
-      let str = template('filmabout-template', { list: data });
-      $('.movie-list').html(str);
+      // let str = template('filmabout-template', { list: data });
+      // $('.movie-list').html(str);
+      a();
       }
       // console.log(data);
    
@@ -83,3 +85,18 @@ $('.btn-t').on('click', '.btn-type', function () {
   })
 })
 
+
+let y = function(){
+  $.ajax({
+    type:'get',
+    url:'/filmAboutYear',
+    data:'',
+    success:function(data){
+      console.log(data);
+      let str = template('year_template',{list:data});
+      console.log(str);
+      $('.btn-e').html(str);
+    }
+  })
+}
+y();

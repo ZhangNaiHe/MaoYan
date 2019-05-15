@@ -7,4 +7,5 @@ router.get('/filmAboutAq',filmAboutctrl.filmAboutAq);
 router.get('/filmAboutType',filmAboutctrl.filmAboutType);
 router.get('/filmAboutArea',filmAboutctrl.filmAboutArea);
 router.get('/filmAboutQy',filmAboutctrl.filmAboutQy);
+router.get('/filmAboutYear',filmAboutctrl.filmAboutYear);
 module.exports = router;
