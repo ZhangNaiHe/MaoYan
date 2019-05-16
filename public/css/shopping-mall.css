@@ -18,7 +18,7 @@ ul {
     margin: 0 auto;
     padding-top: 70px;
     width: 1200px;
-    height: 1200px;
+    /* height: 1200px; */
 }
 body {
     font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
@@ -105,15 +105,15 @@ body {
 .product .prodect-item img {
     height: 100%;
 }
-.product .prodect-item .product- p {
+.product .prodect-item .product-info p {
     font-size: 18px;
     color: #333;
 }
-.product .prodect-item .product- strong {
+.product .prodect-item .product-info strong {
     color: #f03d37;
     margin-right: 6px;
 }
-.product .prodect-item .product- span {
+.product .prodect-item .product-info span {
     color: #999;
     text-decoration: line-through;
 }

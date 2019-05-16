@@ -62,8 +62,13 @@ app.use(filmRouter);
 const filmAboutRouter = require('./routers/film-aboutRouter');
 app.use(filmAboutRouter);
 
+// 选择影片场次路由
 const filmroomRouter = require('./routers/filmroomRoute');
 app.use(filmroomRouter);
+
+// 14分钟内付款路由
+// const filmPayRoute = require('./routers/filmPayRoute');
+// app.use(filmPayRoute);
 
 // 引入榜单页面路由
 const crunchiesRoute = require('./routers/crunchiesRoute');
