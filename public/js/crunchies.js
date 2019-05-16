@@ -55,10 +55,10 @@ showMovie1();
 // #region 最受期待榜
 let showMovie2 = function () {
     $.ajax({
-        type:'get',
-        url:'/board/2',
-        data:'',
-        success:function (data) {
+        type: 'get',
+        url: '/board/2',
+        data: '',
+        success: function (data) {
             // console.log(data);
             let str = template('crunchies_qidai_template', { list: data });
             $('.yz_board-wrapper_2').html(str);
@@ -72,10 +72,10 @@ showMovie2();
 // #region 国内票房榜
 let showMovie3 = function () {
     $.ajax({
-        type:'get',
-        url:'/board/3',
-        data:'',
-        success:function (data) {
+        type: 'get',
+        url: '/board/3',
+        data: '',
+        success: function (data) {
             // console.log(data);
             let str = template('crunchies_guonei_template', { list: data });
             $('.yz_board-wrapper_3').html(str);
@@ -89,10 +89,10 @@ showMovie3();
 // #region 北美票房榜
 let showMovie4 = function () {
     $.ajax({
-        type:'get',
-        url:'/board/4',
-        data:'',
-        success:function (data) {
+        type: 'get',
+        url: '/board/4',
+        data: '',
+        success: function (data) {
             // console.log(data);
             let str = template('crunchies_beimei_template', { list: data });
             $('.yz_board-wrapper_4').html(str);
@@ -106,10 +106,10 @@ showMovie4();
 // #region TOP100
 let showMovie5 = function () {
     $.ajax({
-        type:'get',
-        url:'/board/5',
-        data:'',
-        success:function (data) {
+        type: 'get',
+        url: '/board/5',
+        data: '',
+        success: function (data) {
             // console.log(data);
             let str = template('crunchies_template', { list: data });
             $('.yz_board-wrapper_5').html(str);

@@ -49,7 +49,8 @@ function pro() {//产生随机6位验证码
       var element = Math.floor(Math.random() * arr.length);
       code1 += arr[element];
   }
-  $('#yan').value = code1; //获取验证码   
+  // console.log(code1)
+  $('#yan').val(code1); //获取验证码   
 }
 
 function Color () {//产生随机颜色
@@ -62,16 +63,22 @@ function Color () {//产生随机颜色
       color+=colorArr[colOne];
       bgcolor+=colorArr[colTwo];
   }
-  console.log(bgcolor);
-  $('#yan').css.color=color;
-  $('#yan').css.backgroundColor=bgcolor;
+  // console.log(bgcolor);
+  $('#yan').css({'color':color});
+  $('#yan').css({'backgroundColor':bgcolor});
 }
 
     pro();//调用函数（产生验证码和颜色的函数）
     Color ();
+
+    $('#dasong'),onclick=function(){
+      pro();
+      Color();
+    }
     $('#write').onfocus=function(){
         //$('warn5').style.visibility='visible';
-        $('#warn5').ininnerHTML='<span>请输入密码！</span>';
+        $('#warn5').html('请输入验证码')
+        // console.log('#warn5')
     }
     $('#write').onblur=function(){
         if(this.value==$('#yan').value){
