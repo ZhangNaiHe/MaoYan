@@ -1,8 +1,8 @@
 // #region js效果代码
 
 // #region 支付时间倒计时
-// let maxtime = 14 * 60 - 1;
-let maxtime = 1 * 4 - 1;
+let maxtime = 14 * 60 - 1;
+// let maxtime = 1 * 4 - 1;
 CountDown();
 function CountDown() {
     if (maxtime >= 0) {
@@ -32,6 +32,16 @@ function CountDown() {
     }
 }
 timer = setInterval("CountDown()", 1000);
+// #endregion
+
+// #endregion
+
+
+
+// #region  node代码
+
+// #region  
+
 // #endregion
 
 // #endregion

@@ -6,12 +6,6 @@ module.exports.crunchies = (req, res) => {
 }
 // #endregion
 
-// #region  波西米亚页面
-module.exports.Bohemian_Rhapsody = (req, res) => {
-    res.render('Bohemian_Rhapsody');
-}
-// #endregion
-
 // #region  热映口碑榜数据
 module.exports.crunchiesData1 = (req, res) => {
     let sql = 'select * from movieranking order by movieranking_grade2 desc limit 10';
@@ -67,8 +61,30 @@ module.exports.crunchiesData5 = (req, res) => {
 }
 // #endregion
 
+// #region  波西米亚页面
+module.exports.Bohemian_Rhapsody = (req, res) => {
+    res.render('Bohemian_Rhapsody');
+}
+// #endregion
 
+// #region  波希米亚--短评
+module.exports.BRcomment = (req, res) => {
+    connection.query('select * from comment order by comment_praise desc', (error,results) => {
+        if(error) return console.log(error);
+        res.json(results);
+    })
+}
+// #endregion
 
+// #region 波西米亚--想看
+module.exports.BRwantSee = (req,res)=>{
+    if (!req.session.isLogin) {
+        res.redirect('/login');
+        return false;
+    }
+    res.json(results);
+}
+// #endregion
 
 
 

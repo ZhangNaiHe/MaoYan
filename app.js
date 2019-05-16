@@ -8,18 +8,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // 配置express-session
 const session = require('express-session');
 app.use(session({
-    secret:'itcast',
-    resave:false,
-    saveUninitialized:false,
-    cookie:{
-        maxAge:60000
-    }
+  secret: 'itcast',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    maxAge: 60000
+  }
 }));
 
 
 
 // 首页
-const indexRoute =require('./routers/indexRoute')
+const indexRoute = require('./routers/indexRoute')
 app.use(indexRoute);
 
 
@@ -29,11 +29,11 @@ app.use(loginRoute);
 
 // 注册
 const registerRoute = require('./routers/registerRoute')
-app.use( registerRoute);
+app.use(registerRoute);
 
 
 // 商城
-const shoppingRoute=require('./routers/ShoppingRoute')
+const shoppingRoute = require('./routers/ShoppingRoute')
 app.use(shoppingRoute);
 // // 详情
 // const avengersRoute=require('./routers/AvengersRoute')
@@ -52,7 +52,7 @@ app.use(shoppingRoute);
 // app.use(AromatherapyRoute);
 
 // 详情实验
-const commodityRoute=require('./routers/CommodityRoute')
+const commodityRoute = require('./routers/CommodityRoute')
 app.use(commodityRoute);
 
 // 商城结束
@@ -68,6 +68,7 @@ app.use(filmroomRouter);
 
 // 14分钟内付款路由
 const filmPayRoute = require('./routers/filmPayRoute');
+app.use(filmPayRoute);
 
 
 // 引入榜单页面路由
@@ -93,6 +94,6 @@ app.set('views', './views');
 
 
 
-app.listen(3009,()=>{
+app.listen(3009, () => {
   console.log("http://127.0.0.1:3009")
 })
