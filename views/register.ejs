@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./css/register.css">
   <title>Document</title>
 </head>
+
 <body>
   <!-- 头部 -->
   <div class="header--mini">
@@ -27,21 +29,13 @@
             <span class="unitive-tip">注册成功后，全美团通用</span>
             <span id="warn1"></span>
           </div>
-          <!-- 图形验证码 -->
-          <div class="form-field  note">
-            <label>验证码</label>
-            <input type="text" class="f-text required" name="verify_code">
-            <input type="button" id="yan" value="" disabled="disabled"/>
-            <button type="button" id="changeVerify">看不清，换一张</button>
-            <span id="warn5"></span>
-          </div>
           <!-- 创建密码 -->
           <div class=" form-field password">
             <label>创建密码</label>
             <input type="password" name="password" id="passWord" class="f-text required">
             <span id="warn3"></span>
             <div class="pw-strength">
-              <div class="pw-strength__bar" id="J-pw-strength__bar">     
+              <div class="pw-strength__bar" id="J-pw-strength__bar">
               </div>
               <div class="pw-strength__letter">
                 <span id="low" class="pw-strength__label">弱</span>
@@ -55,6 +49,14 @@
             <label>确认密码</label>
             <input type="password" name="repassword" class="f-text required">
             <span id="warn4"></span>
+          </div>
+          <!-- 图形验证码 -->
+          <div class="form-field  note">
+            <label>验证码</label>
+            <input type="text" class="f-text required" name="verify_code">
+            <input type="button" id="yan" value="" disabled="disabled" />
+            <button type="button" id="changeVerify">看不清，换一张</button>
+            <span id="warn5"></span>
           </div>
           <!-- 注册 -->
           <div class="form-field  submit">
@@ -79,4 +81,5 @@
   <script src="./lib/art-template/lib/template-web.js"></script>
   <script src="./js/register.js"></script>
 </body>
+
 </html>

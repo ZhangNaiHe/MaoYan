@@ -39,8 +39,8 @@ function Color() {
         bgcolor += colorArr[colTwo];
     }
     // console.log(bgcolor);
-    $('#yan').css({'color': color});
-    $('#yan').css({'backgroundColor': bgcolor});
+    $('#yan').css({ 'color': color });
+    $('#yan').css({ 'backgroundColor': bgcolor });
 }
 
 /**
@@ -55,14 +55,13 @@ $('#changeVerify').click(function () {
  */
 $("input[name='mobile']").focus(function () {
     $('#warn1').html('');
-    if (!/^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/.test(this.value)) {
-        $('#warn1').html('请输入正确的11位常用手机号码！');
-    }
+    $('.unitive-tip').hide();
+    this.style.border = '1px solid #f76120';
 });
 $("input[name='mobile']").blur(function () {
     $('#warn1').html('');
     if (!/^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$/.test(this.value)) {
-        $('#warn1').html('请输入正确的11位常用手机号码！');
+        $('#warn1').html('<i id="warn1_icon"></i>请输入您的手机号码');
     }
 });
 
@@ -71,26 +70,25 @@ $("input[name='mobile']").blur(function () {
  */
 $("input[name='password']").focus(function () {
     $('#warn3').html('');
-    if (this.value == '' || this.value.length < 6 || this.value.length > 24) {
-        $('#warn3').html('密码长度为6-24位，请使用数字、字母、下划线组合！');
-    }
+    this.style.border = '1px solid #f76120';
 });
 $("input[name='password']").blur(function () {
     $('#warn3').html('');
     if (this.value == '' || this.value.length < 6 || this.value.length > 24) {
-        $('#warn3').html('密码长度为6-24位，请使用数字、字母、下划线组合！');
+        $('#warn3').html('<i id="warn1_icon"></i>请填写密码');
     }
 });
 $("input[name='repassword']").focus(function () {
     $('#warn4').html('');
+    this.style.border = '1px solid #f76120';
     if (this.value != $("input[name='password']").val()) {
-        $('#warn4').html('两次密码输入不一致，请重新输入！');
+        $('#warn4').html('<i id="warn1_icon"></i>请再次输入密码');
     }
 });
 $("input[name='repassword']").blur(function () {
     $('#warn4').html('');
     if (this.value != $("input[name='password']").val()) {
-        $('#warn4').html('两次密码输入不一致，请重新输入！');
+        $('#warn4').html('<i id="warn1_icon"></i>两次密码输入不一致，请重新输入！');
     }
 });
 $("input[name='password']").keyup(function () {
@@ -100,18 +98,18 @@ $("input[name='password']").keyup(function () {
         $('#warn3').html('含有非法字符！');
     }
     if (this.value.length > 6 && regCode1.test(this.value)) { //密码长度大于6，且含有数字、字母时强度为中
-        $('#high').css('backgroundColor','red');
-        $('#mid').css('backgroundColor','');
+        $('#high').css('backgroundColor', 'red');
+        $('#mid').css('backgroundColor', '');
     } else {
-        $('#high').css('backgroundColor','');
-        $('#mid').css('backgroundColor','orange');
+        $('#high').css('backgroundColor', '');
+        $('#mid').css('backgroundColor', 'orange');
     }
     if (this.value.length > 12) { //密码长度大于12，且含有数字、字母时为强度为高
-        $('#high').css('backgroundColor','red');
-        $('#mid').css('backgroundColor','');
+        $('#high').css('backgroundColor', 'red');
+        $('#mid').css('backgroundColor', '');
     } else {
-        $('#mid').css('backgroundColor','orange');
-        $('#high').css('backgroundColor','');
+        $('#mid').css('backgroundColor', 'orange');
+        $('#high').css('backgroundColor', '');
     }
 });
 
@@ -120,14 +118,13 @@ $("input[name='password']").keyup(function () {
  */
 $("input[name='verify_code']").focus(function () {
     $('#warn5').html('');
-    if (this.value == '') {
-        $('#warn5').html('请输入验证码！');
-    }
+    this.style.border = '1px solid #f76120';
+
 });
 $("input[name='verify_code']").blur(function () {
     $('#warn5').html('');
     if (this.value == '') {
-        $('#warn5').html('请输入验证码！');
+        $('#warn5').html('<i id="warn1_icon"></i>请输入验证码！');
     }
 });
 
@@ -155,7 +152,7 @@ $('.btn').on('click', function () {
         $('#warn5').html('请输入验证码！');
         return;
     }
-    if (verify_code != verify_code_){
+    if (verify_code != verify_code_) {
         $('#warn5').html('请输入正确的验证码！');
         $("input[name='verify_code']").val('');
         pro();
@@ -165,7 +162,7 @@ $('.btn').on('click', function () {
     $.ajax({
         type: 'POST',
         url: '/register',
-        data: {mobile:mobile,password:password,repassword:repassword,verify_code:verify_code},
+        data: { mobile: mobile, password: password, repassword: repassword, verify_code: verify_code },
         success: function (data) {
             if (data.code == '1201') {
                 alert("11111111")
