@@ -24,11 +24,11 @@
     <div class="J-unitive-signup-form">
       <div class="sheet">
         
-        <form action="" method="post">
+        <form id="form-waps" action="" method="post">
           <!-- 手机号 -->
           <div class="form-field iphone">
             <label>手机号</label>
-            <input class="f-text" type="number" value="">
+            <input class="f-text" type="usernumber" name="iphone" value="">
             <span class="unitive-tip">注册成功后，全美团通用</span>
           </div>
           <!-- 获取短信动态码 -->
@@ -38,7 +38,7 @@
             <!-- 短信动态码 -->
         <div class="form-field  note">
             <label>短信动态码</label>
-          <input class="f-text" type="number" name="" id="">
+          <input class="f-text" type="usernumber" name="" >
         </div>
         <!-- 创建密码 -->
         <div class=" form-field password">
@@ -48,12 +48,12 @@
         <!-- 确认密码 -->
         <div class=" form-field affirm">
           <label>确认密码</label>
-          <input class="f-text" type="password" name="" id="">
+          <input class="f-text" type="password" name="password" >
         </div>
 
         <!-- 点寂注册 -->
         <div class="form-field  submit">
-          <input type="button" value="同意以下协议并注册">
+          <input type="button" class="btn" value="同意以下协议并注册">
         </div>
         </form>
       </div>
@@ -75,6 +75,7 @@
 
   <script src="./lib/jquery/dist/jquery.js"></script>
   <script src="./lib/art-template/lib/template-web.js"></script>
+  <script src="./js/register.js"></script>
 </body>
 
 </html>

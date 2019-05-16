@@ -1,5 +1,5 @@
 //
-const conn = require('../data/film');
+const conn = require('../data/index');
 module.exports.show=(req,res)=>{
   res.render('login');
 }
