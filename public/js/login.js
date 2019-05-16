@@ -9,7 +9,7 @@ $('.btn-a').on('click', function () {
       if (data.code == '1101') {
         alert(data.message);
       }else if (data.code == '1102') {
-        location.href = "/index"
+        location.href = "/"
       }
     }
   })
