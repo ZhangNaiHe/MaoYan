@@ -27,10 +27,10 @@ insert into shopping values
 insert into shopping values
 (null, '/aromatherapy', '/images/shopping-mall/Avengers/lc.jpg', '乐宠风扇','乐宠风扇','39','39');
 
+/images/shopping-mall/Avengers/huihou.jpg
 
 
-
-
+/images/shopping-mall/Avengers/shbl.jpg
 
 
 
