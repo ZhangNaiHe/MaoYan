@@ -150,6 +150,9 @@
     font-size: 18px;
     color: #333;
 }
+.nav-ul>li>a:hover{
+   color: #ef4238;
+}
 .nav-ul>.ys{
     color: #fff;
     background-color: #ef4238;

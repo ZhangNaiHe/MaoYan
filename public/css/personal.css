@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
 }
 
 .yz_content {
@@ -23,30 +23,34 @@ a {
 }
 
 /* 1.顶部start */
-.dh{
+.dh {
     position: fixed;
-    width: 100%;    /* position: absolute; */
+    width: 100%;
+    /* position: absolute; */
     background-color: #fff;
     height: 81px;
     border-bottom: 1px solid #d8d8d8;
     z-index: 100;
 }
-.dh_con{
+
+.dh_con {
     position: relative;
     /* position: absolute; */
     margin: 0 auto;
     height: 81px;
     width: 1200px;
 }
+
 /* log */
-.log{
-    display:inline-block;
+.log {
+    display: inline-block;
     width: 133px;
     height: 80px;
     background: url(../images/shopping-mall/log.png) no-repeat 0;
 }
+
 /* 城市 */
-.spm_sy{
+.spm_sy {
     margin-left: 8px;
     margin-top: 0px;
     display: inline-block;
@@ -55,13 +59,15 @@ a {
     height: 100%;
     line-height: 80px;
 }
-.sy{
-position: absolute;
+
+.sy {
+    position: absolute;
     margin-top: 0px;
-    display:inline-block;
- 
+    display: inline-block;
+
 }
-.sy .caret{
+
+.sy .caret {
     /* float: left; */
     float: right;
     margin-top: 40px;
@@ -73,9 +79,10 @@ position: absolute;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
     transition: all .2s ease;
-  
+
 }
-.sy:hover .city-list{
+
+.sy:hover .city-list {
     display: block;
 }
 
@@ -93,12 +100,14 @@ position: absolute;
     top: 81px;
     display: none;
 }
+
 .city-list .city-list-header {
     padding-left: 20px;
     line-height: 58px;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 10px;
 }
+
 .city-list ul li span {
     margin-left: 20px;
     width: 20px;
@@ -111,14 +120,17 @@ position: absolute;
     line-height: 20px;
     margin-top: 5px;
 }
+
 .city-list ul li {
     line-height: 30px;
 }
+
 .city-list ul li div {
     margin-left: 40px;
     display: block;
     margin-bottom: 10px;
 }
+
 .city-list ul li div a {
     position: relative;
     left: 1px;
@@ -143,17 +155,20 @@ position: absolute;
     width: 490px;
     height: 100%;
 }
-.nav-ul{
+
+.nav-ul {
     display: inline-block;
     padding: 0;
     margin: 0;
     list-style: none;
     border: none;
 }
-.nav-ul>li{
+
+.nav-ul>li {
     float: left;
 }
-.nav-ul>li>a{
+
+.nav-ul>li>a {
     text-align: center;
     display: inline-block;
     height: 80px;
@@ -167,28 +182,32 @@ position: absolute;
     color: #ef4238;
 }
 
-.nav-ul>.ys{
+.nav-ul>.ys {
     color: #fff;
     background-color: #ef4238;
 
 }
- .nav-ul>.ys>a{
-   color: #fff;
-} 
+
+.nav-ul>.ys>a {
+    color: #fff;
+}
+
 /* app下载 */
-.app-xz{
+.app-xz {
     position: absolute;
     margin-left: 40px;
     margin-top: 29px;
     display: inline-block;
 }
-.app-xz>a{
+
+.app-xz>a {
     position: absolute;
     display: block;
     height: 67px;
     width: 100px;
 }
-.app-zi{
+
+.app-zi {
     position: relative;
     display: inline-block;
     font-size: 16px;
@@ -197,14 +216,16 @@ position: absolute;
     top: -5px;
 
 }
-.app-tu{
+
+.app-tu {
     display: inline-block;
     width: 15px;
     height: 24px;
 
     background: url(../images/shopping-mall/app-xz下载.png) no-repeat 0;
 }
-.app-jt{
+
+.app-jt {
     position: absolute;
     top: 7px;
     right: 2px;
@@ -216,7 +237,7 @@ position: absolute;
     transition: all .2s ease;
 }
 
-.appa:hover .download-icon{
+.appa:hover .download-icon {
     display: block;
     z-index: 100;
 }
@@ -236,17 +257,20 @@ position: absolute;
     border: 1px solid #dcd4d7;
     border-top: 0;
 }
+
 .download-icon .down-title {
     margin-top: 115px;
     margin-bottom: 3px;
     color: #000;
 }
+
 .download-icon p {
     text-align: center;
     font-size: 14px;
     color: #999;
     margin: 0;
 }
+
 /* 搜索 */
 .search-form {
     float: right;
@@ -255,6 +279,7 @@ position: absolute;
     list-style: none;
 
 }
+
 .search {
     display: inline-block;
     height: 40px;
@@ -263,12 +288,13 @@ position: absolute;
     padding: 0 40px 0 20px;
     border: 1px solid #ccc;
     font-size: 14px;
-    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
     border-radius: 30px;
     background-color: #faf8fa;
     overflow: hidden;
     color: #333;
 }
+
 .submit {
     display: inline-block;
     position: absolute;
@@ -284,11 +310,13 @@ position: absolute;
     list-style: none;
     border: none;
 }
+
 /* 登录 */
 .user-info {
     float: right;
     height: 100%;
 }
+
 .user-info .user-avatar {
     display: block;
     border: 1px solid transparent;
@@ -302,20 +330,24 @@ position: absolute;
     top: 20px;
     right: 0px;
 }
+
 .user-info .user-avatar img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
- .user-info .user-avatar .caret {
+
+.user-info .user-avatar .caret {
     position: absolute;
     right: 0px;
     top: 10px;
 }
-.user-info:hover .user-menu{
+
+.user-info:hover .user-menu {
     display: block;
 }
+
 .user-menu {
     display: none;
     position: absolute;
@@ -329,10 +361,12 @@ position: absolute;
     padding: 15px 26px 5px;
     text-align: center;
 }
+
 .user-menu li {
     margin-bottom: 6px;
     list-style: none;
 }
+
 .user-menu li>a {
     color: #999;
     display: block;
@@ -341,6 +375,7 @@ position: absolute;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 /* 箭头 */
 .caret {
     display: inline-block;
@@ -354,6 +389,7 @@ position: absolute;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
+
 /* 1.顶部end */
 
 /* 2.内容start */
@@ -375,7 +411,7 @@ position: absolute;
     border-right: 1px solid #e1e1e1;
 }
 
-.yz_user_profile_nav > h1 {
+.yz_user_profile_nav>h1 {
     margin-top: 40px;
     margin-bottom: 30px;
     font-size: 22px;
@@ -384,7 +420,7 @@ position: absolute;
     text-align: center;
 }
 
-.yz_user_profile_nav > a {
+.yz_user_profile_nav>a {
     display: block;
     font-weight: 400;
     height: 40px;
@@ -419,6 +455,13 @@ position: absolute;
     float: left;
 }
 
+.yz_avatar-container>img {
+    width: 210px;
+    height: 110px;
+    /* margin-top: 2px; */
+    margin-left: 38px;
+}
+
 .yz_upload_avatar_w {
     position: relative;
     cursor: pointer;
@@ -439,7 +482,7 @@ position: absolute;
     border: 1px;
     font-size: 18px;
     padding: 0;
-    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
 }
 
 /* 按钮2--上传头像按钮 */
@@ -450,7 +493,7 @@ position: absolute;
     opacity: 0;
     bottom: -50px;
     direction: ltr;
-    font-size: 200px!important;
+    font-size: 200px !important;
     cursor: pointer;
 }
 
@@ -461,7 +504,8 @@ position: absolute;
     font-size: 18px;
     line-height: 30px;
 }
-.ui-checkbox{
+
+.ui-checkbox {
     border: none;
     outline: none;
     /* -webkit-appearance: none; */
@@ -491,13 +535,13 @@ position: absolute;
     display: inline-block;
 }
 
-.userexinfo-form-section > p {
+.userexinfo-form-section>p {
     float: left;
     font-size: 16px;
-    
+
 }
 
-.userexinfo-form-section > span {
+.userexinfo-form-section>span {
     float: left;
     display: block;
     margin-right: 10px;
@@ -522,12 +566,12 @@ position: absolute;
     width: 300px;
 }
 
-.interest-list > span {
+.interest-list>span {
     margin-right: 5px;
 }
 
 .interest-list .bottom-tips {
-    font: 12px/1.14 arial,\5b8b\4f53;
+    font: 12px/1.14 arial, \5b8b\4f53;
     display: inline-block;
     color: #ccc;
 }
@@ -543,7 +587,7 @@ position: absolute;
     border: none;
     background-color: #ed3931;
     padding: 0;
-    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
 }
 
 .userexinfo-form .userexinfo-bottom-section {
@@ -553,7 +597,7 @@ position: absolute;
     font-size: 14px;
 }
 
-.userexinfo-form-section:nth-child(2){
+.userexinfo-form-section:nth-child(2) {
     width: 312px;
 }
 
@@ -571,7 +615,9 @@ position: absolute;
     margin-top: 110px;
     visibility: hidden;
 }
-.footer p, .footer p a {
+
+.footer p,
+.footer p a {
     color: #666;
 }
 
@@ -582,12 +628,15 @@ position: absolute;
     font-size: 14px;
     line-height: 20px;
 }
+
 .footer .friendly-links a:hover {
     text-decoration: underline;
 }
+
 .footer .friendly-links a {
     color: #ef4238;
 }
+
 .friendly-links span {
     display: inline-block;
     border-left: 1px solid #444;
@@ -596,4 +645,5 @@ position: absolute;
     position: relative;
     top: 1px;
 }
+
 /* 3.底部end */
