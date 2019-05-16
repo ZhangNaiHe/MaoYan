@@ -67,8 +67,8 @@ const filmroomRouter = require('./routers/filmroomRoute');
 app.use(filmroomRouter);
 
 // 14分钟内付款路由
-const filmPayRoute = require('./routers/filmPayRoute');
-
+// const filmPayRoute = require('./routers/filmPayRoute');
+// app.use(filmPayRoute);
 
 // 引入榜单页面路由
 const crunchiesRoute = require('./routers/crunchiesRoute');
