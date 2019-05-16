@@ -60,7 +60,8 @@ a {
 position: absolute;
     margin-top: 0px;
     display:inline-block;
- 
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    font-size: 16px;
 }
 .sy .caret{
     /* float: left; */
