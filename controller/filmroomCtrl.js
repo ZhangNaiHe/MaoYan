@@ -60,7 +60,7 @@ module.exports.filmRoomXZQ = (req, res) => {
         if (error) return console.log(error);
         if (result == '') {
             res.json({
-                code: '1012',
+                code: '1011',
                 msg: '抱歉，没有找到相关结果，请尝试用其他条件筛选。'
             })
         } else if (result) {

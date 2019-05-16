@@ -7,8 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../public/css/reset.css">
     <link rel="stylesheet" href="../public/css/moviechoose.css">
+    <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=IX2BZ-TTGWR-VVLWY-W4NCS-QBSNZ-IAF7P"></script>
 </head>
-<body>
+<body onload="init()">
              <!-- 导航 -->
              <div class="dh">
                     <div class="dh_con">
@@ -1816,7 +1817,16 @@
                   
                       <div class="cinema-map">
                         <span class="show-map">
-                           
+                          <div class="lan">
+                            <h1>网点查询</h1>
+                            <input id="keyword" type="textbox" value="大地影院(万顺店)">
+                            <i></i>
+                            <input type="button" value="查询" onclick="searchKeyword()">
+                            <!-- 内容 -->
+                             <div id="infoDiv"></div> 
+                          </div> 
+                        
+                          <div id="container"></div>
                         </span>
                       </div> 
                     </div>
@@ -1845,7 +1855,7 @@
                         <div class="movie">
                           <img src="../public/images/moviechoose/qianrenren.jpg" alt="">
                         </div>
-                        <div movie="movie">
+                        <div class="movie">
                           <img src="../public/images/moviechoose/haididi.jpg" alt="">
                         </div>
                         <div class="movie">
@@ -4271,5 +4281,7 @@
                 <p>北京猫眼文化传媒有限公司</p>
             </div>
             <!-- 底部信息栏结束 -->
+            <script src="../public/js/map.js"></script>
+
 </body>
 </html>

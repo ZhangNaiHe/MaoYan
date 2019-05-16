@@ -61,7 +61,7 @@ app.use(filmRouter);
 
 const filmAboutRouter = require('./routers/film-aboutRouter');
 app.use(filmAboutRouter);
-
+// 引入影院页面路由(张乃赫)
 const filmroomRouter = require('./routers/filmroomRoute');
 app.use(filmroomRouter);
 
