@@ -14,7 +14,8 @@ module.exports.userlogin=(req,res)=>{
       })
     }else{
         req.session.isLogin = true;
-        req.session.user = data[0];
+        req.session.user = data+[0];
+
       res.json({
         code:'1102',
         message:"登录成功"
