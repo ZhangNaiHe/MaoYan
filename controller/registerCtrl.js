@@ -1,4 +1,4 @@
-const conn = require('../data/index');
+const conn = require('../data/film');
 module.exports.show=(req,res)=>{
   res.render('register')
 }
