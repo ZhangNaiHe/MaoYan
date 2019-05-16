@@ -30,7 +30,7 @@ module.exports.filmFild = (req, res) => {
         pageTotal: results[0].pageTotal,
         data: result
       })
-      console.log(result);
+      // console.log(result);
     })
 
   })
@@ -56,7 +56,7 @@ module.exports.filmAboutAq = (req, res) => {
       })
     } else if (result) {
       res.json(result);
-      console.log(result);
+      // console.log(result);
     }
   })
 }
@@ -106,7 +106,7 @@ module.exports.filmAboutNd = (req, res) => {
       })
     } else if (result) {
       res.json(result);
-      console.log(result);
+      // console.log(result);
     }
   })
 }

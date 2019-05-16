@@ -241,13 +241,14 @@ body {
 /* 顶部导航 */
 
 .dh {
-    width: 100%;
-    position: fixed;
-    height: 81px;
-    background-color: #fff;
-    border-bottom: 1px solid #d8d8d8;
-    margin-bottom: 50px;
-    z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  height: 81px;
+  background-color: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 50px;
+  z-index: 100;
 }
 
 .dh_con {
@@ -559,7 +560,9 @@ body {
 }
 
 .user-info .user-avatar .careta {
-  margin-top: -39px;
+  margin-top: -74px;
+  margin-left: 47px;
+
 }
 
 .user-info:hover .user-menu {
