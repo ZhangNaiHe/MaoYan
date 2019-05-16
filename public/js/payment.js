@@ -2,7 +2,7 @@
 
 // #region 支付时间倒计时
 // let maxtime = 14 * 60 - 1;
-let maxtime = 1 * 5 - 1;
+let maxtime = 1 * 4 - 1;
 CountDown();
 function CountDown() {
     if (maxtime >= 0) {
@@ -19,11 +19,16 @@ function CountDown() {
     } else {
         clearInterval(timer);
         // alert("时间到,结束!");
+        // 倒计时结束弹出提示框
         let yzPage = document.querySelector('.yz_page');
         let aBody = document.querySelector('body');
         yzPage.style.display = 'block';
-        aBody.style.overflow='hidden';
-        
+        aBody.style.overflow = 'hidden';
+        // 给提示框中的我知道了按钮添加点击事件跳转页面
+        let skipBtn = document.querySelector('#yz_skipBtn');
+        skipBtn.onclick = function () {
+            location.href = '/Bohemian_Rhapsody';
+        }
     }
 }
 timer = setInterval("CountDown()", 1000);
