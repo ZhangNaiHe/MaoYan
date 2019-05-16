@@ -35,21 +35,6 @@ app.use(registerRoute);
 // 商城
 const shoppingRoute = require('./routers/ShoppingRoute')
 app.use(shoppingRoute);
-// // 详情
-// const avengersRoute=require('./routers/AvengersRoute')
-// app.use(avengersRoute);
-// // 详情
-// const ginRoute=require('./routers/GinRoute')
-// app.use(ginRoute);
-// // 详情
-// const nightwalkRoute=require('./routers/nightwalkRoute')
-// app.use(nightwalkRoute);
-// // 详情
-// const UnicornRoute=require('./routers/UnicornRoute')
-// app.use(UnicornRoute);
-// // 详情
-// const AromatherapyRoute=require('./routers/AromatherapyRoute')
-// app.use(AromatherapyRoute);
 
 // 详情实验
 const commodityRoute = require('./routers/CommodityRoute')
@@ -70,6 +55,8 @@ app.use(filmroomRouter);
 const filmPayRoute = require('./routers/filmPayRoute');
 app.use(filmPayRoute);
 
+// const filmPayRoute = require('./routers/filmPayRoute');
+// app.use(filmPayRoute);
 
 // 引入榜单页面路由
 const crunchiesRoute = require('./routers/crunchiesRoute');

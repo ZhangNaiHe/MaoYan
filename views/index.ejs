@@ -12,7 +12,24 @@
 
 <body>
   <!-- 1.顶部start -->
-  <%- include('./layouts/heade.ejs')%>
+  <div class="dh">
+    <div class="dh_con">
+        <%- include('./layouts/heady.ejs')%>
+        <div class="nav">
+            <ul class="nav-ul">
+                <li><a href="">首页</a></li>
+                <li><a href="">电影</a></li>
+                <li><a href="">影院</a></li>
+                <li><a href="">演出</a></li>
+                <li><a href="">榜单</a></li>
+                <li><a href="">热点</a></li>
+                <li class="ys"> <a href="/shopping">商城</a></li>
+            </ul>
+        </div>
+        <%- include('./layouts/header.ejs')%>
+     
+    </div>
+</div>
   <!-- 1.顶部end -->
 
   <!-- 中部模块 -->
@@ -29,121 +46,8 @@
             </div>
           </div>
           <div class="panel-content">
-            <ul>
-              <li class="ranking-item ranking-top ranking-index-1">
-                <a href="">
-                  <div class="ranking-top-left">
-                    <i class="ranking-top-icon"></i>
-                    <img src="./images/pkd.png" alt="">
-                  </div>
-                  <div class="ranking-top-right">
-                    <div class="ranking-top-right-main">
-                      <span class="ranking-top-moive-name">大侦探皮卡丘</span>
-                      <p class="ranking-top-wish">
-                        <span class="stonefont">1268.28</span>万
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index">2</i>
-                    <span class="ranking-movie-name"> 复仇者联盟4：终局之战</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">1268.28</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index">3</i>
-                    <span class="ranking-movie-name"> 何以为家</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">336.91</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index  textcolor_graa">4</i>
-                    <span class="ranking-movie-name">一个母亲得复仇</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">293.05</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index  textcolor_graa">5</i>
-                    <span class="ranking-movie-name">罗马</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">28.96</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index textcolor_graa"> 6</i> <span class="ranking-movie-name">进京城</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">24.54</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index  textcolor_graa">7</i>
-                    <span class="ranking-movie-name">下一任：前任</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">23.04</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index  textcolor_graa">8</i>
-                    <span class="ranking-movie-name"> 港珠澳大桥</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">18.30</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index textcolor_graa">9</i>
-                    <span class="ranking-movie-name">反贪风暴4</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">13.92</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li class="ranking-item">
-                <a href="">
-                  <span class="normal-link">
-                    <i class="ranking-index textcolor_graa">10</i>
-                    <span class="ranking-movie-name">雪豹</span>
-                    <span class="ranking-num-infoa">
-                      <span class="stonefont">9.06</span>万
-                    </span>
-                  </span>
-                </a>
-              </li>
+            <ul class="right-one" >
+          
             </ul>
           </div>
         </div>
@@ -189,7 +93,7 @@
                   <a href="">
                     <div class="ranking-top-left">
                       <i class="ranking-top-icon"></i>
-                      <img class="ranking-img  default-img" src="./images/gelasi.png" alt="">
+                      <img class="ranking-img  default-img" src="../public/images/g" alt="">
                     </div>
                     <div class="ranking-top-right">
                       <div class="ranking-top-right-main">
@@ -461,7 +365,7 @@
             </div>
             <div class="main-content">
               <dl class="move-list">
-                <dd>
+                <!-- <dd>
                   <div class="move-item">
                     <a href="">
                       <div class="move-poster">
@@ -662,12 +566,13 @@
                     </div>
                   </div>
                 </dd>
-              </dl>
+             -->
+            </dl>
             </div>
           </div>
           <div class="panel">
             <div class="main-header">
-              <span class="main-top-title   textcolor_bule">正在热映 (20步)</span>
+              <span class="main-top-title   textcolor_bule">即将上映 (150步)</span>
               <span class="main-top-more">
                 <a href="" class=" textcolor_bule">
                   <span>全部</span>
@@ -676,7 +581,7 @@
               </span>
             </div>
             <div class="main-content">
-              <dl class="move-list">
+              <dl class="move-list room">
                 <dd>
                   <div class="move-item">
                     <a href="">
@@ -1087,8 +992,12 @@
     </div>
   </div>
   <!-- 4.底部end-->
-
-
+  <script src="./lib/jquery/dist/jquery.js"></script>
+  <script src="./lib/art-template/lib/template-web.js"></script>
+  
+  <%- include("./template/indexTemplate.ejs")%>
+ 
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
