@@ -13,6 +13,8 @@ module.exports.userlogin=(req,res)=>{
         message:"您的手机号或密码错误"
       })
     }else{
+        req.session.isLogin = true;
+        req.session.user = data[0];
       res.json({
         code:'1102',
         message:"登录成功"

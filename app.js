@@ -6,15 +6,15 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // 配置express-session
-// const session = require('express-session');
-// app.use(session({
-//     secret:'itcast',
-//     resave:false,
-//     saveUninitialized:false,
-//     cookie:{
-//         maxAge:60000
-//     }
-// }));
+const session = require('express-session');
+app.use(session({
+    secret:'itcast',
+    resave:false,
+    saveUninitialized:false,
+    cookie:{
+        maxAge:60000
+    }
+}));
 
 
 
