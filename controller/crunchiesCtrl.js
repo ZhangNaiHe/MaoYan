@@ -82,7 +82,9 @@ module.exports.BRwantSee = (req,res)=>{
         res.redirect('/login');
         return false;
     }
-    res.json(results);
+    if(results.affectedRows) {
+        res.json(results);
+    }
 }
 // #endregion
 
