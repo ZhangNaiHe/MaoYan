@@ -1982,21 +1982,21 @@
           <ul class="film-panel-sort-ul">
             <li>
               <span>
-                <span class="film-panel-sort-btn"></span>
+                <span class="film-panel-sort-btn btn-rm"></span>
                 <span class="film-panel-sort-wz">按热门排序</span>
               </span>
             </li>
             <li>
               <span>
-                <span class="film-panel-sort-btn"></span>
+                <span class="film-panel-sort-btn btn-sj"></span>
                 <span class="film-panel-sort-wz">按时间排序</span>
               </span>
             </li>
             <li>
-              <span>
+              <!-- <span>
                 <span class="film-panel-sort-btn"></span>
                 <span class="film-panel-sort-wz">按评价排序</span>
-              </span>
+              </span> -->
             </li>
           </ul>
         </div>
@@ -2063,6 +2063,10 @@
   <script src="./lib/jquery/dist/jquery.js"></script>
   <script src="./lib/art-template/lib/template-web.js"></script>
   <script src="./js/film.js"></script>
+  <%-include('./template/film.ejs') %>
+  <%-include('./template/navtemplate.ejs') %>
+  <%-include('./template/areaTemplate.ejs') %>
+  <%-include('./template/yearTemplate.ejs') %>
 </body>
 
 </html>
