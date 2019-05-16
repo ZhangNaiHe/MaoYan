@@ -73,6 +73,8 @@ app.use(crunchiesRoute);
 const filmClassicsRouter = require('./routers/film-classicsRoutet');
 app.use(filmClassicsRouter);
 
+const personalRouter = require('./routers/personalRouter');
+app.use(personalRouter);
 
 
 app.use(express.static('public'));
