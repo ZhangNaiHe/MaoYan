@@ -564,8 +564,73 @@ background-position: 0 17px;
 }
 /* 2.购票流程end */
 
+/* 3.倒计时结束弹出提示框start */
+.yz_page {
+    position: fixed;
+    /* position: relative; */
+    top: 0;
+    right: 0;
+    width: 1349px;
+    height: 768px;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.4);
+    display: none;
+}
 
-/* 3.底部start */
+.yz_lose {
+    position: absolute;
+    top: 25%;
+    left: 32%;
+    width: 460px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:0px 2px 15px -2px #000;
+    padding-top: 25px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.yz_lose_icon_bx {
+    text-align: center;
+    padding-left: calc(50% - 25px);
+    margin-bottom: 15px;
+}
+
+.yz_lose_icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/yz_icon_22.png);
+}
+
+.yz_lose_text {
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.yz_lose_btn {
+    padding-left: 99px;
+}
+
+.yz_lose_btn > input {
+    cursor: pointer;
+    width: 260px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #ff2922;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+}
+
+/* 3.倒计时结束弹出提示框start */
+
+
+/* 4.底部start */
 .footer {
     background-color: #262426;
     padding: 56px 0;
@@ -605,4 +670,4 @@ background-position: 0 17px;
     top: 1px;
 }
 
-/* 3.底部end */
+/* 4.底部end */
