@@ -82,11 +82,10 @@
 
 
 
-  <script type="text/template" id="right-two">
+  <script type="text/template" id="right-one">
   
     {{each list}}
-      {{  if ($index + 1) == 1 }}
-      <li class="ranking-item ranking-top ranking-index ran-{{$index+1}}">
+      <li class="ranking-item ranking-top  ran-{{$index+1}}">
         <a href="">
           <div class="ranking-top-left">
             <i class="ranking-top-icon"></i>
@@ -102,21 +101,26 @@
           </div>
         </a>
       </li>
-      <!-- {{/each}} -->
-    {{  else   }}
-    <!-- {{/each list}} -->
-      <li class="ranking-item">
-        <a href="">
-          <span class="normal-link">
-            <i class=" ran-{{$index+1}}  ranking-index">{{$value.movieRanking_id}}</i>
-            <span class="ranking-movie-name">{{$value.movieRanking_name}}</span>
-            <span class="ranking-num-infoa">
-              <span class="stonefont">{{$value.movieRanking_wantAll}}</span>万
-                        </span>
-          </span>
-        </a>
-      </li>
-      {{/if}}
+      {{/each}}
+     
+    </script>
+
+
+
+    
+  <script type="text/template" id="right-one-two">
+    {{each list}}
+    <li class="ranking-item">
+      <a href="">
+        <span class="normal-link">
+          <i class=" ran-{{$index+1}}  ranking-index">{{$index+2}}</i>
+          <span class="ranking-movie-name">{{$value.movieRanking_name}}</span>
+          <span class="ranking-num-infoa">
+            <span class="stonefont">{{$value.movieRanking_wantAll}}</span>万
+                      </span>
+        </span>
+      </a>
+    </li>
       {{/each}}
      
     </script>

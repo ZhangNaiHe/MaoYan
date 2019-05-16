@@ -1,16 +1,16 @@
-// let right_one = function () {
-//   $.ajax({
-//     type: 'get',
-//     url: '/index',
-//     data: '',
-//     success: function (data) {
-//       let str = template('right-one', { list: data });
-//       // console.log(str);
-//       $('.right-one').html(str);
-//     }
-//   })
-// }
-// right_one()
+let right_one = function () {
+  $.ajax({
+    type: 'get',
+    url: '/index',
+    data: '',
+    success: function (data) {
+      let str = template('right-one', { list: data });
+      // console.log(str);
+      $('.right-inner').html(str);
+    }
+  })
+}
+right_one()
 
 
 let right_one_two =function(){
@@ -19,9 +19,9 @@ let right_one_two =function(){
     url:'/indexroom',
     data:'',
     success:function(data){
-      let str = template('right-two', { list: data });
+      let str = template('right-one-two', { list: data });
       // console.log(str);
-      $('ul.right-one').html(str);
+      $('.right-innerqq').html(str);
     }
   })
   }
