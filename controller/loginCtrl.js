@@ -17,11 +17,7 @@ module.exports.userlogin=(req,res)=>{
       })
     }else{
         req.session.isLogin = true;
-<<<<<<< HEAD
         req.session.user = data[0];
-=======
-        req.session.user = data+[0];
->>>>>>> 86ad6fc5fd8cd7b141df3537dd74711daad2cb99
 
       res.json({
         code:'1102',
