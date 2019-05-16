@@ -168,14 +168,14 @@ position: absolute;
 .nav-ul>li>a:hover {
     color: #ef4238;
 }
-.nav-ul>.ys{
+/* .nav-ul>.ys{
     color: #fff;
     background-color: #ef4238;
 
-}
- .nav-ul>.ys>a{
+} */
+ /* .nav-ul>.ys>a{
    color: #fff;
-} 
+}  */
 /* app下载 */
 .app-xz{
     position: absolute;

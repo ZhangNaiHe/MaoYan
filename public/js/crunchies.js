@@ -33,10 +33,7 @@ window.onload = function () {
 
 
 
-
-
 // #region node代码
-
 
 // #region 热映口碑榜数据
 let showMovie1 = function () {
@@ -154,7 +151,6 @@ let showMovie7 = function () {
 }
 showMovie7();
 // #endregion
-
 
 // #endregion
 
