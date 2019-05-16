@@ -155,3 +155,70 @@ body {
   color: #999;
   font-size: 13px;
 }
+
+.form-field .pw-strength {
+  position: absolute;
+  width: 261px;
+  top: 50px;
+  left: 110px;
+  background: #eee;
+}
+
+.form-field .pw-strength .pw-strength__bar {
+  background: #d3ebee;
+  height: 20px;
+  width: 0;
+  overflow: hidden;
+  transition: all .4s linear;
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -o-transition: all .4s linear;
+}
+
+.form-field .pw-strength .pw-strength__letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form-field .pw-strength .pw-strength__letter .pw-strength__label {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  width: 85px;
+  border-right: 2px solid #fff;
+  color: #fff;
+}
+
+
+.affirm{
+  margin-top: 24px;
+}
+
+#yan{
+  height: 35px;
+  border-radius: 10%;
+}
+
+
+
+
+/* //提示信息栏样式 */
+span{
+  font-size: 10px;
+  color:red;
+}
+
+/* //验证码部分首先隐藏 */
+#login{
+  visibility: hidden;
+}
+#write,#yan{
+  width: 100px;
+}
+
+[type=button]{
+  font-weight: bold;
+}
