@@ -133,6 +133,7 @@ $("input[name='verify_code']").blur(function () {
  */
 $('.btn').on('click', function () {
     let mobile = $("input[name='mobile']").val();
+    console.log(mobile);
     let password = $("input[name='password']").val();
     let repassword = $("input[name='repassword']").val();
     let verify_code = $("input[name='verify_code']").val();
@@ -158,14 +159,20 @@ $('.btn').on('click', function () {
         pro();
         return;
     }
+  
 
     $.ajax({
         type: 'POST',
-        url: '/register',
-        data: { mobile: mobile, password: password, repassword: repassword, verify_code: verify_code },
+        url: '/registera',
+        data: {
+              mobile:mobile,
+              repassword:repassword
+            },
         success: function (data) {
+            //   console.log(data);
             if (data.code == '1201') {
-                alert("11111111")
+                alert(data.message);
+                location.href='/login'
             }
         }
     })
