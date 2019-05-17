@@ -317,6 +317,7 @@
     margin-bottom: 6px;
 }
 .user-menu li>p {
+    width: 30px;
     color: #999;
     display: block;
     word-break: keep-all;
