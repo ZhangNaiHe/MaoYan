@@ -67,18 +67,23 @@ body {
     margin-left: 12px;
 }
 
-.tags .active {
+.tags li:nth-child(1) {
     background: #f34d41;
-    color: #fff
+}
+
+.tags li:nth-child(1) > a {
+    color: #fff;
 }
 
 .tags li.active .pre-date {
-    color: #fff
+    color: #fff;
 }
 
 .tags li a {
     color: #333;
-    font-size: 14px
+    font-size: 14px;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+
 }
 
 .tags li.active a {

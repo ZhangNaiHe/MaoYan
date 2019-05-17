@@ -30,7 +30,7 @@
     margin-top: 0px;
     display: inline-block;
     position: absolute;
-    width: 100px;
+    width: 60px;
     height: 100%;
     line-height: 80px;
 }
@@ -253,6 +253,7 @@
     background-color: #faf8fa;
     overflow: hidden;
     color: #333;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
 }
 .submit {
     display: inline-block;
