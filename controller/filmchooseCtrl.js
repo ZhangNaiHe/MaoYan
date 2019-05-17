@@ -40,7 +40,15 @@ module.exports.filmChooseSele = (req,res) => {
     conn.query('select * from massage where movie_id=?',req.query.id,(error,result) =>{
         if(error) return console.log(error);
         // console.log(result);
-        res.json(result[0]);
+       conn.query('select * from projection where movie_id=?',[req.query.id],(error,results)=> {
+           
+           if(error) return console.log(error) ;
+           console.log(results)
+           res.json({
+            data:result[0],
+            data1:results
+        });
+       })
 
     }) 
 }
