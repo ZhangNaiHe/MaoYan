@@ -7,7 +7,7 @@ module.exports.filmClassics = (req, res) => {
 }
 
 module.exports.filmClassicsFild = (req, res) => {
-  console.log(req.query);
+  // console.log(req.query);
   let pageNum = req.query.pageNum;
   // 一页显示多少条数据
   let pageSize = req.query.pageSize;
@@ -46,7 +46,7 @@ module.exports.filmClassicsType = (req, res) => {
 
 module.exports.filmClassicsAq = (req, res) => {
   let aq = [req.query.id, 'classics'];
-  console.log(aq);
+  // console.log(aq);
   conn.query('select * from showing s where t_id=? and show_state=?', aq, (error, result) => {
     if (error) return console.log(error);
     if (result == '') {

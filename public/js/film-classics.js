@@ -45,7 +45,7 @@ let filmAboutShow = function (pageNum,pageSize) {
         visiblePages: 4,
         // 点击的时候调用方法
         onPageClick: function (event, page) {
-          console.log(page)
+          // console.log(page)
           // $('#page-content').text('Page ' + page);
           filmAboutShow(page, 5);
         }
@@ -110,7 +110,7 @@ $('.btn-t').on('click', '.btn-type', function () {
     url: '/filmClassicsQy',
     data: { id: id },
     success: function (data) {
-      console.log(data);
+      // console.log(data);
       if (data.code == '1002') {
         $('.movie-list').html('<div>' + data.msg + '</div>');
 
@@ -131,7 +131,7 @@ let y = function () {
     data: '',
     success: function (data) {
       let str = template('year_template', { list: data });
-      console.log(data);
+      // console.log(data);
       $('.btn-e').html(str);
     }
   })
@@ -146,7 +146,7 @@ $('.btn-e').on('click', '.btn-type', function () {
     url: '/filmClassicsNd',
     data: { id: id },
     success: function (data) {
-      console.log(data);
+      // console.log(data);
       if (data.code == '1003') {
         $('.movie-list').html('<div>' + data.msg + '</div>');
 
@@ -176,7 +176,7 @@ $('.btn-sj').click(function () {
     data: '',
     success: function (data) {
    
-      console.log(data);
+      // console.log(data);
       let str = template('film-template', { list: data });
       $('.movie-list').html(str);
     }
