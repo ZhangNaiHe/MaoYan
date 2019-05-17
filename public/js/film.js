@@ -2,7 +2,7 @@
 let filmShow = function () {
   $.ajax({
     type: 'get',
-    url: '/filmShow',
+    url: '/filmsShow',
     data: '',
     success: function (data) {
       // console.log(data);
@@ -22,7 +22,7 @@ filmShow();
 let s = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutType',
+    url: '/filmType',
     data: '',
     success: function (data) {
 
@@ -38,7 +38,7 @@ $('.btn-o').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutAq',
+    url: '/filmAq',
     data: { id: id },
     success: function (data) {
       if (data.code == '1001') {
@@ -56,7 +56,7 @@ $('.btn-o').on('click', '.btn-type', function () {
 let a = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutArea',
+    url: '/filmArea',
     data: '',
     success: function (data) {
       let str = template('area_template', { list: data });
@@ -71,7 +71,7 @@ $('.btn-t').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutQy',
+    url: '/filmQy',
     data: { id: id },
     success: function (data) {
       console.log(data);
@@ -90,7 +90,7 @@ $('.btn-t').on('click', '.btn-type', function () {
 let y = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutYear',
+    url: '/filmYear',
     data: '',
     success: function (data) {
       let str = template('year_template', { list: data });
@@ -105,7 +105,7 @@ $('.btn-e').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutNd',
+    url: '/filmNd',
     data: { id: id },
     success: function (data) {
       // console.log(data);
@@ -126,7 +126,7 @@ $('.btn-e').on('click', '.btn-type', function () {
 $('.btn-rm').click(function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutRm',
+    url: '/filmRm',
     data: '',
     success: function (data) {
       console.log(data);
@@ -140,7 +140,7 @@ $('.btn-rm').click(function () {
 $('.btn-sj').click(function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutSj',
+    url: '/filmSj',
     data: '',
     success: function (data) {
       console.log(data);
