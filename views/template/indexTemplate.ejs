@@ -1,6 +1,3 @@
-
-
-
 <script type="text/template" id="left-one">
   {{each list}}
   <dd>
@@ -32,9 +29,9 @@
 
   </script>
 
- 
 
-  <script type="text/template" id="left-two">
+
+<script type="text/template" id="left-two">
     {{each list}}
     <dd>
       <div class="move-item">
@@ -66,27 +63,73 @@
 
 
 
+    <script type="text/template" id="left-three">
+      {{each list}}
+      <dd>
+        <div class="move-item">
+          <a href="">
+            <div class="move-poster  movie-poster-long">
+              <img src="{{$value.movieRanking_cover}}" alt="pikachu">
+              <div class="move-overlay">
+                <div class="move-info">
+                  <div class="move-score">
+                    <i class="integer">{{$value.movieRanking_grade1}}</i>
+                    <i class="fraction">{{$value.movieRanking_grade2}}</i>
+                  </div>
+                  <div class="move-title">{{$value.movieRanking_name}}</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </dd>
+        {{/each}}
+      </script>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script type="text/template" id="right-two">
+      <script type="text/template" id="left-three-one">
+        {{each list}}
+       
+        <dd>
+          <div class="move-item">
+            <a href="">
+              <div class="move-poster">
+                <img src="{{$value.movieRanking_cover}}" alt="pikachu">
+                <div class="move-overlay">
+                  <div class="move-info">
+                    <div class="move-score">
+                      <i class="integer">{{$value.movieRanking_grade1}</i>
+                      <i class="fraction">{{$value.movieRanking_grade2}}</i>
+                    </div>
+                    <div class="move-title">{{$value.movieRanking_name}}</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          {{/each}}
+        </script>
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--右边第一块 -->
+<script type="text/template" id="right-one">
+
     {{each list}}
-      {{  if ($index + 1) == 1 }}
-      <li class="ranking-item ranking-top ranking-index ran-{{$index+1}}">
+      <li class="ranking-item ranking-top  ran-{{$index+1}}">
         <a href="">
           <div class="ranking-top-left">
             <i class="ranking-top-icon"></i>
@@ -102,21 +145,135 @@
           </div>
         </a>
       </li>
-      <!-- {{/each}} -->
-    {{  else   }}
-    <!-- {{/each list}} -->
-      <li class="ranking-item">
-        <a href="">
-          <span class="normal-link">
-            <i class=" ran-{{$index+1}}  ranking-index">{{$value.movieRanking_id}}</i>
-            <span class="ranking-movie-name">{{$value.movieRanking_name}}</span>
-            <span class="ranking-num-infoa">
-              <span class="stonefont">{{$value.movieRanking_wantAll}}</span>万
-                        </span>
-          </span>
-        </a>
-      </li>
-      {{/if}}
       {{/each}}
      
     </script>
+
+<script type="text/template" id="right-one-two">
+    {{each list}}
+    <li class="ranking-item">
+      <a href="">
+        <span class="normal-link">
+          <i class=" ran-{{$index+1}}  ranking-index">{{$index+2}}</i>
+          <span class="ranking-movie-name">{{$value.movieRanking_name}}</span>
+          <span class="ranking-num-infoa">
+            <span class="stonefont">{{$value.movieRanking_wantAll}}</span>万
+                      </span>
+        </span>
+      </a>
+    </li>
+      {{/each}}
+     
+    </script>
+
+
+
+
+<!-- 右边第二块 -->
+
+<script type="text/template" id="right-two-one">
+      {{each list}}
+      <li class="ranking-item ranking-top ranking-index-1">
+          <a href="">
+            <div class="ranking-top-left">
+              <i class="ranking-top-icon"></i>
+              <img class="ranking-img  default-img" src="{{$value.movieRanking_cover}}" alt="">
+            </div>
+            <div class="ranking-top-right">
+              <div class="ranking-top-right-main">
+                <span class="ranking-top-moive-name">{{$value.movieRanking_name}}</span>
+                <p class="ranking-release-time">上映时间{{$value.movieRanking_releasetim}}</p>
+                <p class="ranking-top-wish">
+                  <span class="stonefont">{{$value.movieRanking_want}}</span>人想看
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        {{/each}}
+       
+      </script>
+
+
+
+
+<script type="text/template" id="right-two-two">
+        {{each list}}
+        <li class="ranking-item ranking-top ranking-index-{{$index+2}} ">
+          <a href="">
+            <i class="ranking-indexa">{{$index+2}}</i>
+            <span class="img-link">
+              <img class="ranking-img default-img" src="" alt="">
+            </span>
+            <div class="name-link ranking-movie-name">{{$value.movieRanking_name}}</div>
+            <span class="ranking-num-info">
+              <span class="stonefont">{{$value.movieRanking_want}}</span>人想看
+            </span>
+          </a>
+        </li>
+          {{/each}}
+         
+        </script>
+
+
+
+<script type="text/template" id="right-two-three">
+          {{each list}}
+          <li class="ranking-item">
+            <a href="">
+              <span class="normal-link">
+                <i class="ranking-index  textcolor_graa">{{$index+4}}</i>
+                <span class="ranking-movie-name">{{$value.movieRanking_name}}</span>
+                <span class="ranking-num-info">
+                  <span class="stonefont">{{$value.movieRanking_want}}</span>人想看
+                </span>
+              </span>
+            </a>
+          </li>
+            {{/each}}
+           
+          </script>
+
+
+
+<!--右边第三块  -->
+
+<script type="text/template" id="right-three">
+  
+  {{each list}}
+  <li class="ranking-item ranking-top ranking-index-1">
+    <a href="">
+      <div class="ranking-top-left">
+        <i class="ranking-top-icon"></i>
+        <img src="./images/pkd.png" alt="">
+      </div>
+      <div class="ranking-top-right">
+        <div class="ranking-top-right-main">
+          <span class="ranking-top-moive-name">{{$value.movieRanking_name}}</span>
+          <p class="ranking-top-wish">
+            <span class="stonefont">{{$value.movieRanking_grade1}}{{$value.movieRanking_grade2}}</span>分
+          </p>
+        </div>
+      </div>
+    </a>
+  </li>
+    {{/each}}
+   
+  </script>
+
+<script type="text/template" id="right-three-two">
+  {{each list}}
+  <li class="ranking-item">
+    <a href="">
+      <span class="normal-link">
+        <i class="ranking-index">{{$index+2}}</i>
+        <span class="ranking-movie-name">{{$value.movieRanking_name}}</span>
+        <span class="ranking-num-info">
+          <span class="stonefont">{{$value.movieRanking_grade1}}{{$value.movieRanking_grade2}}</span>分
+        </span>
+      </span>
+    </a>
+  </li>
+    {{/each}}
+   
+  </script>

@@ -5,14 +5,14 @@ const router = express.Router();
 // 导入控制器的文件夹
 const filmClassicsCtrl = require('../controller/film-classicsCtrl');
 router.get('/filmClassics',filmClassicsCtrl.filmClassics);
-router.get('/filmFild',filmClassicsCtrl.filmFild);
-router.get('/filmAboutType',filmClassicsCtrl.filmAboutType);
-router.get('/filmAboutAq',filmClassicsCtrl.filmAboutAq);
-router.get('/filmAboutArea',filmClassicsCtrl.filmAboutArea);
-router.get('/filmAboutQy',filmClassicsCtrl.filmAboutQy);
-router.get('/filmAboutYear',filmClassicsCtrl.filmAboutYear);
-router.get('/filmAboutNd',filmClassicsCtrl.filmAboutNd);
-router.get('/filmAboutRm',filmClassicsCtrl.filmAboutRm);
-router.get('/filmAboutSj',filmClassicsCtrl.filmAboutSj);
+router.get('/filmClassicsFild',filmClassicsCtrl.filmClassicsFild);
+router.get('/filmClassicsType',filmClassicsCtrl.filmClassicsType);
+router.get('/filmClassicsAq',filmClassicsCtrl.filmClassicsAq);
+router.get('/filmClassicsArea',filmClassicsCtrl.filmClassicsArea);
+router.get('/filmClassicsQy',filmClassicsCtrl.filmClassicsQy);
+router.get('/filmClassicsYear',filmClassicsCtrl.filmClassicsYear);
+router.get('/filmClassicsNd',filmClassicsCtrl.filmClassicsNd);
+router.get('/filmClassicsRm',filmClassicsCtrl.filmClassicsRm);
+router.get('/filmClassicsSj',filmClassicsCtrl.filmClassicsSj);
 // 暴露
 module.exports = router;

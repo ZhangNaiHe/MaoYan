@@ -296,6 +296,8 @@ position: absolute;
   display: none;
   position: absolute;
   top: 60px;
+  right: 0px;
+  width: 31px;
   border: 1px solid #d8d8d8;
   border-top: none;
   background-color: #fff;
@@ -638,7 +640,7 @@ a{
   overflow: hidden;
 }
 .ranking-top-right-main{
-  width: 220px;
+  width: 270px;
   display: inline-block;
     line-height: 1;
     vertical-align: middle;
@@ -830,6 +832,15 @@ a{
   position: relative;
   width: 170px;
   float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+}
+.ranking-index-3{
+  border: 1px solid #efefef;
+  position: relative;
+  width: 170px;
+  float: right;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 8px;

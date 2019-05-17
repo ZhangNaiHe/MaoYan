@@ -60,7 +60,8 @@ a {
 position: absolute;
     margin-top: 0px;
     display:inline-block;
- 
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    font-size: 16px;
 }
 .sy .caret{
     /* float: left; */
@@ -167,14 +168,14 @@ position: absolute;
 .nav-ul>li>a:hover {
     color: #ef4238;
 }
-.nav-ul>.ys{
+/* .nav-ul>.ys{
     color: #fff;
     background-color: #ef4238;
 
-}
- .nav-ul>.ys>a{
+} */
+ /* .nav-ul>.ys>a{
    color: #fff;
-} 
+}  */
 /* app下载 */
 .app-xz{
     position: absolute;

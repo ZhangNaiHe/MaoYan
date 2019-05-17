@@ -4,7 +4,14 @@ const router =express.Router();
 const indexCtrl = require('../controller/indexCtrl');
 
 router.get('/',indexCtrl.show);
-router.get('/indexroom',indexCtrl.room);
+router.get('/index',indexCtrl.room);
+router.get('/indexroom',indexCtrl.roomtwo);
+router.get('/indexroom4',indexCtrl.roomthree);
+router.get('/indexroom5',indexCtrl.roomfour);
+router.get('/indexroom6',indexCtrl.roomfive);
+router.get('/indexroom7',indexCtrl.roomsix);
+router.get('/indexroom8',indexCtrl.roomseven);
+
 router.get('/indexroom2',indexCtrl.room_left);
 router.get('/indexroom3',indexCtrl.room_left_two);
 

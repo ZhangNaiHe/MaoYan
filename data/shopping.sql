@@ -31,6 +31,8 @@ insert into shopping values
 
 
 
+/images/shopping-mall/Avengers/huihou.jpg
+/images/shopping-mall/Avengers/shbl.jpg
 
 
 
