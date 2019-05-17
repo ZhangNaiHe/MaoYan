@@ -6,14 +6,14 @@ const router = express.Router();
 const filmCtrl = require('../controller/filmCtrl');
 // 显示页面
 router.get('/film',filmCtrl.show);
-router.get('/filmShow',filmCtrl.filmShow);
-router.get('/filmAboutAq',filmCtrl.filmAboutAq);
-router.get('/filmAboutType',filmCtrl.filmAboutType);
-router.get('/filmAboutArea',filmCtrl.filmAboutArea);
-router.get('/filmAboutQy',filmCtrl.filmAboutQy);
-router.get('/filmAboutYear',filmCtrl.filmAboutYear);
-router.get('/filmAboutNd',filmCtrl.filmAboutNd);
-router.get('/filmAboutRm',filmCtrl.filmAboutRm);
-router.get('/filmAboutSj',filmCtrl.filmAboutSj);
+router.get('/filmsShow',filmCtrl.filmsShow);
+router.get('/filmAq',filmCtrl.filmAq);
+router.get('/filmType',filmCtrl.filmType);
+router.get('/filmArea',filmCtrl.filmArea);
+router.get('/filmQy',filmCtrl.filmQy);
+router.get('/filmYear',filmCtrl.filmYear);
+router.get('/filmNd',filmCtrl.filmNd);
+router.get('/filmRm',filmCtrl.filmRm);
+router.get('/filmSj',filmCtrl.filmSj);
 // 暴露路由
 module.exports = router;

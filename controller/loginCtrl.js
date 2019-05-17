@@ -18,6 +18,7 @@ console.log(params)
       })
     }else{
         req.session.isLogin = true;
+
         req.session.user = data[0];
 
       res.json({

@@ -29,7 +29,7 @@
 let filmAboutShow = function (pageNum,pageSize) {
   $.ajax({
     type: 'get',
-    url: '/filmAboutShow',
+    url: '/filmClassicsFild',
     data: {
       pageNum: pageNum || 1,
       pageSize: pageSize || 3
@@ -45,7 +45,7 @@ let filmAboutShow = function (pageNum,pageSize) {
         visiblePages: 4,
         // 点击的时候调用方法
         onPageClick: function (event, page) {
-          console.log(page)
+          // console.log(page)
           // $('#page-content').text('Page ' + page);
           filmAboutShow(page, 5);
         }
@@ -59,7 +59,7 @@ filmAboutShow(1,5);
 let s = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutType',
+    url: '/filmClassicsType',
     data: '',
     success: function (data) {
 
@@ -74,7 +74,7 @@ $('.btn-o').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutAq',
+    url: '/filmClassicsAq',
     data: { id: id },
     success: function (data) {
       if (data.code == '1001') {
@@ -92,7 +92,7 @@ $('.btn-o').on('click', '.btn-type', function () {
 let a = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutArea',
+    url: '/filmClassicsArea',
     data: '',
     success: function (data) {
       let str = template('area_template', { list: data });
@@ -107,10 +107,10 @@ $('.btn-t').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutQy',
+    url: '/filmClassicsQy',
     data: { id: id },
     success: function (data) {
-      console.log(data);
+      // console.log(data);
       if (data.code == '1002') {
         $('.movie-list').html('<div>' + data.msg + '</div>');
 
@@ -127,11 +127,11 @@ $('.btn-t').on('click', '.btn-type', function () {
 let y = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutYear',
+    url: '/filmClassicsYear',
     data: '',
     success: function (data) {
       let str = template('year_template', { list: data });
-      console.log(data);
+      // console.log(data);
       $('.btn-e').html(str);
     }
   })
@@ -143,10 +143,10 @@ $('.btn-e').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutNd',
+    url: '/filmClassicsNd',
     data: { id: id },
     success: function (data) {
-      console.log(data);
+      // console.log(data);
       if (data.code == '1003') {
         $('.movie-list').html('<div>' + data.msg + '</div>');
 
@@ -161,7 +161,7 @@ $('.btn-e').on('click', '.btn-type', function () {
 $('.btn-rm').click(function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutRm',
+    url: '/filmClassicsRm',
     data: '',
     success: function (data) {
       let str = template('film-template', { list: data });
@@ -172,11 +172,11 @@ $('.btn-rm').click(function () {
 $('.btn-sj').click(function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutSj',
+    url: '/filmClassicsSj',
     data: '',
     success: function (data) {
    
-      console.log(data);
+      // console.log(data);
       let str = template('film-template', { list: data });
       $('.movie-list').html(str);
     }

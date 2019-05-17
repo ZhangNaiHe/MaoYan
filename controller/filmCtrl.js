@@ -5,8 +5,9 @@ module.exports.show = (req, res) => {
   res.render('film');
 }
 
-module.exports.filmShow = (req, res) => {
-  conn.query('select * from showing', (error, result) => {
+module.exports.filmsShow = (req, res) => {
+  let s = 'hot';
+  conn.query('select * from showing where show_state=?', s,(error, result) => {
     if (error) return console.log(error);
     if (result == '') {
       res.json({
@@ -22,7 +23,7 @@ module.exports.filmShow = (req, res) => {
 
 
 // 渲染类型
-module.exports.filmAboutType = (req, res) => {
+module.exports.filmType = (req, res) => {
   conn.query('select * from type', (error, result) => {
     if (error) return console.log(error);
     res.json(result);
@@ -30,8 +31,8 @@ module.exports.filmAboutType = (req, res) => {
 }
 
 // 搜索对应的内容
-module.exports.filmAboutAq = (req, res) => {
-  let aq = [req.query.id, 'coming'];
+module.exports.filmAq = (req, res) => {
+  let aq = [req.query.id, 'hot'];
   // console.log(aq);
   conn.query('select * from showing s where t_id=? and show_state=?  order by show_look desc', aq, (error, result) => {
     if (error) return console.log(error);
@@ -47,7 +48,7 @@ module.exports.filmAboutAq = (req, res) => {
   })
 }
 
-module.exports.filmAboutArea = (req, res) => {
+module.exports.filmArea = (req, res) => {
   conn.query('select * from area', (error, result) => {
     if (error) return console.log(error);
     res.json(result);
@@ -55,8 +56,8 @@ module.exports.filmAboutArea = (req, res) => {
 }
 
 // 查到区域对应的内容
-module.exports.filmAboutQy = (req, res) => {
-  let aq = [req.query.id, 'coming'];
+module.exports.filmQy = (req, res) => {
+  let aq = [req.query.id, 'hot'];
   conn.query('select * from showing s where a_id=?and show_state=?  order by show_look desc', aq, (error, result) => {
     if (error) return console.log(error);
     if (result == '') {
@@ -71,7 +72,7 @@ module.exports.filmAboutQy = (req, res) => {
 }
 
 
-module.exports.filmAboutYear = (req, res) => {
+module.exports.filmYear = (req, res) => {
   conn.query('select *  from year', (error, result) => {
     if (error) return console.log(error);
     res.json(result);
@@ -79,8 +80,8 @@ module.exports.filmAboutYear = (req, res) => {
 }
 
 // 点击选择
-module.exports.filmAboutNd = (req, res) => {
-  let aq = [req.query.id, 'coming'];
+module.exports.filmNd = (req, res) => {
+  let aq = [req.query.id, 'hot'];
   conn.query('select * from showing s where y_id=?and show_state=?  order by show_look desc', aq, (error, result) => {
     if (error) return console.log(error);
     if (result == '') {
@@ -90,22 +91,21 @@ module.exports.filmAboutNd = (req, res) => {
       })
     } else if (result) {
       res.json(result);
-      // console.log(result);
     }
   })
 }
 
 
-module.exports.filmAboutRm = (req, res) => {
-  let aq = 'coming';
+module.exports.filmRm = (req, res) => {
+  let aq = 'hot';
   conn.query('select * from showing where show_state=? order by show_look desc', aq, (error, result) => {
     if (error) return console.log(error);
     res.json(result);
   })
 }
 
-module.exports.filmAboutSj = (req, res) => {
-  let aq = 'coming';
+module.exports.filmSj = (req, res) => {
+  let aq = 'hot';
   conn.query('select * from showing where show_state=? order by show_year asc', aq, (error, result) => {
     if (error) return console.log(error);
     res.json(result);
