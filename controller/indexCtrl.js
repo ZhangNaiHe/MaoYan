@@ -84,7 +84,8 @@ module.exports.room_left=(req,res)=>{
 }
 
 
-module.exports.room_left_two=(req,res)=>{
+module.exports.room_left_two=(req,res)=>{ 
+  console.log(req.query.body);
   conn.query('select * from movieranking order by movieRanking_wantALL desc limit 8' ,(error,data)=>{
     if(error)return console.log(error);
     // console.log(data);
@@ -103,7 +104,15 @@ module.exports.room_left_three=(req,res)=>{
 
 
 module.exports.room_left_three2=(req,res)=>{
-  conn.query('select * from movieranking order by movieRanking_grade2 asc limit 2,6' ,(error,data)=>{
+  conn.query('select * from movieranking order by movieRanking_grade2 asc limit 2,2' ,(error,data)=>{
+    if(error)return console.log(error);
+    // console.log(data);
+    res.json(data);
+  })
+}
+
+module.exports.room_left_three3=(req,res)=>{
+  conn.query('select * from movieranking order by movieRanking_grade2 asc limit 4,4' ,(error,data)=>{
     if(error)return console.log(error);
     // console.log(data);
     res.json(data);

@@ -145,7 +145,7 @@ let left_two = function(){
        data:'',
        success:function(data){
          let str = template('left-two', { list: data });
-        //  console.log(data);
+         console.log(data);
          $('.room').html(str);
        }
      })
@@ -183,4 +183,17 @@ let left_three_one = function(){
 left_three_one();
 
 
+let left_three_two = function(){
+  $.ajax({
+       type:'get',
+       url:'/indexroom11',
+       data:'',
+       success:function(data){
+         let str = template('left-three-one', { list: data });
+        //  console.log(data);
+         $('.left-inner-three').html(str);
+       }
+     })
+}
+left_three_two();
 
