@@ -7,9 +7,10 @@ module.exports.userlogin=(req,res)=>{
   let params = [req.body.mobile,req.body.password];
 
 
-
-  conn.query('select * from users where nickname =? and password = ?',params ,(error,data)=>{
+console.log(params)
+  conn.query('select * from users where nickname =? and password = ?',params,(error,data)=>{
     if(error) return console.log(error);
+    console.log(data)
     if(data.length==0){
       res.json({
         code:'1101',
