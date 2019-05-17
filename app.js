@@ -81,7 +81,7 @@ app.use(crunchiesRoute);
 
 // 11.1 引入基本信息页面路由
 const personalRouter = require('./routers/personalRouter');
-// 11.2 引入基本信息页面路由
+// 11.2 挂载基本信息页面路由
 app.use(personalRouter);
 
 // 选座页面
