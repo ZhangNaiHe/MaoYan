@@ -73,6 +73,9 @@ app.use(filmClassicsRouter);
 const personalRouter = require('./routers/personalRouter');
 app.use(personalRouter);
 
+const filmchooseRouter = require('./routers/filmchoose');
+app.use(filmchooseRouter);
+
 
 app.use(express.static('public'));
 // 配置模板(ejs)

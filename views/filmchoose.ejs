@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../public/css/reset.css">
-    <link rel="stylesheet" href="../public/css/moviechoose.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/moviechoose.css">
     <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=IX2BZ-TTGWR-VVLWY-W4NCS-QBSNZ-IAF7P"></script>
 </head>
 <body onload="init()">
@@ -36,7 +36,7 @@
                     <div class="wrapper clearfix">
                       <div class="cinema-left">
                         <div class="avatar-shadow">
-                          <img class="avatar" src="../public/images/photos.jpg">
+                          <img class="avatar" src="./images/photos.jpg">
                           <div class="avatar-num">查看全部2张图片</div>
                         </div>
                       </div>
@@ -87,36 +87,36 @@
                   <div class="container" id="app" class="page-cinemas/cinema" >
                     <div class="movie-list-container">
                       <div class="movie-list">
-                        <div 
+                        <!-- <div 
                           class="movie active">
-                          <img src="../public/images/moviechoose/pikaququ.jpg" alt="">
-                        </div class="movie active">
-                        <div class="movie">
-                          <img src="../public/images/moviechoose/fuchouzhezhe.jpg" alt="">
+                          <img src="./images/moviechoose/pikaququ.jpg" alt="">
                         </div>
                         <div class="movie">
-                          <img src="../public/images/moviechoose/heyiweijia.jpg" alt="">
+                          <img src="./images/moviechoose/fuchouzhezhe.jpg" alt="">
                         </div>
                         <div class="movie">
-                          <img src="../public/images/moviechoose/gelasi.png" alt="">
+                          <img src="./images/moviechoose/heyiweijia.jpg" alt="">
                         </div>
                         <div class="movie">
-                          <img src="../public/images/moviechoose/mothers.jpg" alt="">
+                          <img src="./images/moviechoose/gelasi.png" alt="">
                         </div>
+                        <div class="movie">
+                          <img src="./images/moviechoose/mothers.jpg" alt="">
+                        </div> -->
                         <!-- <div class="movie">
                           <img src="../public/images/moviechoose/qianrenren.jpg" alt="">
                         </div> -->
                         <div class="movie">
-                          <img src="../public/images/moviechoose/haididi.jpg" alt="">
+                          <img src="./images/moviechoose/haididi.jpg" alt="">
                         </div>
                         <div class="movie">
-                          <img src="../public/images/moviechoose/dogs.jpg" alt="">
+                          <img src="./images/moviechoose/dogs.jpg" alt="">
                         </div>
                         <div class="movie">
-                          <img src="../public/images/moviechoose/shuangsheng.jpg" alt="">
+                          <img src="./images/moviechoose/shuangsheng.jpg" alt="">
                         </div>
                         <div class="movie">
-                          <img src="../public/images/moviechoose/longzhu.jpg" alt="">
+                          <img src="./images/moviechoose/longzhu.jpg" alt="">
                         </div>
               
                         <span class="pointer"></span>
@@ -128,12 +128,12 @@
               
                     <div class="show-list active">
                       <div class="movie-info">
-                <div>
+                <!-- <div>
                   <h3 class="movie-name">大侦探皮卡丘</h3>
               
                       <span class="score sc">8.6</span>
               
-                </div>
+                </div> -->
               
                 <div class="movie-desc">
                   <div>
@@ -151,12 +151,12 @@
                 </div>
               </div>
 
-              <!-- 電影信息 -->
+              <!-- 電影信息 -->d
               <div class="show-date">
-                <span>观影时间 :</span>
-                  <span class="date-item active">今天 5月14</span>
+               
+                  <!-- <span class="date-item active">今天 5月14</span>
                   <span class="date-item ">明天 5月15</span>
-                  <span class="date-item ">后天 5月16</span>
+                  <span class="date-item ">后天 5月16</span> -->
               </div>
               
                 <div class="plist-container active">
@@ -2532,7 +2532,12 @@
                 <p>北京猫眼文化传媒有限公司</p>
             </div>
             <!-- 底部信息栏结束 -->
-            <script src="../public/js/map.js"></script>
-
+            <script src="./lib/jquery/dist/jquery.js"></script>
+            <script src="./lib/art-template/lib/template-web.js"></script>
+            <script src="./js/map.js"></script>
+            <script src="./js/filmchooserender.js"></script>
+            <%-include('./template/choose-film.ejs') %>
+            <%-include('./template/choose-massage.ejs') %>
+            <%-include('./template/choose-times.ejs') %>
 </body>
 </html>
