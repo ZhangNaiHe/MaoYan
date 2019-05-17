@@ -145,7 +145,7 @@ let left_two = function(){
        data:'',
        success:function(data){
          let str = template('left-two', { list: data });
-         console.log(data);
+        //  console.log(data);
          $('.room').html(str);
        }
      })
