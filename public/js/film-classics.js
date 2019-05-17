@@ -35,7 +35,8 @@ let filmAboutShow = function (pageNum,pageSize) {
       pageSize: pageSize || 3
     },
     success: function (data) {
-      let str = template('filmabout-template', { list: data.data });
+      let str = template('film-template', { list: data.data });
+      // console.log(str)
       $('.movie-list').html(str);
       $('.pagination').twbsPagination({
         // 总共有多少页
@@ -54,20 +55,6 @@ let filmAboutShow = function (pageNum,pageSize) {
   })
 }
 filmAboutShow(1,5);
-
-
-// let filmAboutShow = function () {
-//   $.ajax({
-//     type: 'get',
-//     url: '/filmAboutShow',
-//     data: "",
-//     success: function (data) {
-//       let str = template('filmabout-template', { list: data });
-//       $('.movie-list').html(str);
-//     }
-//   })
-// }
-// filmAboutShow();
 
 let s = function () {
   $.ajax({
@@ -93,7 +80,8 @@ $('.btn-o').on('click', '.btn-type', function () {
       if (data.code == '1001') {
         $('.movie-list').html('<div>' + data.msg + '</div>');
       } else {
-        let str = template('filmabout-template', { list: data });
+        let str = template('film-template', { list: data });
+        // console.log(str)
         $('.movie-list').html(str);
       }
     }
@@ -127,7 +115,7 @@ $('.btn-t').on('click', '.btn-type', function () {
         $('.movie-list').html('<div>' + data.msg + '</div>');
 
       } else {
-        let str = template('filmabout-template', { list: data });
+        let str = template('film-template', { list: data });
         $('.movie-list').html(str);
       }
     }
@@ -163,7 +151,7 @@ $('.btn-e').on('click', '.btn-type', function () {
         $('.movie-list').html('<div>' + data.msg + '</div>');
 
       } else {
-        let str = template('filmabout-template', { list: data });
+        let str = template('film-template', { list: data });
         $('.movie-list').html(str);
       }
     }
@@ -176,8 +164,7 @@ $('.btn-rm').click(function () {
     url: '/filmAboutRm',
     data: '',
     success: function (data) {
-      console.log(data);
-      let str = template('filmabout-template', { list: data });
+      let str = template('film-template', { list: data });
       $('.movie-list').html(str);
     }
   })
@@ -190,7 +177,7 @@ $('.btn-sj').click(function () {
     success: function (data) {
    
       console.log(data);
-      let str = template('filmabout-template', { list: data });
+      let str = template('film-template', { list: data });
       $('.movie-list').html(str);
     }
   })

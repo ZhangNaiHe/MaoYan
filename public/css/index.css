@@ -577,10 +577,44 @@ a{
 .ranking-item {
   overflow: hidden;
 }
-.ranking-index-1 {
+.ran-1 {
   margin-bottom: 11px;
-  border: 1px solid #efefef;
+  color: #ef4238;
+
+  border: 1px solid #ffff;
 }
+.ran-2{
+  margin-bottom: 11px;  
+  color: #ef4238;
+  border: 1px solid #ffff;
+}
+.ran-3{
+  color: #999;
+}
+.ran-4{
+  color: #999;
+}
+
+.ran-5{
+  color: #999;
+}
+
+.ran-6{
+  color: #999;
+}
+
+.ran-7{
+  color: #999;
+}
+
+.ran-8{
+  color: #999;
+}
+.ran-9{
+  color: #999;
+}
+
+
 .ranking-top-left{
   width: 120px;
   height: 78px;
@@ -604,7 +638,7 @@ a{
   overflow: hidden;
 }
 .ranking-top-right-main{
-  width: 220px;
+  width: 270px;
   display: inline-block;
     line-height: 1;
     vertical-align: middle;
@@ -621,7 +655,6 @@ a{
 .ranking-top-wish{
   margin-top: 12px;
   font-size: 14px;
-  color: #ef4238;
   line-height: 1;
 }
 .stonefont {
@@ -633,7 +666,6 @@ a{
   line-height: 35px;
 }
 .ranking-index{
-  color: #ef4238;
   display: inline-block;
   width: 20px;
   font-size: 18px;

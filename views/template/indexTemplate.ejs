@@ -1,0 +1,126 @@
+
+
+
+<script type="text/template" id="left-one">
+  {{each list}}
+  <dd>
+    <div class="move-item">
+      <a href="">
+        <div class="move-poster">
+          <img src="{{$value.movieRanking_cover}}" alt="pikachu">
+          <div class="move-overlay">
+            <div class="move-info">
+              <div class="move-score">
+                <i class="integer">{{$value.movieRanking_grade1}}</i>
+                <i class="fraction">{{$value.movieRanking_grade2}}</i>
+              </div>
+              <div class="move-title">{{$value.movieRanking_name}}</div>
+            </div>
+          </div>
+        </div>
+      </a>
+  
+      <div class="move-sale">
+        <a href="" class="active">购 票</a>
+      </div>
+      <div class="movie-ver">
+        <i class="imax3d"></i>
+      </div>
+    </div>
+  </dd>
+    {{/each}}
+
+  </script>
+
+ 
+
+  <script type="text/template" id="left-two">
+    {{each list}}
+    <dd>
+      <div class="move-item">
+        <a href="">
+          <div class="move-poster">
+            <img src="{{$value.movieRanking_cover}}" alt="pikachu">
+            <div class="move-overlay">
+              <div class="move-info">
+                <div class="move-title">{{$value.movieRanking_name}}</div>
+              </div>
+  
+            </div>
+          </div>
+        </a>
+        <div class="want-see">
+          <span class="stonefont">{{$value.movieRanking_wantAll}}</span>
+          人想看
+        </div>
+        <div class="movie-presale">
+          <a href="" class="movie-presale-sep">预告片</a>
+          <a href="" class="active">预售</a>
+        </div>
+        <div class="movie-rt">{{$value.movieRanking_releasetim}}</div>
+      </div>
+    </dd>
+      {{/each}}
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/template" id="right-one">
+  
+    {{each list}}
+      <li class="ranking-item ranking-top  ran-{{$index+1}}">
+        <a href="">
+          <div class="ranking-top-left">
+            <i class="ranking-top-icon"></i>
+            <img src="./images/pkd.png" alt="">
+          </div>
+          <div class="ranking-top-right">
+            <div class="ranking-top-right-main">
+              <span class="ranking-top-moive-name">{{$value.movieRanking_name}}</span>
+              <p class="ranking-top-wish">
+                <span class="stonefont">{{$value.movieRanking_wantAll}}</span>万
+              </p>
+            </div>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+     
+    </script>
+
+
+
+    
+  <script type="text/template" id="right-one-two">
+    {{each list}}
+    <li class="ranking-item">
+      <a href="">
+        <span class="normal-link">
+          <i class=" ran-{{$index+1}}  ranking-index">{{$index+2}}</i>
+          <span class="ranking-movie-name">{{$value.movieRanking_name}}</span>
+          <span class="ranking-num-infoa">
+            <span class="stonefont">{{$value.movieRanking_wantAll}}</span>万
+                      </span>
+        </span>
+      </a>
+    </li>
+      {{/each}}
+     
+    </script>

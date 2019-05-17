@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付-猫眼电影-一网打尽好电影</title>
+    <link rel="stylesheet" href="./css/payment.css">
+</head>
+
+<body>
+    <!-- 1.顶部导航start -->
+    <%- include('./layouts/crunchies_heade.ejs')%>
+    <!-- 1.顶部导航end -->
+
+    <!-- 2.购票流程图start -->
+    <div class="yz_flow">
+        <div class="yz_content">
+            <!-- 购票流程 -->
+            <div class="order-progress-bar">
+                <div class="step done first">
+                    <span class="step-num">1</span>
+                    <div class="bar"></div>
+                    <span class="step-text">选座电影场次</span>
+                </div>
+                <div class="step done">
+                    <span class="step-num">2</span>
+                    <div class="bar"></div>
+                    <span class="step-text">选择座位</span>
+                </div>
+                <div class="step done">
+                    <span class="step-num">3</span>
+                    <div class="bar yz_flow_box"></div>
+                    <span class="step-text yz_flow_text">14分钟内付款</span>
+                </div>
+                <div class="step last">
+                    <span class="step-num">4</span>
+                    <div class="bar"></div>
+                    <span class="step-text">影院取票观票</span>
+                </div>
+            </div>
+            <!-- 支付倒计时 -->
+            <div class="yz_paytime">
+                <div class="yz_count_down">
+                    <p class="yz_time">
+                        请在<span class="yz_minute"></span>分钟<span class="yz_second"></span>秒内完成支付
+                    </p>
+                    <p class="yz_tip">超时订单会自动取消，如遇支付问题，请致电猫眼客服：1010-5335</p>
+                </div>
+            </div>
+
+
+            <!-- 核对场次提示 -->
+            <div class="yz_warning">
+                <p>请仔细核对场次信息，出票后将<span class="yz_attention">无法退票和改签</span></p>
+            </div>
+            <!-- 购票详情 -->
+            <table class="yz_order_table">
+                <thead>
+                    <tr>
+                        <th>影片</th>
+                        <th>时间</th>
+                        <th>影院</th>
+                        <th>座位</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="yz_movie_name">《大侦探皮卡丘》</td>
+                        <td class="yz_showtime">今天 5月16日 13:00</td>
+                        <td class="yz_cinema_name">大地影院(万顺店)</td>
+                        <td>
+                            <span class="yz_hall">2号厅(激光)</span>
+                            <div class="yz_seats">
+                                <span>
+                                    <i>6</i>排
+                                    <i>7</i>座
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 实际支付金额 -->
+            <div class="yz_price_wrapper">
+                <!-- 实际支付 -->
+                <div class="yz_price_money">
+                    <span>实际支付：</span>
+                    <span>￥<strong class="yz_price">28.9</strong></span>
+                </div>
+                <!-- 确认支付 -->
+                <div class="yz_price_verify">
+                    <div class="yz_pay_btn">确认支付</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2.购票流程图end -->
+
+    <!-- 3.倒计时结束弹出提示框start -->
+    <div class="yz_page">
+        <div class="yz_lose">
+            <div class="yz_lose_icon_bx">
+                <div class="yz_lose_icon"></div>
+            </div>
+            <div class="yz_lose_text">支付超时，该订单已经失效，请重新购买</div>
+            <div class="yz_lose_btn">
+                <input type="button" value="我知道了" id="yz_skipBtn">
+            </div>
+        </div>
+    </div>
+    <!-- 3.倒计时结束弹出提示框end -->
+
+    <!-- 4.底部start -->
+    <%- include('./layouts/bottom.ejs')%>
+    <!-- 4.底部end -->
+
+    <script src="./lib/jquery/dist/jquery.min.js"></script>
+    <script src="./js/payment.js"></script>
+    
+</body>
+
+</html>

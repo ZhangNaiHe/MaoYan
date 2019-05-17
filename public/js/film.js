@@ -1,67 +1,152 @@
-let show = function () {
-  var btn = document.querySelectorAll('.btn-o>li>a');
-console.log(btn);
-  for (var i = 0; i < btn.length; i++) {
-    btn[i].onclick = function () {
-      for (var j = 0; j < btn.length; j++) {
-        btn[j].removeAttribute('class');
-      }
-      this.className = 'active';
-    }
-  }
 
-  var btn1 = document.querySelectorAll('.btn-t>li>a');
-  for (var i = 0; i < btn1.length; i++) {
-    btn1[i].onclick = function () {
-      for (var j = 0; j < btn1.length; j++) {
-        btn1[j].removeAttribute('class');
-      }
-      this.className = 'active';
-    }
-  }
-
-  var btn2 = document.querySelectorAll('.btn-e>li>a');
-  for (var i = 0; i < btn2.length; i++) {
-    btn2[i].onclick = function () {
-      for (var j = 0; j < btn2.length; j++) {
-        btn2[j].removeAttribute('class');
-      }
-      this.className = 'active';
-    }
-  }
-
-  // var btn3 = document.querySelectorAll('.film-panel-sort-btn');
-  // for(var i = 0;i < btn3.length;i++){
-  //   btn3[i].onclick = function(){
-  //     for(var j = 0;j < btn3.length;j++){
-  //       btn3[j].attr('class','active');
-  //     }
-  //     // this.remove('.film-panel-sort-btn');
-  //     this.removeAttribute('class');
-  //   }
-  // }
-}
-
-  
-show();
-
-
-
-
-// 显示页面
-let filmShow = function(){
+let filmShow = function () {
   $.ajax({
-    type:'get',
-    url:'/filmShow',
-    data:'',
-    success: function(data){
-     if(data.code == 1000){
-      $('.movie-list').html('<div>'+data.msg+'</div>');
-     }else{
-       let str = template('film-template',{list:data});
-       $('.movie-list').html(str);
-     }
+    type: 'get',
+    url: '/filmShow',
+    data: '',
+    success: function (data) {
+      // console.log(data);
+      if (data.code == '1000') {
+        $('.movie-list').html('<div>' + data.msg + '</div>');
+        console.log( $('.movie-list').html('<div>' + data.msg + '</div>'));
+      } else {
+        let str = template('film-template', {list: data});
+        $('.movie-list').html(str);
+      }
     }
   })
 }
 filmShow();
+
+
+let s = function () {
+  $.ajax({
+    type: 'get',
+    url: '/filmAboutType',
+    data: '',
+    success: function (data) {
+
+      let str = template('nav_template', { lis: data });
+      $('.btn-o').html(str);
+    }
+  })
+}
+s();
+
+// 点击类型进行选择
+$('.btn-o').on('click', '.btn-type', function () {
+  let id = $(this).data('id');
+  $.ajax({
+    type: 'get',
+    url: '/filmAboutAq',
+    data: { id: id },
+    success: function (data) {
+      if (data.code == '1001') {
+        $('.movie-list').html('<div>' + data.msg + '</div>');
+      } else {
+        let str = template('film-template', { list: data });
+        // console.log(str);
+        $('.movie-list').html(str);
+      }
+    }
+  })
+})
+
+
+let a = function () {
+  $.ajax({
+    type: 'get',
+    url: '/filmAboutArea',
+    data: '',
+    success: function (data) {
+      let str = template('area_template', { list: data });
+      $('.btn-t').html(str);
+    }
+  })
+}
+a();
+
+// 点击区域选择
+$('.btn-t').on('click', '.btn-type', function () {
+  let id = $(this).data('id');
+  $.ajax({
+    type: 'get',
+    url: '/filmAboutQy',
+    data: { id: id },
+    success: function (data) {
+      console.log(data);
+      if (data.code == '1002') {
+        $('.movie-list').html('<div>' + data.msg + '</div>');
+
+      } else {
+        let str = template('film-template', { list: data });
+        // console.log(str);
+        $('.movie-list').html(str);
+      }
+    }
+  })
+})
+
+let y = function () {
+  $.ajax({
+    type: 'get',
+    url: '/filmAboutYear',
+    data: '',
+    success: function (data) {
+      let str = template('year_template', { list: data });
+      $('.btn-e').html(str);
+    }
+  })
+}
+y();
+
+// 点击年代选择对应的影片
+$('.btn-e').on('click', '.btn-type', function () {
+  let id = $(this).data('id');
+  $.ajax({
+    type: 'get',
+    url: '/filmAboutNd',
+    data: { id: id },
+    success: function (data) {
+      // console.log(data);
+      if (data.code == '1003') {
+        $('.movie-list').html('<div>' + data.msg + '</div>');
+
+      } else {
+        let str = template('film-template', { list: data });
+        // console.log(str);
+        $('.movie-list').html(str);
+      }
+    }
+  })
+})
+// 渲染年代
+
+
+$('.btn-rm').click(function () {
+  $.ajax({
+    type: 'get',
+    url: '/filmAboutRm',
+    data: '',
+    success: function (data) {
+      console.log(data);
+      let str = template('film-template', { list: data });
+      // console.log(str);
+      $('.movie-list').html(str);
+    }
+  })
+})
+
+$('.btn-sj').click(function () {
+  $.ajax({
+    type: 'get',
+    url: '/filmAboutSj',
+    data: '',
+    success: function (data) {
+      console.log(data);
+      let str = template('film-template', { list: data });
+      // console.log(str);
+      $('.movie-list').html(str);
+    }
+  })
+})
