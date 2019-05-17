@@ -9,7 +9,7 @@ module.exports.filmAbout = (req, res) => {
 // 渲染模板
 module.exports.filmFild = (req, res) => {
   let s = 'coming';
-  console.log(req.query);
+  // console.log(req.query);
   let pageNum = req.query.pageNum;
   // 一页显示多少条数据
   let pageSize = req.query.pageSize;

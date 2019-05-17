@@ -29,7 +29,7 @@
 let filmAboutShow = function (pageNum,pageSize) {
   $.ajax({
     type: 'get',
-    url: '/filmAboutShow',
+    url: '/filmClassicsFild',
     data: {
       pageNum: pageNum || 1,
       pageSize: pageSize || 3
@@ -59,7 +59,7 @@ filmAboutShow(1,5);
 let s = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutType',
+    url: '/filmClassicsType',
     data: '',
     success: function (data) {
 
@@ -74,7 +74,7 @@ $('.btn-o').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutAq',
+    url: '/filmClassicsAq',
     data: { id: id },
     success: function (data) {
       if (data.code == '1001') {
@@ -92,7 +92,7 @@ $('.btn-o').on('click', '.btn-type', function () {
 let a = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutArea',
+    url: '/filmClassicsArea',
     data: '',
     success: function (data) {
       let str = template('area_template', { list: data });
@@ -107,7 +107,7 @@ $('.btn-t').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutQy',
+    url: '/filmClassicsQy',
     data: { id: id },
     success: function (data) {
       console.log(data);
@@ -127,7 +127,7 @@ $('.btn-t').on('click', '.btn-type', function () {
 let y = function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutYear',
+    url: '/filmClassicsYear',
     data: '',
     success: function (data) {
       let str = template('year_template', { list: data });
@@ -143,7 +143,7 @@ $('.btn-e').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
     type: 'get',
-    url: '/filmAboutNd',
+    url: '/filmClassicsNd',
     data: { id: id },
     success: function (data) {
       console.log(data);
@@ -161,7 +161,7 @@ $('.btn-e').on('click', '.btn-type', function () {
 $('.btn-rm').click(function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutRm',
+    url: '/filmClassicsRm',
     data: '',
     success: function (data) {
       let str = template('film-template', { list: data });
@@ -172,7 +172,7 @@ $('.btn-rm').click(function () {
 $('.btn-sj').click(function () {
   $.ajax({
     type: 'get',
-    url: '/filmAboutSj',
+    url: '/filmClassicsSj',
     data: '',
     success: function (data) {
    

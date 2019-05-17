@@ -2,68 +2,65 @@
  <html lang="en">
 
  <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>猫眼电影-一网打尽好电影</title>
-     <link rel="stylesheet" href="./css/reset.css">
-     <link rel="stylesheet" href="./css/personal.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>猫眼电影-一网打尽好电影</title>
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/personal.css">
  </head>
 
-<body>
-    <!-- 1.顶部导航start -->
-    <div class="dh">
-      <div class="dh_con">
-          <%- include('./layouts/heady.ejs')%>
-          <div class="nav">
-              <ul class="nav-ul">
-                  <li><a href="">首页</a></li>
-                  <li><a href="">电影</a></li>
-                  <li><a href="">影院</a></li>
-                  <li><a href="">演出</a></li>
-                  <li><a href="">榜单</a></li>
-                  <li><a href="">热点</a></li>
-                  <li> <a href="/shopping">商城</a></li>
-              </ul>
-          </div>
-          <%- include('./layouts/header.ejs')%>
-       
-      </div>
-  </div>
-    <!-- 1.顶部导航end -->
+ <body>
+   <!-- 1.顶部导航start -->
+   <div class="dh">
+     <div class="dh_con">
+       <%- include('./layouts/heady.ejs')%>
+       <div class="nav">
+         <ul class="nav-ul">
+           <li><a href="">首页</a></li>
+           <li><a href="">电影</a></li>
+           <li><a href="">影院</a></li>
+           <li><a href="">演出</a></li>
+           <li><a href="">榜单</a></li>
+           <li><a href="">热点</a></li>
+           <li> <a href="/shopping">商城</a></li>
+         </ul>
+       </div>
+       <%- include('./layouts/header.ejs')%>
+     </div>
+   </div>
+   <!-- 1.顶部导航end -->
+   <!-- 2.内容start -->
+   <div class="yz_container">
+     <div class="yz_content yz_main yz_clearfix">
+       <div class="yz_user_profile_nav">
+         <h1>个人中心</h1>
+         <a href="" class="yz_orders">我的订单</a>
+         <a href="" class="yz_profile">基本信息</a>
+       </div>
+       <div class="yz_profile_container yz_clearfix">
+         <div class="yz_profile_title">基本信息</div>
+         <div class="yz_avatar-container">
+           <img src="<%= avatar%>" alt="">
+           <div class="yz_upload_avatar_w yz_upload_avatar_image">
+             <input type="button" value="更换头像" class="yz_upload_avatar yz_upload_btn">
+             <input type="file" id="fileUpload" class="yz_upload_avatar2" name="avatar">
+           </div>
+           <div class="yz_tips">支持JPG,JPEG,PNG格式,且文件需小于1M</div>
+         </div>
 
-     <!-- 2.内容start -->
-     <div class="yz_container">
-         <div class="yz_content yz_main yz_clearfix">
-             <div class="yz_user_profile_nav">
-                 <h1>个人中心</h1>
-                 <a href="" class="yz_orders">我的订单</a>
-                 <a href="" class="yz_profile">基本信息</a>
-             </div>
-             <div class="yz_profile_container yz_clearfix">
-                 <div class="yz_profile_title">基本信息</div>
-                 <div class="yz_avatar-container">
-                     <img src="<%= avatar%>" alt="">
-                     <div class="yz_upload_avatar_w yz_upload_avatar_image">
-                         <input type="button" value="更换头像" class="yz_upload_avatar yz_upload_btn">
-                         <input type="file" id="fileUpload" class="yz_upload_avatar2" name="avatar">
-                     </div>
-                     <div class="yz_tips">支持JPG,JPEG,PNG格式,且文件需小于1M</div>
-                 </div>
-
-
-                 <form id="J-userexinfo-form" class="userexinfo-form">
-                     <div class="userexinfo-form-section">
-                         <p>昵称：</p>
-                         <span>
-                             <input type="text" name="petname" id="userexinfo-form-nickname" class="ui-checkbox"
-                                 placeholder="2-15个字，支持中英文、数字" value="<%= petname%>">
-                         </span>
-                     </div>
-                     <div class="userexinfo-form-section">
-                         <p>性别：</p>
-                         <span>
-                             <input type="radio" name="sex" id="" value="男" <% if(sex== '男'){%> checked <%}%>>男
+         <form id="J-userexinfo-form" class="userexinfo-form">
+           <div class="userexinfo-form-section">
+             <p>昵称：</p>
+             <span>
+               <input type="text" name="petname" id="userexinfo-form-nickname" class="ui-checkbox"
+                 placeholder="2-15个字，支持中英文、数字" value="<%= petname%>">
+             </span>
+           </div>
+           <div class="userexinfo-form-section">
+             <p>性别：</p>
+             <span>
+               <input type="radio" name="sex" id="" value="男" <% if(sex== '男'){%> checked <%}%>>男
                             <input type="radio" name="sex" id="" value="女" <% if(sex== '女'){%> checked <%}%>>女
                           </span>
                         </div>  
@@ -212,33 +209,30 @@
                                       <option value="28" <% if(day== '28'){%> selected <%}%>>28</option>
                                       <option value="29" <% if(day== '29'){%> selected <%}%>>29</option>
                                       <option value="30" <% if(day== '30'){%> selected <%}%>>30</option>
-                                      <option value="31" <% if(day== '31'){%> selected
-                                 <%}%>>31</option>
+                                      <option value="31" <% if(day== '31'){%>
+                 selected<%}%>>31</option>
                                     </select>
                                   </div>
                                   <span class="tip">日</span>
                                 </span>
                               </div>
                 
-
-
-
                         <div class="date-picker userexinfo-form-section">
                                              <div class="userexinfo-form-section">
                           <p>生活状态：</p>
                           <span>
                             <input type="radio" name="marriage" id="userexinfo-form-merriage-1" value="单身" class="ui-radio radio-first"  <% if(marriage== '单身'){%> checked
-                                 <%}%>>
+                 <%}%>>
                             <label for="userexinfo-form-merriage-1">单身</label>
                           </span>
                           <span>
                             <input type="radio" name="marriage" id="userexinfo-form-merriage-2" value="热恋中" class="ui-radio" <% if(marriage== '热恋中'){%> checked
-                                 <%}%>>
+                 <%}%>>
                             <label for="userexinfo-form-merriage-2">热恋中</label>
                           </span>
                           <span>
                             <input type="radio" name="marriage" id="userexinfo-form-merriage-3" value="已婚" class="ui-radio" <% if(marriage== '已婚'){%> checked
-                                 <%}%>>
+                 <%}%>>
                             <label for="userexinfo-form-merriage-3">已婚</label>
                           </span>
                           <span>
@@ -262,162 +256,79 @@
                                 <option value="公共事业" <% if(job== '公共事业'){%> selected <%}%>>公共事业</option>
                                 <option value="学生" <% if(job== '学生'){%> selected <%}%>>学生</option>
                                 <option value="其他" <% if(job== '其他'){%> selected
-                                 <%}%>>其他</option>
+                 <%}%>>其他</option>
                               </select>
                             </div>
                             </div>
                           </span>
-                        </div>
-              
-                        <!-- <div class="userexinfo-form-section expand-list">
-                          <p>兴趣：</p>
-                          <div class="interest-list">
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-1" value="美食" class="ui-checkbox" <% if(interest== '美食'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-1">美食</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-2" value="动漫" class="ui-checkbox" <% if(interest== '动漫'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-2">动漫</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-3" value="摄影" class="ui-checkbox" <% if(interest== '摄影'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-3">摄影</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-4" value="电影" class="ui-checkbox" <% if(interest== '电影'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-4">电影</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-5" value="体育" class="ui-checkbox" <% if(interest== '体育'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-5">体育</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-6" value="财经" class="ui-checkbox" <% if(interest== '财经'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-6">财经</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-7" value="音乐" class="ui-checkbox" <% if(interest== '音乐'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-7">音乐</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-8" value="游戏" class="ui-checkbox" <% if(interest== '游戏'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-8">游戏</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-9" value="科技" class="ui-checkbox" <% if(interest== '科技'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-9">科技</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-10" value="旅游" class="ui-checkbox" <% if(interest== '旅游'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-10">旅游</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-11" value="文学" class="ui-checkbox" <% if(interest== '文学'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-11">文学</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-12" value="公益" class="ui-checkbox" <% if(interest== '公益'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-12">公益</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-13" value="汽车" class="ui-checkbox" <% if(interest== '汽车'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-13">汽车</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-14" value="时尚" class="ui-checkbox" <% if(interest== '时尚'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-14">时尚</label>
-                            </span>
-                            <span>
-                              <input type="checkbox" name="interest" id="userexinfo-form-interest-15" value="宠物" class="ui-checkbox" <% if(interest== '宠物'){%> checked
-                                 <%}%>>
-                              <label for="userexinfo-form-interest-15">宠物</label>
-                            </span>
-                            <span class="bottom-tips">选择你的兴趣使你获得个性化的电影推荐哦</span>
-                          </div>
-                        </div> -->
-                        <div class="userexinfo-form-section">
+                        </div>D
+                        <div class="userexinfo-form-section ">
                           <p>个性签名：</p>
                           <span>
                             <input type="text" name="signature" id="userexinfo-form-bio" class="ui-checkbox" placeholder="20个字以内" value="<%= signature%>">
-                         </span>
-                     </div>
-                     <input type="hidden" name="csrf"
-                         value="e69493f3aebe15836e16cea0050c08dab364a0a60bfa8bb7ad7b3ccc2e703a62">
-                     <div class="userexinfo-bottom-section clearfix">
-                         <input type="button" class="form-save-btn" value="保存" data-id="<%= id%>">
-                         <!-- <span id="cancell-btn" class="cancel_alert hand">注销账号1</span> -->
-                     </div>
+             </span>
+           </div>
+           <input type="hidden" name="csrf" value="e69493f3aebe15836e16cea0050c08dab364a0a60bfa8bb7ad7b3ccc2e703a62">
+           <div class="userexinfo-bottom-section clearfix">
+             <input type="button" class="form-save-btn" value="保存" data-id="<%= id%>">
+             <!-- <span id="cancell-btn" class="cancel_alert hand">注销账号1</span> -->
+           </div>
 
-                 </form>
+         </form>
 
 
-             </div>
-         </div>
+       </div>
      </div>
-     <!-- 2.内容end -->
+   </div>
+   <!-- 2.内容end -->
 
-     <!-- 3.底部start -->
-     <div class="db">
-         <div class="footer" style="visibility: visible;">
-             <p class="friendly-links">
-                 关于猫眼 :
-                 <a href="http://ir.maoyan.com/s/index.php#pageScroll0" target="_blank">关于我们</a>
-                 <span></span>
-                 <a href="http://ir.maoyan.com/s/index.php#pageScroll1" target="_blank">管理团队</a>
-                 <span></span>
-                 <a href="http://ir.maoyan.com/s/index.php#pageScroll2" target="_blank">投资者关系</a>
-                 &nbsp;&nbsp;&nbsp;&nbsp;
-                 友情链接 :
-                 <a href="http://www.meituan.com" data-query="utm_source=wwwmaoyan" target="_blank">美团网</a>
-                 <span></span>
-                 <a href="http://www.gewara.com" data-query="utm_source=wwwmaoyan">格瓦拉</a>
-                 <span></span>
-                 <a href="http://i.meituan.com/client" data-query="utm_source=wwwmaoyan" target="_blank">美团下载</a>
-                 <span></span>
-                 <a href="https://www.huanxi.com" data-query="utm_source=maoyan_pc" target="_blank">欢喜首映</a>
-             </p>
-             <p class="friendly-links">
-                 商务合作邮箱：v@maoyan.com
-                 客服电话：10105335
-                 违法和不良信息举报电话：4006018900
-                 <br>
-                 投诉举报邮箱：tousujubao@meituan.com
-                 舞弊线索举报邮箱：wubijubao@maoyan.com
-             </p>
-             <p>
-                 ©2016
-                 猫眼电影 maoyan.com
-                 <a href="https://tsm.miit.gov.cn/pages/EnterpriseSearchList_Portal.aspx?type=0&amp;keyword=京ICP证160733号&amp;pageNo=1"
-                     target="_blank">京ICP证160733号</a>
-                 <a href="http://www.miibeian.gov.cn" target="_blank">京ICP备16022489号-1</a>
-                 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003232"
-                     target="_blank">京公网安备 11010102003232号</a>
-                 <a href="/about/licence" target="_blank">网络文化经营许可证</a>
-                 <a href="http://www.meituan.com/about/rules" target="_blank">电子公告服务规则</a>
-             </p>
-             <p>北京猫眼文化传媒有限公司</p>
-         </div>
+   <!-- 3.底部start -->
+   <div class="db">
+     <div class="footer" style="visibility: visible;">
+       <p class="friendly-links">
+         关于猫眼 :
+         <a href="http://ir.maoyan.com/s/index.php#pageScroll0" target="_blank">关于我们</a>
+         <span></span>
+         <a href="http://ir.maoyan.com/s/index.php#pageScroll1" target="_blank">管理团队</a>
+         <span></span>
+         <a href="http://ir.maoyan.com/s/index.php#pageScroll2" target="_blank">投资者关系</a>
+         &nbsp;&nbsp;&nbsp;&nbsp;
+         友情链接 :
+         <a href="http://www.meituan.com" data-query="utm_source=wwwmaoyan" target="_blank">美团网</a>
+         <span></span>
+         <a href="http://www.gewara.com" data-query="utm_source=wwwmaoyan">格瓦拉</a>
+         <span></span>
+         <a href="http://i.meituan.com/client" data-query="utm_source=wwwmaoyan" target="_blank">美团下载</a>
+         <span></span>
+         <a href="https://www.huanxi.com" data-query="utm_source=maoyan_pc" target="_blank">欢喜首映</a>
+       </p>
+       <p class="friendly-links">
+         商务合作邮箱：v@maoyan.com
+         客服电话：10105335
+         违法和不良信息举报电话：4006018900
+         <br>
+         投诉举报邮箱：tousujubao@meituan.com
+         舞弊线索举报邮箱：wubijubao@maoyan.com
+       </p>
+       <p>
+         ©2016
+         猫眼电影 maoyan.com
+         <a href="https://tsm.miit.gov.cn/pages/EnterpriseSearchList_Portal.aspx?type=0&amp;keyword=京ICP证160733号&amp;pageNo=1"
+           target="_blank">京ICP证160733号</a>
+         <a href="http://www.miibeian.gov.cn" target="_blank">京ICP备16022489号-1</a>
+         <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003232" target="_blank">京公网安备
+           11010102003232号</a>
+         <a href="/about/licence" target="_blank">网络文化经营许可证</a>
+         <a href="http://www.meituan.com/about/rules" target="_blank">电子公告服务规则</a>
+       </p>
+       <p>北京猫眼文化传媒有限公司</p>
      </div>
-     <!-- 3.底部end-->
-     <script src="./lib/jquery/dist/jquery.js"></script>
-     <script src="./lib/art-template/lib/template-web.js"></script>
-     <script src="./js/personal.js"></script>
-     <%-include('./template/personal-avatar.ejs') %>
+   </div>
+   <!-- 3.底部end-->
+   <script src="./lib/jquery/dist/jquery.js"></script>
+   <script src="./lib/art-template/lib/template-web.js"></script>
+   <script src="./js/personal.js"></script>
+   <%-include('./template/personal-avatar.ejs') %>
  </body>
 
  </html>
