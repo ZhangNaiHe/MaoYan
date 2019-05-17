@@ -145,7 +145,8 @@ body {
 .film-list .film-price .price-num {
     font-size: 16px;
     margin-right: -3px;
-    font-weight: 700
+    font-weight: 700;
+    color: #ef4238;
 }
 
 .film-list .choose-down {
