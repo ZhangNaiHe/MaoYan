@@ -84,15 +84,13 @@ const personalRouter = require('./routers/personalRouter');
 // 11.2 挂载基本信息页面路由
 app.use(personalRouter);
 
-<<<<<<< HEAD
 const filmchooseRouter = require('./routers/filmchoose');
 app.use(filmchooseRouter);
 
-=======
-// 选座页面
+
 const ticket = require('./routers/ticketRoute')
 app.use(ticket);
->>>>>>> 4c4e2332a060060922fd03f9876f7cad84b3c591
+
 
 
 // 14分钟内付款路由
