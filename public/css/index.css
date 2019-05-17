@@ -386,6 +386,12 @@ position: absolute;
 .text-color{
   color: #ef4238!important;
 }
+.main-complete {
+  color: #ef4238;
+}
+.main-complete-2 {
+  color: #2d98f3;
+}
 a{
  text-decoration: none; 
 }
