@@ -834,6 +834,15 @@ a{
   margin-bottom: 20px;
   padding-bottom: 8px;
 }
+.ranking-index-3{
+  border: 1px solid #efefef;
+  position: relative;
+  width: 170px;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+}
 
 .ranking-index-2 a {
   display: block;
