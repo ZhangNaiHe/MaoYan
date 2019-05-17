@@ -131,7 +131,7 @@ let left_one = function(){
         success:function(data){
           let str = template('left-one', { list: data });
           // console.log(data);
-          $('.move-list').html(str);
+          $('.move-aa').html(str);
         }
       })
 }

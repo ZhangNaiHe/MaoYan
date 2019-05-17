@@ -14,5 +14,7 @@ router.get('/indexroom8',indexCtrl.roomseven);
 
 router.get('/indexroom2',indexCtrl.room_left);
 router.get('/indexroom3',indexCtrl.room_left_two);
+router.get('/indexroom9',indexCtrl.room_left_three);
+router.get('/indexroom10',indexCtrl.room_left_three2);
 
 module.exports=router;

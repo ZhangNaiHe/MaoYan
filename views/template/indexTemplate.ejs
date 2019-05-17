@@ -63,13 +63,13 @@
 
 
 
-    <script type="text/template" id="left-three">
+<script type="text/template" id="left-three">
       {{each list}}
       <dd>
         <div class="move-item">
           <a href="">
             <div class="move-poster  movie-poster-long">
-              <img src="{{$value.movieRanking_cover}}" alt="pikachu">
+              <img src="./images/厉鬼将.png" alt="pikachu">
               <div class="move-overlay">
                 <div class="move-info">
                   <div class="move-score">
@@ -87,10 +87,13 @@
       </script>
 
 
+   
 
-      <script type="text/template" id="left-three-one">
+
+
+
+<script type="text/template" id="left-three-one">
         {{each list}}
-       
         <dd>
           <div class="move-item">
             <a href="">
@@ -99,7 +102,7 @@
                 <div class="move-overlay">
                   <div class="move-info">
                     <div class="move-score">
-                      <i class="integer">{{$value.movieRanking_grade1}</i>
+                      <i class="integer">{{$value.movieRanking_grade1}}</i>
                       <i class="fraction">{{$value.movieRanking_grade2}}</i>
                     </div>
                     <div class="move-title">{{$value.movieRanking_name}}</div>
@@ -107,9 +110,12 @@
                 </div>
               </div>
             </a>
+          </div>
+        </dd>
+       
           {{/each}}
         </script>
-  
+
 
 
 
@@ -239,7 +245,7 @@
 <!--右边第三块  -->
 
 <script type="text/template" id="right-three">
-  
+
   {{each list}}
   <li class="ranking-item ranking-top ranking-index-1">
     <a href="">
