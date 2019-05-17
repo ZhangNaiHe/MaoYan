@@ -33,7 +33,7 @@ body{
   margin-top: 0px;
   display: inline-block;
   position: absolute;
-  width: 100px;
+  width: 50px;
   height: 100%;
   line-height: 80px;
 }
@@ -144,6 +144,15 @@ position: absolute;
   font-size: 18px;
   color: #333;
 }
+
+.nav-ul>li>a:hover {
+  color: #ef4238;
+}
+
+.nav-ul .ys > a:hover {
+  color: #fff;
+}
+
 .nav-ul>.ys{
   color: #fff;
   background-color: #ef4238;
@@ -376,6 +385,12 @@ position: absolute;
 }
 .text-color{
   color: #ef4238!important;
+}
+.main-complete {
+  color: #ef4238;
+}
+.main-complete-2 {
+  color: #2d98f3;
 }
 a{
  text-decoration: none; 
