@@ -154,7 +154,7 @@ $('.btn').on('click', function () {
         return;
     }
     if (verify_code != verify_code_) {
-        $('#warn5').html('请输入正确的验证码！');
+        $('#warn5').html('<i id="warn1_icon"></i>请输入正确的验证码！');
         $("input[name='verify_code']").val('');
         pro();
         return;
