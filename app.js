@@ -6,15 +6,15 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // 配置express-session
-const session = require('express-session');
-app.use(session({
-  secret: 'itcast',
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-    maxAge: 60000
-  }
-}));
+// const session = require('express-session');
+// app.use(session({
+//   secret: 'itcast',
+//   resave: false,
+//   saveUninitialized: false,
+//   cookie: {
+//     maxAge: 60000
+//   }
+// }));
 
 // 设置静态资源目录
 app.use(express.static('public'));
@@ -83,6 +83,11 @@ app.use(crunchiesRoute);
 const personalRouter = require('./routers/personalRouter');
 // 11.2 引入基本信息页面路由
 app.use(personalRouter);
+
+// 选座页面
+const ticket = require('./routers/ticketRoute')
+app.use(ticket);
+
 
 // 14分钟内付款路由
 const filmPayRoute = require('./routers/filmPayRoute');

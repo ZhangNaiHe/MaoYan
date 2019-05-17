@@ -1,0 +1,34 @@
+<script type="text/template" id="ticket-film">
+
+    
+    <div class="movie-t">
+            <p>电影：
+                <span id="movie">{{}}</span>
+            </p>
+
+            <p>
+                时间：<span id="date">{{ projection_time }}</span>
+            </p>
+
+            <p>座位：</p>
+
+            <ul id="seats_chose"></ul>
+
+            <p>
+                票数：<span id="tickects_num">0</span>
+            </p>
+            <p style='display:none'>单价<span id="price"></span></p>
+            <p>
+                总价：<b>￥
+                    <span id="total_price">0</span>
+                </b>
+            </p>
+
+
+
+            <input type="button" class="btn" value="确定购买" />
+            <div id="legend"></div>
+        </div>
+    </script>
+
+
