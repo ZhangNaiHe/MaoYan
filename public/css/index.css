@@ -296,6 +296,8 @@ position: absolute;
   display: none;
   position: absolute;
   top: 60px;
+  right: 0px;
+  width: 31px;
   border: 1px solid #d8d8d8;
   border-top: none;
   background-color: #fff;
