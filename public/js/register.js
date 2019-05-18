@@ -1,4 +1,4 @@
-/**
+ /**
  * 页面载入加载验证码
  */
 var verify_code_ = '';
@@ -97,6 +97,14 @@ $("input[name='password']").keyup(function () {
     if (regCode.test(this.value)) {
         $('#warn3').html('含有非法字符！');
     }
+    if (this.value.length <=6 && regCode1.test(this.value)) { //密码长度小于等于6，且含有数字、字母时为强度为高
+        $('#low').css('backgroundColor', 'green');
+        $('#mid').css('backgroundColor', '');
+    } else {
+        $('#').css('backgroundColor', 'orange');
+        $('#high').css('backgroundColor', '');
+    }
+
     if (this.value.length > 6 && regCode1.test(this.value)) { //密码长度大于6，且含有数字、字母时强度为中
         $('#high').css('backgroundColor', 'red');
         $('#mid').css('backgroundColor', '');
@@ -104,7 +112,8 @@ $("input[name='password']").keyup(function () {
         $('#high').css('backgroundColor', '');
         $('#mid').css('backgroundColor', 'orange');
     }
-    if (this.value.length > 12) { //密码长度大于12，且含有数字、字母时为强度为高
+
+    if (this.value.length > 10&& regCode1.test(this.value)) { //密码长度大于10，且含有数字、字母时为强度为高
         $('#high').css('backgroundColor', 'red');
         $('#mid').css('backgroundColor', '');
     } else {
