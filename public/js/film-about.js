@@ -18,7 +18,6 @@ let filmAboutShow = function (pageNum,pageSize) {
         // 点击的时候调用方法
         onPageClick: function (event, page) {
           console.log(page)
-          // $('#page-content').text('Page ' + page);
           filmAboutShow(page, 5);
         }
       });
@@ -95,6 +94,7 @@ $('.btn-t').on('click', '.btn-type', function () {
     }
   })
 })
+
 let y = function () {
   $.ajax({
     type: 'get',
@@ -107,7 +107,6 @@ let y = function () {
   })
 }
 y();
-
 // 点击年代选择对应的影片
 $('.btn-e').on('click', '.btn-type', function () {
   let id = $(this).data('id');
@@ -129,20 +128,7 @@ $('.btn-e').on('click', '.btn-type', function () {
 })
 // 渲染年代
 
-
-
-// $('.btn-qb').click(function () {
-//   console.log(1);
-//   $.ajax({
-//     type: 'get',
-//     url: '/filmAboutSelect',
-//     data: "",
-//     success: function (data) {
-//       filmAboutShow();
-//     }
-//   })
-// })
-
+// 排序
 $('.btn-rm').click(function () {
   $.ajax({
     type: 'get',
@@ -155,7 +141,6 @@ $('.btn-rm').click(function () {
     }
   })
 })
-
 $('.btn-sj').click(function () {
   $.ajax({
     type: 'get',
