@@ -1,8 +1,8 @@
 // #region js效果代码
 
 // #region 支付时间倒计时
-let maxtime = 14 * 60 - 1;
-// let maxtime = 1 * 4 - 1;
+// let maxtime = 14 * 60 - 1;
+let maxtime = 1 * 6 - 1;
 CountDown();
 function CountDown() {
     if (maxtime >= 0) {
@@ -27,7 +27,7 @@ function CountDown() {
         // 给提示框中的我知道了按钮添加点击事件跳转页面
         let skipBtn = document.querySelector('#yz_skipBtn');
         skipBtn.onclick = function () {
-            location.href = '/Bohemian_Rhapsody';
+            location.href = '/ticketselection-ZJ';
         }
     }
 }
