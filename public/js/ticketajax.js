@@ -26,11 +26,11 @@ $('.demo').on('click', '.btn', () => {
     // let money = $('#total_price').text();
 
     let name = $('#movie').html();
-    console.log(movie);
+    // console.log(movie);
     let date = $('#date').html();
-    console.log(date);
+    // console.log(date);
     let sale = $('#yuan').text() + 0;
-    console.log(sale)
+    // console.log(sale)
     let much = arr.length + 1;
     let money = sale * much;
     $.ajax({
