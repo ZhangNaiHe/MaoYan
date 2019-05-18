@@ -99,27 +99,30 @@ $("input[name='password']").keyup(function () {
     }
     if (this.value.length <=6 && regCode1.test(this.value)) { //密码长度小于等于6，且含有数字、字母时为强度为高
         $('#low').css('backgroundColor', 'green');
-        $('#mid').css('backgroundColor', '');
-    } else {
-        $('#').css('backgroundColor', 'orange');
-        $('#high').css('backgroundColor', '');
-    }
+        // $('#mid').css('backgroundColor', '');
+        }
+    //  else {
+    //     $('#mind').css('backgroundColor', '');
+    //     $('#low').css('backgroundColor', '');
+    // }
 
     if (this.value.length > 6 && regCode1.test(this.value)) { //密码长度大于6，且含有数字、字母时强度为中
-        $('#high').css('backgroundColor', 'red');
-        $('#mid').css('backgroundColor', '');
-    } else {
-        $('#high').css('backgroundColor', '');
+        $('#low').css('backgroundColor', '');
         $('#mid').css('backgroundColor', 'orange');
-    }
+    } 
+    // else {
+    //     $('#high').css('backgroundColor', '');
+    //     $('#mid').css('backgroundColor', '');
+    // }
 
-    if (this.value.length > 10&& regCode1.test(this.value)) { //密码长度大于10，且含有数字、字母时为强度为高
-        $('#high').css('backgroundColor', 'red');
+    if (this.value.length > 8&& regCode1.test(this.value)) { //密码长度大于10，且含有数字、字母时为强度为高
         $('#mid').css('backgroundColor', '');
-    } else {
-        $('#mid').css('backgroundColor', 'orange');
-        $('#high').css('backgroundColor', '');
-    }
+        $('#high').css('backgroundColor', 'red');
+    } 
+    // else {
+    //     $('#mid').css('backgroundColor', '');
+    //     $('#high').css('backgroundColor', '');
+    // }
 });
 
 /**

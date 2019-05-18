@@ -84,6 +84,8 @@ const personalRouter = require('./routers/personalRouter');
 // 11.2 挂载基本信息页面路由
 app.use(personalRouter);
 
+
+
 // 引入影院选择路由
 const filmchooseRouter = require('./routers/filmchoose');
 // 挂载

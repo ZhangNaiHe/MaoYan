@@ -139,4 +139,3 @@ function getTotalPrice(sc) { //计算票价总额
 }
 
 
-
