@@ -9,98 +9,106 @@
     <link rel="shortcut icon" href=".images/login.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/logoin.css">
+    <link rel="shortcut icon" href="./images/bitbug_favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
-<!-- logo -->
-<div class="header cf">
-    <a class="site-logo" href="">猫眼电影</a>
-</div>
-<!-- 表单 -->
-<div class="site-body-wrapper">
-    <div class="site-body cf">
-        <div class="promotion-banner">
-            <img src="./images/logo.png" alt="">
-        </div>
-        <div class="login-section">
-            <form id="normal-form" action="" method="POST" class="form form--stack">
-                <div class="validate-info" style="visibility:hidden"></div>
-                <span class="login-type" data-mtevent="login.mobile.switch">
-                    <a id="J-mobile-link" href="">手机动态码登录<i></i></a>
-                    账号登录
-                </span>
-                <div class="form-field form-field--icon phone-input-wrapper">
-                    <span class="country-area">
-                      <span class="plus"></span><span>86</span>
-                      <i class="right-arrow"></i>
+    <!-- logo -->
+    <div class="header cf">
+        <a class="site-logo" href="">猫眼电影</a>
+    </div>
+    <!-- 表单 -->
+    <div class="site-body-wrapper">
+        <div class="site-body cf">
+            <div class="promotion-banner">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="login-section">
+                <form id="normal-form" action="" method="POST" class="form form--stack">
+                    <div class="validate-info" style="visibility:hidden"></div>
+                    <span class="login-type" data-mtevent="login.mobile.switch">
+                        <a id="J-mobile-link" href="">手机动态码登录<i></i></a>
+                        账号登录
                     </span>
-                    <input type="hidden" name="countrycode" value="86"/>
-                    <input type="text" id="login-email" class="f-text phone-input" name="mobile" placeholder="手机号" value="" maxlength="15"/>
-                </div>
-                <div class="form-field form-field--icon ">
-                    <i class="icon icon-password"></i>
-                    <input type="password" id="login-password" class="f-text pw-input" name="password" placeholder="密码"/>
-                </div>
-                <div class="form-field form-field--auto-login cf">
-                    <a tabindex="-1" href="" class="forget-password">忘记密码？</a>
-                </div>
-                <div class="form-field form-field--ops">
-                    <input data-mtevent="login.normal.submit" type="button" class="btn  btn-a" name="commit" value="登录"/>
-                </div>
-                <p class="signup-guide">还没有账号？<a href="/register" class="color_a">免费注册</a></p>
-            </form>
-            <form id="mobile-form" action="" method="POST" class="formform--stack J-wwwtracker-form" style="display:none">
-                <span class="login-type login-type--normal">
-                    <a id="J-normal-link" href="">普通方式登录<i class="aa"></i></a>账号登录
-                </span>
-                <div class="J-info form-field form-field--icon phone-input-wrapper">
-                    <span class="country-area">
-                      <span class="plus"></span><span>86</span>
-                      <i class="right-arrow"></i>
-                    </span>
-                    <input type="hidden" name="countrycode" value="86"/>
-                    <input type="text" id="login-mobile" class="f-text phone-input" name="mobile" value="" placeholder="手机号" maxlength="15"/>
-                </div>
-                <div class="form-field form-field--icon">
-                    <i class="icon icon-password"></i>
-                    <input type="text" name="code" id="login-verify-code" class="f-text smscode-input" autocomplete="off" value="" placeholder="动态码"/>
-                    <div class="form-field form-field--verify-mobile" style="top:19px;">
-                        <input type="button" class="btn-normal btn-mini" id="J-verify-btn" value="获取手机动态码"/>
+                    <div class="form-field form-field--icon phone-input-wrapper">
+                        <span class="country-area">
+                            <span class="plus"></span><span>86</span>
+                            <i class="right-arrow"></i>
+                        </span>
+                        <input type="hidden" name="countrycode" value="86" />
+                        <input type="text" id="login-email" class="f-text phone-input" name="mobile" placeholder="手机号"
+                            value="" maxlength="15" />
                     </div>
-                    <i class="form-uuid" style="display:none"></i>
-                    <i class="risk_partner" style="display:none">0</i>
-                    <i class="risk_smsTemplateId" style="display:none">0</i>
-                    <i class="risk_smsPrefixId" style="display:none">0</i>
-                    <i id='mobileLoginContinue' style="display: none"></i>
-                </div>
-                <div class="form-field form-field--info">
-                    <span class="verify-tip" id="J-verify-tip"></span>
-                </div>
-                <div class="form-field form-field--auto-login cf">
-                    <a tabindex="-1" href="" class="forget-password">忘记密码？</a>
-                </div>
-                <div class="form-field form-field--ops">
-                    <input type="button" class="btn" name="commit" value="登录"/>
-                </div>
-            </form>
+                    <div class="form-field form-field--icon ">
+                        <i class="icon icon-password"></i>
+                        <input type="password" id="login-password" class="f-text pw-input" name="password"
+                            placeholder="密码" />
+                    </div>
+                    <div class="form-field form-field--auto-login cf">
+                        <a tabindex="-1" href="" class="forget-password">忘记密码？</a>
+                    </div>
+                    <div class="form-field form-field--ops">
+                        <input data-mtevent="login.normal.submit" type="button" class="btn  btn-a" name="commit"
+                            value="登录" />
+                    </div>
+                    <p class="signup-guide">还没有账号？<a href="/register" class="color_a">免费注册</a></p>
+                </form>
+                <form id="mobile-form" action="" method="POST" class="formform--stack J-wwwtracker-form"
+                    style="display:none">
+                    <span class="login-type login-type--normal">
+                        <a id="J-normal-link" href="">普通方式登录<i class="aa"></i></a>账号登录
+                    </span>
+                    <div class="J-info form-field form-field--icon phone-input-wrapper">
+                        <span class="country-area">
+                            <span class="plus"></span><span>86</span>
+                            <i class="right-arrow"></i>
+                        </span>
+                        <input type="hidden" name="countrycode" value="86" />
+                        <input type="text" id="login-mobile" class="f-text phone-input" name="mobile" value=""
+                            placeholder="手机号" maxlength="15" />
+                    </div>
+                    <div class="form-field form-field--icon">
+                        <i class="icon icon-password"></i>
+                        <input type="text" name="code" id="login-verify-code" class="f-text smscode-input"
+                            autocomplete="off" value="" placeholder="动态码" />
+                        <div class="form-field form-field--verify-mobile" style="top:19px;">
+                            <input type="button" class="btn-normal btn-mini" id="J-verify-btn" value="获取手机动态码" />
+                        </div>
+                        <i class="form-uuid" style="display:none"></i>
+                        <i class="risk_partner" style="display:none">0</i>
+                        <i class="risk_smsTemplateId" style="display:none">0</i>
+                        <i class="risk_smsPrefixId" style="display:none">0</i>
+                        <i id='mobileLoginContinue' style="display: none"></i>
+                    </div>
+                    <div class="form-field form-field--info">
+                        <span class="verify-tip" id="J-verify-tip"></span>
+                    </div>
+                    <div class="form-field form-field--auto-login cf">
+                        <a tabindex="-1" href="" class="forget-password">忘记密码？</a>
+                    </div>
+                    <div class="form-field form-field--ops">
+                        <input type="button" class="btn" name="commit" value="登录" />
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-<!-- 底部 -->
-<footer class="footer">
-    <div class="copyright">
-        <p>
-            &copy;<span>2019</span>
-            <a href="">美团网团购</a>
-            meituan.com
-            <a href="">京ICP证070791号</a>
-            京公网安备11010502025545号
-        </p>
-    </div>
-</footer>
-<script src="./lib/jquery/dist/jquery.js"></script>
-<script src="./lib/art-template/lib/template-web.js"></script>
-<script src="./js/login.js"></script>
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="copyright">
+            <p>
+                &copy;<span>2019</span>
+                <a href="">美团网团购</a>
+                meituan.com
+                <a href="">京ICP证070791号</a>
+                京公网安备11010502025545号
+            </p>
+        </div>
+    </footer>
+    <script src="./lib/jquery/dist/jquery.js"></script>
+    <script src="./lib/art-template/lib/template-web.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
