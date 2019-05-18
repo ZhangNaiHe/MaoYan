@@ -1,12 +1,12 @@
 create table ticket(
     ticket_id int primary key auto_increment comment '电影票id',
-    projection_id int comment '影片放映id',
-    movei_id int comment '影片id',
+    projection_time varchar(255) not null comment '时间',
+    movie_names varchar(255) not null comment '影片名',
     seats varchar(255) DEFAULT null comment '座位',
-    money float default null comment '总价'
+    money float(5,2) default null comment '总价'
 );
 
 
 insert into ticket values 
-(1,1,1,'1-1',32),
-(2,1,1,'4-5',32);
+(1,'12:15','大侦探皮卡丘','1-1',32),
+(2,'12:15','大侦探皮卡丘','2-2',32);

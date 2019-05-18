@@ -30,6 +30,8 @@ let a = function () {
 }
 a();
 
+// filmchoose_template
+
 
 $('.movie-list').on('click', '.movie', function () {
     let id = $(this).attr('data-id');
@@ -39,9 +41,11 @@ $('.movie-list').on('click', '.movie', function () {
         data: { id: id },
         success: function (data) {
             // console.log(data)
-            let str = template('massage-template', data);
+            let str = template('massage-template', data.data);
             // console.log(str);
             $('.movie-info').html(str);
+            let str1 = template('filmchoose_template',{list:data.data1}) ;
+            $('.plist tbody').html(str1);
         }
     })
 })
