@@ -11,7 +11,7 @@ module.exports.filmRoomShow = (req, res) => {
     conn.query('select * from film', (error, result) => {
       if (error) return console.log(error);
       res.json(result);
-      console.log(result);
+    //   console.log(result);
     })
   }
 
@@ -26,7 +26,7 @@ module.exports.filmRoomBrand = (req, res) => {
 
 // 渲染品牌搜索内容
 module.exports.filmRoomPP = (req, res) => {
-    console.log(req.query.id)
+    // console.log(req.query.id)
     conn.query('select * from film where bra_id=?',req.query.id,(error,result) => {
         if (error) return console.log(error);
         if (result == '') {
@@ -65,7 +65,7 @@ module.exports.filmRoomXZQ = (req, res) => {
             })
         } else if (result) {
             res.json(result);
-            console.log(result)
+            // console.log(result)
         }
     })
 }
@@ -94,7 +94,7 @@ module.exports.filmRoomTST = (req, res) => {
             })
         } else if (result) {
             res.json(result);
-            console.log(result)
+            // console.log(result)
         }
     })
 }
