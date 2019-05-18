@@ -1,4 +1,4 @@
-const connection = require('../data/index');
+const connection = require('../data/film');
 
 //页面显示
 module.exports.ticketShow = (req, res) => {
