@@ -27,10 +27,10 @@ $('.demo').on('click', '.btn', () => {
 
     let name = $('#movie').html();
     console.log(movie);
-    let date = $('#data').html();
+    let date = $('#date').html();
     console.log(date);
     let sale = $('#yuan').text() + 0;
-    // console.log(sale)
+    console.log(sale)
     let much = arr.length + 1;
     let money = sale * much;
     $.ajax({
