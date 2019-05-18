@@ -28,6 +28,7 @@ module.exports.ticketmovie = (req, res) => {
 //     })
 // }
 
+// 提交
 module.exports.tickets = (req, res) => {
     console.log(req.query.id);
         connection.query('insert into ticket(projection_time,movie_names,seats,money) values("'+ req.query.date +'","'+ req.query.name +'","'+ req.query.id +'","'+ req.query.money+'")', (error, result) => {

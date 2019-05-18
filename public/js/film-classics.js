@@ -22,10 +22,7 @@
 // let 排好的数据 = arrSort('播放量',arr);
 // console.log(排好的数据);
 
-
-
-
-
+// 渲染页面同时创建分页
 let filmAboutShow = function (pageNum,pageSize) {
   $.ajax({
     type: 'get',
@@ -35,8 +32,8 @@ let filmAboutShow = function (pageNum,pageSize) {
       pageSize: pageSize || 3
     },
     success: function (data) {
+      // 渲染模板
       let str = template('film-template', { list: data.data });
-      // console.log(str)
       $('.movie-list').html(str);
       $('.pagination').twbsPagination({
         // 总共有多少页
@@ -45,8 +42,6 @@ let filmAboutShow = function (pageNum,pageSize) {
         visiblePages: 4,
         // 点击的时候调用方法
         onPageClick: function (event, page) {
-          // console.log(page)
-          // $('#page-content').text('Page ' + page);
           filmAboutShow(page, 5);
         }
       });
@@ -54,8 +49,10 @@ let filmAboutShow = function (pageNum,pageSize) {
     }
   })
 }
+// 调用
 filmAboutShow(1,5);
 
+// 渲染
 let s = function () {
   $.ajax({
     type: 'get',
@@ -70,6 +67,7 @@ let s = function () {
 }
 s();
 
+// 点击是获取对应的影片
 $('.btn-o').on('click', '.btn-type', function () {
   let id = $(this).data('id');
   $.ajax({
@@ -88,7 +86,7 @@ $('.btn-o').on('click', '.btn-type', function () {
   })
 })
 
-
+// 渲染
 let a = function () {
   $.ajax({
     type: 'get',
@@ -123,7 +121,7 @@ $('.btn-t').on('click', '.btn-type', function () {
 })
 
 
-
+// 渲染
 let y = function () {
   $.ajax({
     type: 'get',
@@ -158,6 +156,7 @@ $('.btn-e').on('click', '.btn-type', function () {
   })
 })
 
+// 点击热门排序
 $('.btn-rm').click(function () {
   $.ajax({
     type: 'get',
@@ -169,6 +168,7 @@ $('.btn-rm').click(function () {
     }
   })
 })
+// 点击事件排序
 $('.btn-sj').click(function () {
   $.ajax({
     type: 'get',
