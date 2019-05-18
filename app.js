@@ -85,6 +85,8 @@ const personalRouter = require('./routers/personalRouter');
 app.use(personalRouter);
 
 
+
+// 影院选择页面路由
 const filmchooseRouter = require('./routers/filmchoose');
 app.use(filmchooseRouter);
 

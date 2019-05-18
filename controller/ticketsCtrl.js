@@ -12,6 +12,7 @@ module.exports.ticketmovie = (req, res) => {
     connection.query('select * from projection,yingpian where projection_time= "12:15" and projection.movie_id = yingpian.movie_id', (error, results) => {
         if (error) return console.log(error);
            res.json(results);
+           var mid = results.movie_id;
     })
 };
 
@@ -30,7 +31,7 @@ module.exports.ticketmovie = (req, res) => {
 
 module.exports.tickets = (req, res) => {
     console.log(req.query.id);
-        connection.query('insert into ticket(seats,money) values("' + req.query.id +'","'+ req.query.money+'")', (error, result) => {
+        connection.query('insert into ticket(seats,money) values("'+mid +'","'+  +'","'+ req.query.id +'","'+ req.query.money+'")', (error, result) => {
             if (error) return console.log(error);
             if (result.affectedRows) {
                 res.json({

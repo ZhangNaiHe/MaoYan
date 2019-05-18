@@ -1,36 +1,85 @@
 <script type="text/template" id="ticket-film">
 
-    
-    <div class="movie-t">
-            <p>电影：
-                <span id="movie">{{ movie_names }}</span>
-            </p>
-
-            <p>
-                时间：<span id="date">{{ projection_time }}</span>
-            </p>
-            <p>
-                版本: <span id="ver">{{ projection_language }}</span>
-            </p>
-            <p>座位：</p>
-
-            <ul id="seats_chose"></ul>
-
-            <p>
-                票数：<span id="tickects_num">0</span>
-            </p>
-            <p style='display:none'>单价<span id="price">{{projection_pay}}</span></p>
-            <p>
-                总价：<b>￥
-                    <span id="total_price">0</span>
-                </b>
-            </p>
 
 
+    <!-- <div id="seat_area">
 
-            <input type="button" class="btn" value="确定购买" />
-            <div id="legend"></div>
+            <div class="front">屏幕</div>
+
         </div>
-    </script>
+        <div class="booking_area"> -->
 
-
+                <!-- <div class="movie-block">
+    
+                    <div class="movie-t">
+                            <div class="clearfix">
+                          
+                                    <div class="movie-pic">
+                                        <img src="{{movie_url}}" alt="">
+                                    </div>
+                                    <div class="movie-text">
+                                        <p class="movie-name" id="movie">{{ movie_names }}</p>
+                                        <div class="text-info">
+                                            <span>类型:</span>
+                                            <span class="movie-message">{{movie_type}}</span>
+                                        </div>
+                                        <div class="text-info">
+                                            <span>时长:</span>
+                                            <span class="movie-message" id="date">{{movie_long}} </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-cinema">
+                                        <div class="text-info">
+                                            <span>影院:</span>
+                                            <span class="movie-message">sfc</span>
+                                        </div>
+                                        <div class="text-info">
+                                            <span>影厅:</span>
+                                            <span class="movie-message">{{projection_rooms}}</span>
+                                        </div>
+                                        <div class="text-info">
+                                            <span>版本:</span>
+                                            <span class="movie-message" id="ver">{{ projection_language }}</span>
+                                        </div>
+                                   
+                                        <div class="text-info">
+                                            <span>票价:</span>
+                                            <span class="movie-message">￥{{projection_pay}}/张</span>
+                                        </div>
+                                        <ul id="seats_chose"></ul>
+                                        <p> 
+                                                总价：<b>￥
+                                                    <span id="total_price">0</span>
+                                                </b>
+                                            </p>
+                                    </div> -->
+                                 
+                    
+                            <p>电影：
+                                <span id="movie">{{ movie_names }}</span>
+                            </p>
+                
+                            <p>
+                                时间：<span id="date">{{ projection_time }}</span>
+                            </p>
+                            <p>
+                                版本: <span id="ver">{{ projection_language }}</span>
+                            </p>
+                            <p>座位：</p>
+                
+                            <ul id="seats_chose"></ul>
+                
+                            <p>
+                                票数：<span id="tickects_num">0</span>
+                            </p>
+                            <p style='display:none'>单价<span id="price">{{projection_pay}}</span></p>
+                          
+                
+                
+                
+                            <input type="button" class="btn" value="确定购买" />
+                        <!-- </div>  -->
+                    </div>
+                    </div>
+                </script>
