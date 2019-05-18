@@ -1,4 +1,4 @@
-const connection = require('../data/film');
+const connection = require('../data/index');
 
 //页面显示
 module.exports.ticketShow = (req, res) => {
@@ -9,10 +9,9 @@ module.exports.ticketShow = (req, res) => {
 // // 显示页面
 module.exports.ticketmovie = (req, res) => {
     // let parmas = [req.body.show_name,req.body.price,req.body.ver,req.body.data-time,req.body.row,req.body.column]
-    connection.query('select * from projection,yingpian where projection_time= "12:15" and projection.movie_id = yingpian.movie_id', (error, results) => {
+    connection.query('select * from projection,yingpian,massage where projection_time= "12:15" and projection.movie_id = yingpian.movie_id and projection_id = massage.movie_id', (error, results) => {
         if (error) return console.log(error);
            res.json(results);
-           var mid = results.movie_id;
     })
 };
 
@@ -31,7 +30,7 @@ module.exports.ticketmovie = (req, res) => {
 
 module.exports.tickets = (req, res) => {
     console.log(req.query.id);
-        connection.query('insert into ticket(seats,money) values("'+mid +'","'+  +'","'+ req.query.id +'","'+ req.query.money+'")', (error, result) => {
+        connection.query('insert into ticket(projection_time,movie_names,seats,money) values("'+ req.query.date +'","'+ req.query.name +'","'+ req.query.id +'","'+ req.query.money+'")', (error, result) => {
             if (error) return console.log(error);
             if (result.affectedRows) {
                 res.json({

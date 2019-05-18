@@ -23,21 +23,29 @@ $('.demo').on('click', '.btn', () => {
     }
     console.log(arr);
     // 获取总价
-    let money = $('#total_price').text();
+    // let money = $('#total_price').text();
 
-    
-
+    let name = $('#movie').html();
+    console.log(movie);
+    let date = $('#data').html();
+    console.log(date);
+    let sale = $('#yuan').text() + 0;
+    // console.log(sale)
+    let much = arr.length + 1;
+    let money = sale * much;
     $.ajax({
         type: 'get',
         url: '/tickets',
         data: {
             id: arr,
+            name:name,
+            date:date,
             money:money
         },
         success: function (data) {
             // console.log(data);
             if (data.code == '1004') {
-                console.log(data.message);
+                // console.log(data.message);
                 location.href = '';
             }
         }

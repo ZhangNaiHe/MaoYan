@@ -1,6 +1,6 @@
 var price = '{{projection_pay}}'; //电影票价
 
-// var $cart = $('#seats_chose'), //座位区
+var $cart = $('#seats_chose'), //座位区
 
     $tickects_num = $('#tickects_num'), //票数
 
@@ -59,21 +59,21 @@ var sc = $('#seat_area').seatCharts({
         ]
 
     },
-
     click: function () {
 
         if (this.status() == 'available') { //若为可选座状态，添加座位
 
-            let lio = $('<li>' + (this.settings.row + 1) + '排' + this.settings.label + '座</li>')
+            $('<li>' + (this.settings.row + 1) + '排' + this.settings.label + '座</li>')
 
                 .attr('id', 'cart-item-' + this.settings.id)
 
-                .data('seatId', this.settings.id);
+                .data('seatId', this.settings.id)
 
-                // .appendTo($cart);
-            $('.booking_aer').on('append','#seats_chose',() => {
-                lio
-            })
+                // .attr('row', this.settings.row + 1)
+
+                // .attr('column', this.settings.label)
+                .appendTo($cart);
+
 
 
             $tickects_num.text(sc.find('selected').length + 1); //统计选票数量
@@ -110,9 +110,11 @@ var sc = $('#seat_area').seatCharts({
 
     }
 
+
 });
 
-//设置已售出的座位
+
+
 
 sc.get(['1_3', '1_4', '4_4', '4_5', '4_6', '4_7', '4_8']).status('unavailable');
 
