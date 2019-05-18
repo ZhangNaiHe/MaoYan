@@ -1,8 +1,13 @@
+// 引入express包
 const express = require('express');
+// 调用express的方法
 const router = express.Router();
+// 引入控制器
 const filmAboutctrl = require('../controller/film-aboutCtrl');
-
+ 
+// 显示页面
 router.get('/filmabout',filmAboutctrl.filmAbout);
+// 
 router.get('/filmAboutShow',filmAboutctrl.filmFild);
 router.get('/filmAboutAq',filmAboutctrl.filmAboutAq);
 router.get('/filmAboutType',filmAboutctrl.filmAboutType);
