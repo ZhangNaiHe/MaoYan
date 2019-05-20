@@ -2,7 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 
-const cateCtrl = require('../controllers/cateShowCtrl');
+const cateCtrl = require('../controller/cateShowCtrl');
 
 router.get('/hostpot-ZJ', cateCtrl.hostpot);
 router.get('/news-ZJ', cateCtrl.news);

@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>选座座位</title>
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/hostspot-ZJ.css">
     <link rel="stylesheet" href="./css/All-use-css/heade.css">
     <link rel="stylesheet" href="./css/All-use-css/bottom.css">
-    <link rel="stylesheet" href="./css/movieselection-ZJ.css">
     <link rel="stylesheet" href="./css/jq22.css">
+    <link rel="stylesheet" href="./css/movieselection-ZJ.css">
     <link rel="shortcut icon" href="./images/bitbug_favicon.ico" type="image/x-icon">
 
-    <style>
+    <!-- <style>
         .btn:hover {
             border-radius: 3px;
             background-color: #ff8400;
@@ -28,7 +28,7 @@
             border: none;
             cursor: pointer;
         }
-    </style>
+    </style> -->
 
 </head>
 
@@ -87,12 +87,16 @@
                 <div class="t">
                     <%-include('./template/ticket-film.ejs') %>
                 </div>
-                <p>座位</p>
-                <ul id="seats_chose"></ul>
+                <div class="x">
 
-
-
-                <a href="./payment" class="btn">确定购买</a>
+                    <p>座位</p>
+                    <ul id="seats_chose"></ul>
+                    
+                    <p>票数：<span id="tickects_num">0</span></p>
+                    <p>总价：<b>￥<span id="total_price">0</span></b></p>
+                    
+                    <a href="./payment" class="btn">确定购买</a>
+                </div>
 
 
 

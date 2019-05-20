@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>图集</title>
-    <link rel="stylesheet" href="./hostspot-ZJ.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/hostspot-ZJ.css">
+    <link rel="stylesheet" href="./css/All-use-css/heade.css">
+    <link rel="stylesheet" href="./css/All-use-css/bottom.css">
+    <link rel="stylesheet" href="./css/movieselection-ZJ.css">
+    <link rel="stylesheet" href="./css/jq22.css">
     <link rel="shortcut icon" href="./images/bitbug_favicon.ico" type="image/x-icon">
 
 </head>
 
 <body>
+    <div class="dh">
+        <div class="dh_con">
+            <%- include('./layouts/heady.ejs')%>
+            <div class="nav">
+                <ul class="nav-ul">
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/filmClassics">电影</a></li>
+                    <li><a href="/filmroom">影院</a></li>
+                    <li><a href="">演出</a></li>
+                    <li><a href="/Bohemian_Rhapsody">榜单</a></li>
+                    <li><a href="">热点</a></li>
+                    <li class="ys"> <a style="color:white" href="/shopping">商城</a></li>
+                </ul>
+            </div>
+            <%- include('./layouts/header.ejs')%>
+
+        </div>
+    </div>
     <div class="subnav">
         <ul class="navbar clearfix">
             <li><a href="./hotspot-ZJ.html" class="active">热点首页</a></li>

@@ -21,7 +21,7 @@ $('.demo').on('click', '.btn', () => {
     for (var i = 0; i < $('.demo .selected').length; i++) {
         arr.push($('.demo .selected').eq(i).attr('id'));
     }
-    console.log(arr);
+    // console.log(arr);
     // 获取总价
     // let money = $('#total_price').text();
 
