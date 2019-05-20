@@ -27,7 +27,7 @@ $('.demo').on('click', '.btn', () => {
 
     let name = $('#movie').html();
     // console.log(movie);
-    let date = $('#date').html();
+    let date = $('#when').html();
     // console.log(date);
     let sale = $('#yuan').text() + 0;
     // console.log(sale)
