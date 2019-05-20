@@ -11,7 +11,7 @@ router.get('/crunchies',crunchiesCtrl.crunchies);
 router.get('/board/1',crunchiesCtrl.crunchiesData1);
 // 最受期待榜
 router.get('/board/2',crunchiesCtrl.crunchiesData2);
-// 国内票房榜
+// 国内票房
 router.get('/board/3',crunchiesCtrl.crunchiesData3);
 // 北美票房榜
 router.get('/board/4',crunchiesCtrl.crunchiesData4);

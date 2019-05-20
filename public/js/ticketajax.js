@@ -16,10 +16,10 @@ show();
 // 点击确定按钮
 $('.demo').on('click', '.btn', () => {
     //获取li的自定义属性值
-    $('.demo .selected').attr('id');
+    $('#seats_chose li').attr('id');
     let arr = [];
-    for (var i = 0; i < $('.demo .selected').length; i++) {
-        arr.push($('.demo .selected').eq(i).attr('id'));
+    for (var i = 0; i < $('#seats_chose li').length; i++) {
+        arr.push($('#seats_chose li').eq(i).text());
     }
     // console.log(arr);
     // 获取总价
@@ -27,27 +27,36 @@ $('.demo').on('click', '.btn', () => {
 
     let name = $('#movie').html();
     // console.log(movie);
-    let date = $('#date').html();
+    let date = $('#when').html();
     // console.log(date);
     let sale = $('#yuan').text() + 0;
     // console.log(sale)
-    let much = arr.length + 1;
+    let where = $('#where').text();
+    let much = arr.length;
     let money = sale * much;
-    $.ajax({
-        type: 'get',
-        url: '/tickets',
-        data: {
-            id: arr,
-            name:name,
-            date:date,
-            money:money
-        },
-        success: function (data) {
-            // console.log(data);
-            if (data.code == '1004') {
-                // console.log(data.message);
-                location.href = '';
+    if (much <= 0) {
+        alert('请至少选择一个座位')
+        return false;
+    } else {
+        $.ajax({
+            type: 'get',
+            url: '/tickets',
+            data: {
+                id: arr,
+                name:name,
+                date:date,
+                money:money,
+                where:where
+            },
+            success: function (data) {
+                // console.log(data);
+                if (data.code == '1004') {
+                    // console.log(data.message);
+                    location.href = '';
+                }
             }
-        }
-    })
+        })
+    }
+
+  
 })

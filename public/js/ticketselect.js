@@ -59,56 +59,60 @@ var sc = $('#seat_area').seatCharts({
         ]
 
     },
-    click: function () {
+    click:function () {
+            if (sc.find('selected').length > 1) {
+                alert('最多选择两个座位');
+                return false
+            }
 
-        if (this.status() == 'available') { //若为可选座状态，添加座位
+            if (this.status() == 'available') { //若为可选座状态，添加座位
 
-            $('<li>' + (this.settings.row + 1) + '排' + this.settings.label + '座</li>')
+                $('<li>' + (this.settings.row + 1) + '排' + this.settings.label + '座</li>')
 
-                .attr('id', 'cart-item-' + this.settings.id)
+                    .attr('id', 'cart-item-' + this.settings.id)
 
-                .data('seatId', this.settings.id)
+                    .data('seatId', this.settings.id)
 
-                // .attr('row', this.settings.row + 1)
+                    .attr('row', this.settings.row + 1)
 
-                // .attr('column', this.settings.label)
-                .appendTo($cart);
-
-
-
-            $tickects_num.text(sc.find('selected').length + 1); //统计选票数量
-
-            $total_price.text((getTotalPrice(sc) + price).toFixed(2));//计算票价总金额
+                    .attr('column', this.settings.label)
+                    .appendTo($cart);
 
 
 
-            return 'selected';
+                $tickects_num.text(sc.find('selected').length + 1); //统计选票数量
 
-        } else if (this.status() == 'selected') { //若为选中状态
-
-
-
-            $tickects_num.text(sc.find('selected').length - 1);//更新票数量
-
-            $total_price.text((getTotalPrice(sc) - price).toFixed(2));//更新票价总金额
-
-            $('#cart-item-' + this.settings.id).remove();//删除已预订座位
+                $total_price.text((getTotalPrice(sc) + price).toFixed(2));//计算票价总金额
 
 
 
-            return 'available';
+                return 'selected';
 
-        } else if (this.status() == 'unavailable') { //若为已售出状态
+            } else if (this.status() == 'selected') { //若为选中状态
 
-            return 'unavailable';
 
-        } else {
 
-            return this.style();
+                $tickects_num.text(sc.find('selected').length - 1);//更新票数量
+
+                $total_price.text((getTotalPrice(sc) - price).toFixed(2));//更新票价总金额
+
+                $('#cart-item-' + this.settings.id).remove();//删除已预订座位
+
+
+
+                return 'available';
+
+            } else if (this.status() == 'unavailable') { //若为已售出状态
+
+                return 'unavailable';
+
+            } else {
+
+                return this.style();
+
+            }
 
         }
-
-    }
 
 
 });
