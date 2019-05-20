@@ -32,24 +32,31 @@ $('.demo').on('click', '.btn', () => {
     let sale = $('#yuan').text() + 0;
     // console.log(sale)
     let where = $('#where').text();
-    let much = arr.length + 1;
+    let much = arr.length;
     let money = sale * much;
-    $.ajax({
-        type: 'get',
-        url: '/tickets',
-        data: {
-            id: arr,
-            name:name,
-            date:date,
-            money:money,
-            where:where
-        },
-        success: function (data) {
-            // console.log(data);
-            if (data.code == '1004') {
-                // console.log(data.message);
-                location.href = '';
+    if (much <= 0) {
+        alert('请至少选择一个座位')
+        return false;
+    } else {
+        $.ajax({
+            type: 'get',
+            url: '/tickets',
+            data: {
+                id: arr,
+                name:name,
+                date:date,
+                money:money,
+                where:where
+            },
+            success: function (data) {
+                // console.log(data);
+                if (data.code == '1004') {
+                    // console.log(data.message);
+                    location.href = '';
+                }
             }
-        }
-    })
+        })
+    }
+
+  
 })

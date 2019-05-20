@@ -67,9 +67,9 @@
                         <th>座位</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="yz_movie_name">《大侦探皮卡丘》</td>
+                <tbody class="yz_payment_data">
+                    <!-- <tr> -->
+                        <!-- <td class="yz_movie_name">《大侦探皮卡丘》</td>
                         <td class="yz_showtime">今天 5月16日 13:00</td>
                         <td class="yz_cinema_name">大地影院(万顺店)</td>
                         <td>
@@ -80,8 +80,8 @@
                                     <i>7</i>座
                                 </span>
                             </div>
-                        </td>
-                    </tr>
+                        </td> -->
+                    <!-- </tr> -->
                 </tbody>
             </table>
             <!-- 实际支付金额 -->
@@ -120,6 +120,10 @@
 
     <script src="./lib/jquery/dist/jquery.min.js"></script>
     <script src="./js/payment.js"></script>
+    <script src="./js/crunchies.js"></script>
+    <script src="./lib/art-template/lib/template-web.js"></script>
+    <%- include('./template/crunchies_template.ejs')%>
+
 
 </body>
 
