@@ -136,6 +136,7 @@ body {
   font-size: 14px;
   width: 75px;
   height: 100%;
+  color: #000;
 }
 
 .channel-btn-one>li>a.hv:hover {
