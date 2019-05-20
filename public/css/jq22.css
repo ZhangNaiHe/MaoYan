@@ -1,6 +1,6 @@
 html,body,div,span,h1,h2,h3,h4,h5,h6,p,pre,a,code,em,img,small,strong,sub,sup,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 a{color:#007bc4; text-decoration:none;}
-a:hover{text-decoration:underline}
+/* a:hover{text-decoration:underline} */
 ol,ul{list-style:none}
 table{border-collapse:collapse;border-spacing:0}
 html{background:url(../images/demo_bg.png)}
@@ -24,7 +24,16 @@ h2.title{margin:4px 0 30px;padding:15px 0 10px 20px; border-bottom:1px solid #d3
      background-color: #ff8400;color: #fff;display: inline-block;height: 28px;line-height: 28px;text-align: center;
      width: 72px;transition: background-color 0.2s linear 0s;border:none;cursor:pointer;}
 .demo{width:700px;margin:0 auto}
-.btn:hover{background-color: #e95a00;text-decoration: none}
+.btn:hover{   width: 260px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 21px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 2px 10px -2px #f03d37;
+    background-color: #f03d37;
+
+}
 
 ul.ul_demo li {
     background: url("../images/demo_icon.gif") no-repeat scroll 0 6px;
@@ -33,7 +42,7 @@ ul.ul_demo li {
 }
 .input{border:1px solid #ccc;padding:0 5px;width:220px; height: 26px;line-height: 26px;}
 
-.front{width: 300px;margin: 5px 32px 45px 32px;background-color: #f0f0f0;	color: #666;text-align: center;padding: 3px;border-radius: 5px;}
+.front{width: 360px;margin: 5px 32px 45px 65px;background-color: #f0f0f0;	color: #666;text-align: center;padding: 3px;border-radius: 5px;margin-left: 65px;}
 
 .booking_area {float: right;position: relative;width:200px;height: 450px; }
 
@@ -43,21 +52,45 @@ ul.ul_demo li {
 
 .booking_area p span{color:#666}
 
-div.seatCharts-cell {color: #182C4E;height: 25px;width: 25px;line-height: 25px;margin: 3px;float: left;text-align: center;outline: none;font-size: 13px;}
+div.seatCharts-cell {  display: inline-block;
+    font-size: 0;
+    width: 30px;
+    height: 26px;
+    margin: 0 5px;}
 
-div.seatCharts-seat {color: #fff;cursor: pointer;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 
-div.seatCharts-row {height: 35px;}
+div.seatCharts-seat {  
+    background-image: url(../images/imgs-ZJ/seat-zj.png);
+    background-position: 0 1px;}
 
-div.seatCharts-seat.available {background-color: #B9DEA0;}
+div.seatCharts-row {height: 35px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    text-align: center;}
 
-div.seatCharts-seat.focused {background-color: #76B474;border: none;}
+div.seatCharts-seat.available {    display: inline-block;
+    font-size: 0;
+    width: 30px;
+    height: 26px;
+    margin: 0 5px;
+    background-image: url(../images/imgs-ZJ/seat-zj.png);
+    background-position: 0 1px;}
 
-div.seatCharts-seat.selected {background-color: #E6CAC4;}
+.seatCharts-space {
+    position: relative;
+    top: 11px;
+    font-size: 16px !important;
+    color: #999;
+    }
+    
 
-div.seatCharts-seat.unavailable {background-color: #472B34;cursor: not-allowed;}
+div.seatCharts-seat.focused {background-image: url(../images/imgs-ZJ/seat-sole-zj.png);}
 
-div.seatCharts-container {border-right: 1px dotted #adadad;width: 400px;padding: 20px;float: left;}
+div.seatCharts-seat.selected {background-image: url(../images/imgs-ZJ/seat-sole-zj.png);}
+
+div.seatCharts-seat.unavailable {background-image: url(../images/imgs-ZJ/seat-sole-zj.png);}
+
+div.seatCharts-container {border-right: 1px dotted #adadad;width: 457px;padding: 20px;float: left;padding-right: 88px; margin-left: -120px;}
 
 div.seatCharts-legend {padding-left: 0px;position: absolute;bottom: 16px;}
 
@@ -71,4 +104,25 @@ span.seatCharts-legendDescription {margin-left: 5px;line-height: 30px;}
 
 #seats_chose {max-height: 150px;overflow-y: auto;overflow-x: none;width: 200px;}
 
-#seats_chose li{float:left; width:72px; height:26px; line-height:26px; border:1px solid #d3d3d3; background:#f7f7f7; margin:6px; font-size:14px; font-weight:bold; text-align:center}
+#seats_chose li{    cursor: default;
+    position: relative;
+    font-size: 12px;
+    color: #f03d37;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 12px 10px 0;
+    background: url(../images/imgs-ZJ/ticket-selected-zj.png) no-repeat;}
+
+.btn {
+    width: 260px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 21px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 2px 10px -2px #f03d37;
+    background-color: #f03d37;
+}
