@@ -1,4 +1,4 @@
-/**
+ /**
  * 页面载入加载验证码
  */
 var verify_code_ = '';
@@ -97,6 +97,8 @@ $("input[name='password']").keyup(function () {
     if (regCode.test(this.value)) {
         $('#warn3').html('含有非法字符！');
     }
+
+
     if (this.value.length > 6 && regCode1.test(this.value)) { //密码长度大于6，且含有数字、字母时强度为中
         $('#high').css('backgroundColor', 'red');
         $('#mid').css('backgroundColor', '');
@@ -104,7 +106,8 @@ $("input[name='password']").keyup(function () {
         $('#high').css('backgroundColor', '');
         $('#mid').css('backgroundColor', 'orange');
     }
-    if (this.value.length > 12) { //密码长度大于12，且含有数字、字母时为强度为高
+
+    if (this.value.length > 10&& regCode1.test(this.value)) { //密码长度大于10，且含有数字、字母时为强度为高
         $('#high').css('backgroundColor', 'red');
         $('#mid').css('backgroundColor', '');
     } else {
@@ -154,7 +157,7 @@ $('.btn').on('click', function () {
         return;
     }
     if (verify_code != verify_code_) {
-        $('#warn5').html('请输入正确的验证码！');
+        $('#warn5').html('<i id="warn1_icon"></i>请输入正确的验证码！');
         $("input[name='verify_code']").val('');
         pro();
         return;

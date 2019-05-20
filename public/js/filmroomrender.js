@@ -1,3 +1,4 @@
+// 1.显示页面
 let filmRoomShow = function () {
     console.log(1);
     $.ajax({
@@ -5,10 +6,7 @@ let filmRoomShow = function () {
         url: '/filmRoomShow',
         data: '',
         success:function (data) {
-            // console.log(1)
             let str = template('film-template',{list:data});
-
-            // console.log(str);
             $('.e').html(str);
         }
     })
@@ -16,15 +14,14 @@ let filmRoomShow = function () {
 
 filmRoomShow();
 
+// 渲染页面
 let s = function () {
     $.ajax({
         type: 'get',
         url: '/filmRoomBrand',
         data: '',
         success: function (data) {
-            // console.log(data);
         let str = template('brandroom_template',{list:data});
-        // console.log(str);
         $('.a').html(str);
         }
     })
@@ -52,7 +49,6 @@ $('.a').on('click','.btn-type',function () {
         }
     })
 })
-// console.log('0');
 
 
 // 行政区
@@ -136,33 +132,5 @@ let y = function () {
         }
     })
   })
-
-
-
-//   $('.btn-t').on('click', '.btn-type', function () {
-//     let id = $(this).data('id');
-//     console.log(id);
-//     $.ajax({
-//       type: 'get',
-//       url: '/filmAboutQy',
-//       data: { id: id },
-//       success: function (data) {
-//         if (data.code == '1002') {
-//           $('.movie-list').html('<div>'+data.msg+'</div>');
-//           console.log(data);
-//         } else {
-//         let str = template('filmabout-template', { list: data });
-//         $('.movie-list').html(str);
-//         }
-//         // console.log(data);
-     
-//       }
-//     })
-//   })
-
-
-
-
-
 
 

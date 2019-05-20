@@ -1,31 +1,35 @@
-
+// 显示页面
 let filmShow = function () {
+  // 发起ajax请求
   $.ajax({
     type: 'get',
     url: '/filmsShow',
     data: '',
     success: function (data) {
       // console.log(data);
+      // 判断
       if (data.code == '1000') {
+        // 显示msg没有影片内容
         $('.movie-list').html('<div>' + data.msg + '</div>');
         console.log( $('.movie-list').html('<div>' + data.msg + '</div>'));
       } else {
+        // 渲染模板插入
         let str = template('film-template', {list: data});
         $('.movie-list').html(str);
       }
     }
   })
 }
+// 调用
 filmShow();
 
-
+// 渲染
 let s = function () {
-  $.ajax({
+  $.ajax({显示
     type: 'get',
     url: '/filmType',
     data: '',
     success: function (data) {
-
       let str = template('nav_template', { lis: data });
       $('.btn-o').html(str);
     }
@@ -52,7 +56,7 @@ $('.btn-o').on('click', '.btn-type', function () {
   })
 })
 
-
+// 渲染显示
 let a = function () {
   $.ajax({
     type: 'get',
@@ -87,6 +91,7 @@ $('.btn-t').on('click', '.btn-type', function () {
   })
 })
 
+// 渲染
 let y = function () {
   $.ajax({
     type: 'get',
@@ -122,7 +127,7 @@ $('.btn-e').on('click', '.btn-type', function () {
 })
 // 渲染年代
 
-
+// 点击热门进行排序
 $('.btn-rm').click(function () {
   $.ajax({
     type: 'get',
@@ -137,6 +142,7 @@ $('.btn-rm').click(function () {
   })
 })
 
+// 点击时间根据事件排序
 $('.btn-sj').click(function () {
   $.ajax({
     type: 'get',

@@ -13,31 +13,33 @@
 
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
 
-<!-- 底部 -->
-<link rel="stylesheet" href="./css/All-use-css/bottom.css">
-  
+  <!-- 底部 -->
+  <link rel="stylesheet" href="./css/All-use-css/bottom.css">
+  <link rel="shortcut icon" href="./images/bitbug_favicon.ico" type="image/x-icon">
+
+
 </head>
 
 <body>
   <!-- 顶部导航 -->
   <div class="dh">
     <div class="dh_con">
-        <%- include('./layouts/heady.ejs')%>
-        <div class="nav">
-            <ul class="nav-ul">
-                <li><a href="/">首页</a></li>
-                <li class="ys"><a href="/filmClassics">电影</a></li>
-                <li><a href="/filmroom">影院</a></li>
-                <li><a href="">演出</a></li>
-                <li><a href="/crunchies">榜单</a></li>
-                <li><a href="">热点</a></li>
-                <li><a href="/shopping">商城</a></li>
-            </ul>
-        </div>
-        <%- include('./layouts/header.ejs')%>
-     
+      <%- include('./layouts/heady.ejs')%>
+      <div class="nav">
+        <ul class="nav-ul">
+          <li><a href="/">首页</a></li>
+          <li class="ys"><a href="/filmClassics">电影</a></li>
+          <li><a href="/filmroom">影院</a></li>
+          <li><a href="">演出</a></li>
+          <li><a href="/crunchies">榜单</a></li>
+          <li><a href="">热点</a></li>
+          <li><a href="/shopping">商城</a></li>
+        </ul>
+      </div>
+      <%- include('./layouts/header.ejs')%>
+
     </div>
-</div>
+  </div>
   <!-- 电影分类 -->
   <div class="film-classify">
     <!-- 公共宽度 -->
@@ -500,8 +502,8 @@
       </ul>
     </div>
   </div>
- <!-- 底部 -->
- <%- include('./layouts/bottom.ejs')%>
+  <!-- 底部 -->
+  <%- include('./layouts/bottom.ejs')%>
 
   <!-- 引入jquery-->
   <script src="./lib/jquery/dist/jquery.js"></script>

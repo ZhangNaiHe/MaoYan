@@ -1,10 +1,14 @@
+
+// 引入数据库
 const conn = require('../data/film');
+// 显示首页
 module.exports.show=(req,res)=>{
   res.render('index');
 }
 
 
-// 右边
+// 右边 template模块
+//#region
 module.exports.room=(req,res)=>{
   conn.query('select * from movieranking order by movieRanking_ticket desc limit 1'  ,(error,data)=>{
     if(error)return console.log(error);
@@ -63,18 +67,11 @@ module.exports.roomseven=(req,res)=>{
   })
 }
 
+//#endregion
 
 
 
-
-
-
-
-
-
-
-
-// 左边
+//  #region 左边template模块  
 module.exports.room_left=(req,res)=>{
   conn.query('select * from movieranking order by movieRanking_grade2 desc limit 8' ,(error,data)=>{
     if(error)return console.log(error);
@@ -118,3 +115,4 @@ module.exports.room_left_three3=(req,res)=>{
     res.json(data);
   })
 }
+//#endregion

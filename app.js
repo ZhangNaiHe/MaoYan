@@ -81,8 +81,22 @@ app.use(crunchiesRoute);
 
 // 11.1 引入基本信息页面路由
 const personalRouter = require('./routers/personalRouter');
-// 11.2 引入基本信息页面路由
+// 11.2 挂载基本信息页面路由
 app.use(personalRouter);
+
+
+
+// 引入影院选择路由
+const filmchooseRouter = require('./routers/filmchoose');
+// 挂载
+app.use(filmchooseRouter);
+
+// 引入选座路由
+const ticket = require('./routers/ticketRoute')
+// 挂载
+app.use(ticket);
+
+
 
 // 14分钟内付款路由
 const filmPayRoute = require('./routers/filmPayRoute');

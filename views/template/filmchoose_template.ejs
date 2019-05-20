@@ -1,0 +1,47 @@
+<script type="text/template" id="filmchoose_template">
+ {{each list}}
+ {{if $index % 2 != 0}}
+ <tr class="even">
+    <td>
+      <span class="begin-time">{{$value.projection_time}}</span>
+      <br />
+      <span class="end-time">{{$value.projection_over}}</span>
+    </td>
+    <td>
+      <span class="lang">{{$value.projection_language}}</span>
+    </td>
+    <td>
+      <span class="hall">{{$value.projection_rooms}}</span>
+    </td>
+    <td>
+      <span class="sell-price"><span class="stonefont">{{$value.projection_pay}}</span></span>
+    </td>
+    <td>
+      <a href="" class="buy-btn normal"
+      >选座购票</a>
+    </td>
+  </tr>
+  {{else if $index %2 == 0}} 
+  <tr class="">
+    <td>
+      <span class="begin-time">{{$value.projection_time}}</span>
+      <br />
+      <span class="end-time">{{$value.projection_over}}</span>
+    </td>
+    <td>
+      <span class="lang">{{$value.projection_language}}</span>
+    </td>
+    <td>
+      <span class="hall">{{$value.projection_rooms}}</span>
+    </td>
+    <td>
+      <span class="sell-price"><span class="stonefont">{{$value.projection_pay}}</span></span>
+    </td>
+    <td>
+      <a href="" class="buy-btn normal" data-id='{{$value.projection_id}}'
+      >选座购票</a>
+    </td>
+  </tr>
+   {{/if}}
+ {{/each}}
+</script>

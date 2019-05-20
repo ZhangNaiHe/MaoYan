@@ -1,0 +1,152 @@
+        <!-- 选票部分 -->
+        <div class="select-ticket clearfix"  style="display:none">
+            <div class="seats">
+                <!-- 座位示例 -->
+                <div class="seat-example">
+                    <div class="selecttable-seats example">
+                        <span>可选座位</span>
+                    </div>
+                    <div class="sole-seats example">
+                        <span>已选座位</span>
+                    </div>
+                    <div class="selected-seats example">
+                        <span>已选座位</span>
+                    </div>
+                    <div class="double-seats example">
+                        <span>情侣座位</span>
+                    </div>
+                </div>
+                <div class="screening-room">
+                    <!-- 座位 -->
+                    <div class="row-id-box">
+                        <!-- 座位排数 -->
+                        <span class="row-id">1</span>
+                    </div>
+
+                    <div class="seats-box">
+                        <!-- 屏幕 -->
+                        <div class="screen-box">
+                            <div class="screen">屏幕中央</div>
+                            <div class="screen-center-line"></div>
+                        </div>
+                        <!-- 座位 -->
+                        <div class="seats-block">
+                            <div class="seats-row">
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                                <span class="seat"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 电影信息 -->
+            <div class="movie-block">
+                <div class="clearfix">
+                    <!-- 影片信息 -->
+                    <div class="movie-pic">
+                        <img src="../public/images/imgs-ZJ/cateye-gouku-zj.jpg" alt="">
+                    </div>
+                    <div class="movie-text">
+                        <p class="movie-name">龙珠超:布罗利</p>
+                        <div class="text-info">
+                            <span>类型:</span>
+                            <span class="movie-message">动画，动作，冒险</span>
+                        </div>
+                        <div class="text-info">
+                            <span>时长:</span>
+                            <span class="movie-message">100分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 影院的信息 -->
+                <div class="info-cinema">
+                    <div class="text-info">
+                        <span>影院:</span>
+                        <span class="movie-message">sfc</span>
+                    </div>
+                    <div class="text-info">
+                        <span>影厅:</span>
+                        <span class="movie-message">sfc</span>
+                    </div>
+                    <div class="text-info">
+                        <span>版本:</span>
+                        <span class="movie-message">日语中字</span>
+                    </div>
+                    <div class="text-info">
+                        <span>场次:</span>
+                        <span class="movie-message tred">周五 5月24 11:35</span>
+                    </div>
+                    <div class="text-info">
+                        <span>票价:</span>
+                        <span class="movie-message">￥32/张</span>
+                    </div>
+                </div>
+
+                <!-- 电影票 -->
+                <div class="info-ticket" style="display:none">
+                    <!-- 未选中时 -->
+                    <div class="no-ticket" style="display:none">
+                        <p class="buy-ticket">座位：一次最多选5个座位</p>
+                        <p class="no-select">请<span class="tred">点击左侧</span>座位图选择座位</p>
+                    </div>
+                    <!-- 选中时 -->
+                    <div class="has-ticket" style="display:block">
+                        <span class="seat-ticket">座位:</span>
+                        <div class="ticket-selected">
+                            <span class="ticket">1排1座</span>
+                        </div>
+                    </div>
+                    <!--  价格 -->
+                    <div class="total">
+                        <span>总价:</span>
+                        <span class="price">
+                            0
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 验证表单 -->
+                <div class="confim-order" >
+
+                    <div class="isLogin-block">
+                        <form action="">
+
+                            <!-- 手机号 -->
+                            <div class="phone-number">
+                                <input type="text" name="phone-number" id="p-number" placeholder="输入手机号"
+                                    class="phone-number-input">
+                            </div>
+                            <!-- 验证码 -->
+                            <div class="islogin-code">
+                                <input type="text" class="islogin-code-input" name="codeinput" placeholder="填写验证码">
+                                <div class="send-code" id="sendCodeBtn">获取验证码</div>
+                            </div>
+                            <!-- 按钮 -->
+                            <div class="login-btn">
+                                <button class="islogin-btn disable">确认选座</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        
+            
+        </div>

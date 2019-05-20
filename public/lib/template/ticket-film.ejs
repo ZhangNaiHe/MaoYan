@@ -1,0 +1,42 @@
+<script type="text/template" id="ticket-film">
+<div class="demo clearfix">
+
+    <div id="seat_area">
+
+        <div class="front">屏幕</div>
+
+    </div>
+
+
+        <div class="booking_area">
+            <p>电影：
+                <span id="movie">{{$value.show_name}}</span>
+            </p>
+
+            <p>
+                时间：<span id="date">{{$value.data_time}}</span>
+            </p>
+
+            <p>座位：</p>
+
+            <ul id="seats_chose"></ul>
+
+            <p>
+                票数：<span id="tickects_num">0</span>
+            </p>
+
+            <p>
+                总价：<b>￥
+                    <span id="total_price">0</span>
+                </b>
+            </p>
+
+
+
+            <input type="button" class="btn" value="确定购买" />
+            <div id="legend"></div>
+            
+        </div>
+        
+    </div>
+</script>
