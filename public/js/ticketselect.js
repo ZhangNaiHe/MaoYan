@@ -1,4 +1,4 @@
-var price = '{{projection_pay}}'; //电影票价
+var price = 28.9; //电影票价
 
 var $cart = $('#seats_chose'), //座位区
 
@@ -78,7 +78,7 @@ var sc = $('#seat_area').seatCharts({
 
             $tickects_num.text(sc.find('selected').length + 1); //统计选票数量
 
-            $total_price.text(getTotalPrice(sc) + price);//计算票价总金额
+            $total_price.text((getTotalPrice(sc) + price).toFixed(2));//计算票价总金额
 
 
 
@@ -90,7 +90,7 @@ var sc = $('#seat_area').seatCharts({
 
             $tickects_num.text(sc.find('selected').length - 1);//更新票数量
 
-            $total_price.text(getTotalPrice(sc) - price);//更新票价总金额
+            $total_price.text((getTotalPrice(sc) - price).toFixed(2));//更新票价总金额
 
             $('#cart-item-' + this.settings.id).remove();//删除已预订座位
 

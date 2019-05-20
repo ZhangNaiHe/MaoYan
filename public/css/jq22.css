@@ -84,9 +84,9 @@ div.seatCharts-seat.available {    display: inline-block;
     }
     
 
-div.seatCharts-seat.focused {background-image: url(../images/imgs-ZJ/seat-sole-zj.png);}
+div.seatCharts-seat.focused {background-image: url(../images/imgs-ZJ/seat-selected.png);}
 
-div.seatCharts-seat.selected {background-image: url(../images/imgs-ZJ/seat-sole-zj.png);}
+div.seatCharts-seat.selected {background-image: url(../images/imgs-ZJ/seat-selected.png);}
 
 div.seatCharts-seat.unavailable {background-image: url(../images/imgs-ZJ/seat-sole-zj.png);}
 
