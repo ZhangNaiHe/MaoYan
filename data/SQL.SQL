@@ -19,3 +19,7 @@ insert into showing values
 (null,'当我们海阔天空','images/film/film6.jpg','青春','大陆','2019',1086,null,null,'coming'),
 (null,'X战警:黑凤凰','images/film/film7.jpg','科幻','美国','2019',166687,null,null,'coming'),
 (null,'黑衣人:全球追击','images/film/film8.jpg','喜剧','美国','2019',694581,null,null,'coming');
+
+
+insert into showing values
+(null)
