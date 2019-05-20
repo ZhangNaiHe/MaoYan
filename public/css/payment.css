@@ -526,6 +526,12 @@ background-position: 0 17px;
     margin-right: 2px;
 }
 
+.yz_seats>span{
+    font-size: 16px;
+    /* margin-right: 2px; */
+    font-weight: 900;
+}
+
 .yz_seats i {
     font-size: 16px;
     font-style: normal;

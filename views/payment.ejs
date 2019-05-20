@@ -69,7 +69,7 @@
                 </thead>
                 <tbody class="yz_payment_data">
                     <!-- <tr> -->
-                        <!-- <td class="yz_movie_name">《大侦探皮卡丘》</td>
+                    <!-- <td class="yz_movie_name">《大侦探皮卡丘》</td>
                         <td class="yz_showtime">今天 5月16日 13:00</td>
                         <td class="yz_cinema_name">大地影院(万顺店)</td>
                         <td>
@@ -93,7 +93,9 @@
                 </div>
                 <!-- 确认支付 -->
                 <div class="yz_price_verify">
-                    <div class="yz_pay_btn">确认支付</div>
+                    <a href="/succeed">
+                            <div class="yz_pay_btn">确认支付</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -119,9 +121,10 @@
     <!-- 4.底部end -->
 
     <script src="./lib/jquery/dist/jquery.min.js"></script>
-    <script src="./js/payment.js"></script>
-    <script src="./js/crunchies.js"></script>
+    <!-- <script src="./js/crunchies.js"></script> -->
     <script src="./lib/art-template/lib/template-web.js"></script>
+    <script src="./js/payment.js"></script>
+
     <%- include('./template/crunchies_template.ejs')%>
 
 

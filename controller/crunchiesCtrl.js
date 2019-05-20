@@ -89,17 +89,7 @@ module.exports.BRwantSee = (req, res) => {
 // #endregion
 
 
-// #region 电影信息
-module.exports.payment = (req, res) => {
-    let sql = 'select * from ticket where ticket_id = (select max(ticket_id) from ticket)';
-    connection.query(sql, (error, results) => {
-        if(error) {
-            console.log(error);
-        }
-        res.json(results);
-    })
-}
-// #endregion
+
 
 
 

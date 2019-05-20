@@ -45,3 +45,37 @@ timer = setInterval("CountDown()", 1000);
 // #endregion
 
 // #endregion
+
+
+// #region
+// let showMovie8 = function () {
+//     console.log(2)
+//     console.log(1)
+//     $.ajax({
+//         type: 'get',
+//         url: '/payment',
+//         data: '',
+//         success: function (data) {
+//             console.log(data);
+//             // let str = template('payment_template', { list: data });
+//             // $('.yz_payment_data').html(str);
+//             // console.log(data);
+//         }
+//     })
+// }
+// showMovie8();
+// #endregion
+
+let a = function () {
+    $.ajax({
+        type: 'get',
+        url: '/prl',
+        data: '',
+        success: function (data) {
+            // console.log(data);
+            let str = template('payment_template', { list: data });
+            $('.yz_payment_data').html(str);
+        }
+    })
+}
+a();

@@ -102,6 +102,8 @@ app.use(ticket);
 const filmPayRoute = require('./routers/filmPayRoute');
 app.use(filmPayRoute);
 
+const paymentRouter = require('./routers/paymentRouter');
+app.use(paymentRouter);
 
 // 指定端口，启动服务
 app.listen(3009, () => {
