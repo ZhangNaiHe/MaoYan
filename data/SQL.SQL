@@ -22,4 +22,15 @@ insert into showing values
 
 
 insert into showing values
-(null)
+(null,'下一任:前任','images/film/filmm1.jpg','爱情','大陆','2019',null,4.3,1.20,'hot',1,2,3),
+(null,'复仇者联盟4:终局之战','images/film/filmm2.jpg','动作','美国','2019',null,9.0,42.15,'hot',1,2,5),
+(null,'大侦探皮卡丘','images/film/filmm3.jpg','冒险','美国','2019',null,8.5,4.95,'hot',2,4,5),
+(null,'何以为家','images/film/filmm4.jpg','剧情','黎巴嫩','2019',null,9.3,3.40,'hot',2,3,1),
+(null,'五月天人生无限公司','images/film/filmm6.jpg','纪录片','中国台湾','2019',50234,null,9,'hot',1,1,1),
+(null,'双生','images/film/filmm7.jpg','悬疑','中国大陆','2019',null,6.5,150.5,'hot',1,2,1),
+(null,'反贪风暴4','images/film/filmm8.jpg','动作','中国香港','2019',null,9.1,7.93,'hot',2,3,1),
+(null,'一条狗的使命2','images/film/filmm9.jpg','剧情','美国','2019',null,9.3,95.5,'hot',1,3,5),
+(null,'一个母亲的复仇','images/film/filmm10.jpg','剧情','印度','2019',null,9.3,869.5,'hot',3,5,1),
+(null,'哥斯拉2:怪兽之王','images/film/filmm11.jpg','科幻','美国','2019',251826,null,null,'hot',1,2,1),
+(null,'进京城','images/film/filmm12.jpg','剧情','中国大陆','2019',null,9.0,64.5,'hot',1,2,1),
+(null,'罗马','images/film/filmm13.jpg','剧情','墨西哥','2019',null,8.5,44.4,'hot',2,2,1);
