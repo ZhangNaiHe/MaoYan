@@ -89,9 +89,13 @@ module.exports.BRwantSee = (req, res) => {
 // #endregion
 
 
+<<<<<<< HEAD
 module.exports.succeed=(req,res)=>{
     res.render('succeed');
 }
+=======
+
+>>>>>>> 8e7cafa79470132a8f1db80f53686038e324beb0
 
 
 
