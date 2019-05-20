@@ -1,12 +1,13 @@
+// console.log(1);
 // 显示页面
 let filmShow = function () {
+  // console.log(1);
   // 发起ajax请求
   $.ajax({
     type: 'get',
     url: '/filmsShow',
     data: '',
     success: function (data) {
-      // console.log(data);
       // 判断
       if (data.code == '1000') {
         // 显示msg没有影片内容
@@ -16,6 +17,7 @@ let filmShow = function () {
         // 渲染模板插入
         let str = template('film-template', {list: data});
         $('.movie-list').html(str);
+        
       }
     }
   })
@@ -25,7 +27,7 @@ filmShow();
 
 // 渲染
 let s = function () {
-  $.ajax({显示
+  $.ajax({
     type: 'get',
     url: '/filmType',
     data: '',
@@ -64,6 +66,7 @@ let a = function () {
     data: '',
     success: function (data) {
       let str = template('area_template', { list: data });
+      console.log(str);
       $('.btn-t').html(str);
     }
   })

@@ -6,6 +6,7 @@ module.exports.show = (req, res) => {
 }
 
 module.exports.filmsShow = (req, res) => {
+  console.log(1);
   let s = 'hot';
   conn.query('select * from showing where show_state=?', s,(error, result) => {
     if (error) return console.log(error);
