@@ -126,3 +126,7 @@ span.seatCharts-legendDescription {margin-left: 5px;line-height: 30px;}
     box-shadow: 0 2px 10px -2px #f03d37;
     background-color: #f03d37;
 }
+
+.x {
+    margin-left: 22px;
+}

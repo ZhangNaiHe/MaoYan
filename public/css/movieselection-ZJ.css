@@ -208,12 +208,12 @@
     margin-left: 140px;
 }
 
-.movie-name {
+#movie {
     font-size: 20px;
     font-weight: 700;
     color: #333;
     margin: 0 0 14px;
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
     text-overflow: ellipsis;
 }
