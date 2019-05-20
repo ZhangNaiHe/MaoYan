@@ -26,10 +26,6 @@ router.get('/BRcomment',crunchiesCtrl.BRcomment);
 // 波西米亚--想看
 router.get('/BRwantSee',crunchiesCtrl.BRwantSee);
 
-<<<<<<< HEAD
-router.get('/succeed',crunchiesCtrl.succeed);
-=======
->>>>>>> 8e7cafa79470132a8f1db80f53686038e324beb0
 
 
 
