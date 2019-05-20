@@ -39,10 +39,10 @@ let filmAboutShow = function (pageNum,pageSize) {
         // 总共有多少页
         totalPages: Math.ceil(data.pageTotal / data.pageSize),
         // 显示页码的数量有几个
-        visiblePages: 4,
+        visiblePages: 2,
         // 点击的时候调用方法
         onPageClick: function (event, page) {
-          filmAboutShow(page, 5);
+          filmAboutShow(page, 10);
         }
       });
 
@@ -50,7 +50,7 @@ let filmAboutShow = function (pageNum,pageSize) {
   })
 }
 // 调用
-filmAboutShow(1,5);
+filmAboutShow(1,10);
 
 // 渲染
 let s = function () {

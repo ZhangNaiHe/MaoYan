@@ -14,18 +14,18 @@ let filmAboutShow = function (pageNum,pageSize) {
         // 总共有多少页
         totalPages: Math.ceil(data.pageTotal / data.pageSize),
         // 显示页码的数量有几个
-        visiblePages: 4,
+        visiblePages: 2,
         // 点击的时候调用方法
         onPageClick: function (event, page) {
           console.log(page)
-          filmAboutShow(page, 5);
+          filmAboutShow(page, 10);
         }
       });
 
     }
   })
 }
-filmAboutShow(1,5);
+filmAboutShow(1,10);
 
 let s = function () {
   $.ajax({
