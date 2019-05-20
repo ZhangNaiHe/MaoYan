@@ -89,6 +89,11 @@ module.exports.BRwantSee = (req,res)=>{
 // #endregion
 
 
+module.exports.succeed=(req,res)=>{
+    res.render('succeed');
+}
+
+
 
 
 

@@ -352,13 +352,38 @@ position: absolute;
 
 /* 2.中间部分start */
 .yz_purchase {
+    /* position: relative; */
     padding-top: 81px;
     height: 300px;
+}
+
+
+.yz_content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.yz_icon,
+.yz_icon_2 {
+    float: left;
+    display: inline-block;
+}
+
+.yz_icon {
+    padding-top: 100px;
+}
+
+.yz_icon_2 {
+    height: 380px;
+    line-height: 380px;
+    margin-left: 100px;
+    font-size: 45px;
 }
 
 .yz_icon > img {
     width: 200px;
     height: 200px;
+
 }
 /* 2.中间部分end */
 
