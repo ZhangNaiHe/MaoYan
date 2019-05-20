@@ -69,9 +69,9 @@ var sc = $('#seat_area').seatCharts({
 
                 .data('seatId', this.settings.id)
 
-                // .attr('row', this.settings.row + 1)
+                .attr('row', this.settings.row + 1)
 
-                // .attr('column', this.settings.label)
+                .attr('column', this.settings.label)
                 .appendTo($cart);
 
 

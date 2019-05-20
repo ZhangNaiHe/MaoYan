@@ -16,10 +16,10 @@ show();
 // 点击确定按钮
 $('.demo').on('click', '.btn', () => {
     //获取li的自定义属性值
-    $('.demo .selected').attr('id');
+    $('#seats_chose li').attr('id');
     let arr = [];
-    for (var i = 0; i < $('.demo .selected').length; i++) {
-        arr.push($('.demo .selected').eq(i).attr('id'));
+    for (var i = 0; i < $('#seats_chose li').length; i++) {
+        arr.push($('#seats_chose li').eq(i).text());
     }
     // console.log(arr);
     // 获取总价
@@ -31,6 +31,7 @@ $('.demo').on('click', '.btn', () => {
     // console.log(date);
     let sale = $('#yuan').text() + 0;
     // console.log(sale)
+    let where = $('#where').text();
     let much = arr.length + 1;
     let money = sale * much;
     $.ajax({
@@ -40,7 +41,8 @@ $('.demo').on('click', '.btn', () => {
             id: arr,
             name:name,
             date:date,
-            money:money
+            money:money,
+            where:where
         },
         success: function (data) {
             // console.log(data);
