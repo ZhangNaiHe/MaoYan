@@ -26,6 +26,9 @@ router.get('/BRcomment',crunchiesCtrl.BRcomment);
 // 波西米亚--想看
 router.get('/BRwantSee',crunchiesCtrl.BRwantSee);
 
+// 电影信息
+router.get('/payment',crunchiesCtrl.payment);
+
 
 
 // 暴露路由

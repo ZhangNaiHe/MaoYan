@@ -69,22 +69,35 @@ module.exports.Bohemian_Rhapsody = (req, res) => {
 
 // #region  波希米亚--短评
 module.exports.BRcomment = (req, res) => {
-    connection.query('select * from comment order by comment_praise desc', (error,results) => {
-        if(error) return console.log(error);
+    connection.query('select * from comment order by comment_praise desc', (error, results) => {
+        if (error) return console.log(error);
         res.json(results);
     })
 }
 // #endregion
 
 // #region 波西米亚--想看
-module.exports.BRwantSee = (req,res)=>{
+module.exports.BRwantSee = (req, res) => {
     if (!req.session.isLogin) {
         res.redirect('/login');
         return false;
     }
-    if(results.affectedRows) {
+    if (results.affectedRows) {
         res.json(results);
     }
+}
+// #endregion
+
+
+// #region 电影信息
+module.exports.payment = (req, res) => {
+    let sql = 'select * from ticket where ticket_id = (select max(ticket_id) from ticket)';
+    connection.query(sql, (error, results) => {
+        if(error) {
+            console.log(error);
+        }
+        res.json(results);
+    })
 }
 // #endregion
 

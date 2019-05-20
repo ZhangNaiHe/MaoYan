@@ -154,6 +154,22 @@ let showMovie7 = function () {
 showMovie7();
 // #endregion
 
+// #region
+let showMovie8 = function () {
+    $.ajax({
+        type: 'get',
+        url: '/payment',
+        data: '',
+        success: function (data) {
+            // let str = template('payment_template', { list: data });
+            // $('.yz_payment_data').html(str);
+            console.log(data);
+        }
+    })
+}
+showMovie8();
+// #endregion
+
 // #endregion
 
 
