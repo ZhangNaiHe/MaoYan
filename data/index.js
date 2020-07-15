@@ -9,7 +9,7 @@ const conn = mysql.createConnection({
   // 账号
   user:'root',
   // 密码
-  password:'root',
+  password:'123456',
   // 数据库名
   database:'movie'
 })
